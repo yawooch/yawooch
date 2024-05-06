@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+*{
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    display: block;
+}
+body {
+    overflow: auto;
+    overflow-y: scroll;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #444;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+}
+div{
+    display: block; /**/
+}
+h1{
+    margin: 67em;
+}
+.cm-member-wrap{
+    background-color: white;
+    width: 710px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 80px 100px;
+}
+.cm-member-wrap .cm-logo {
+    display: block;
+    padding: 0 0 70px 0;
+}
+#cm_logo {
+    display: block;
+    width: 140px;
+    height: 47px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    background: url(https://i.ibb.co/grsGs7C/Logo-Transparent.png) center no-repeat;
+    background-size: contain;
+}
+.cm-step-member{
+    border-bottom: 1px solid #ebebeb;
+    position: relative;
+    margin: 0 0 40px 0;
+}
+.cm-step-member ol li {
+    list-style: none;
+    float: left;
+}
+.cm-member-wrap .cm-step-member ol li:first-child {
+    margin-left: 0;
+}
+.cm-member-wrap .cm-step-member ol li {
+    margin: 0 0 0 46px;
+    text-align: center;
+    font-size: .866em;
+}
+.cm-member-wrap .cm-step-member ol li .cm-step.on {
+    border-bottom: 2px solid #6D3030;
+    color: #6D3030;
+}
+.cm-member-wrap .cm-step-member ol li .cm-step {
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-size: .9333em;
+    letter-spacing: 0;
+}
+/* "회원가입을 위한 가입확인 단계입니다." 문구 */
+.cm-signtitle {
+    padding: 0 0 25px 0;
+    font-size: 1.4666em;
+    color: #222;
+}
+/* 이름, 주민번호, 휴대번호 입력창 */
+table {
+    display: table;
+    width: 510px;
+    border-collapse: collapse; /* collapse : 표(table)의 테두리와 셀(td)의 테두리 사이의 간격을 없앱니다. 겹치는 부분은 한 줄로 나타냅니다 */
+}
+th{
+    display: table-cell;
+    font-weight: normal;
+    color: black;
+}
+.cm-member-table-wrap {
+    position: relative;
+    border-top: 1px solid #555;
+}
+.cm-member-table-form tbody th {
+    width: 140px;
+    background : #f7f8f9;
+}
+.cm-member-table-form tbody th, .cm-member-table-form tbody td{
+    height: 50px;
+    padding: 7px 0 7px 15px;
+    text-align: left;
+    border-bottom: 1px solid #d1d5dd;
+}
+/* 주민번호 입력창 */
+.cm-mti-left{
+    width: 100px;
+}
+.cm-mti-middle{
+    width: 20px;
+}
+.cm-member-table-input1{
+    width: 258px;
+    height: 32px;
+    padding: 0 10px;
+    line-height: 30px;
+    color: #444;
+    border: 1px solid #d8d9db;
+}
+.cm-member-table-input2{
+    width: 110px;
+    height: 32px;
+    padding: 0 10px;
+    line-height: 30px;
+    color: #444;
+    border: 1px solid #d8d9db;
+}
+
+/* 하단 문구 */
+.cm-member-bottom-text {
+    margin-top: 25px;
+    font-size: .866em;
+}
+/* 하단버튼 */
+.cm-member-wrap .cm-agree-btn-bottom {
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+.cm-button{
+    border-radius: 4px;
+}
+.cm-button:disabled {
+    color: #777!important;
+    cursor: default!important;
+    background-color: #e0e0e0!important;
+    border-color: #e0e0e0!important;
+}
+.cm-button.red {
+    color: #fff;
+    line-height: 36px;
+    border: 0;
+    background: #6D3030;
+}
+#cm_btnagreebottom {
+    border: 0;
+    width: 200px;
+    height: 45px;
+    padding: 0;
+    font-size: 20px;
+    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+    color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+}
+

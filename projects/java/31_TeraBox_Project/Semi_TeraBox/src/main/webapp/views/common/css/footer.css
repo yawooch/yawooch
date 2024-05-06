@@ -1,0 +1,169 @@
+#cm_header>.cm-content, #cm_videoSection>.cm-content, #cm_footer>.cm-content, #cm_movieSection>.cm-content, #cm_noticeSection>.cm-content{
+    width:1100px;
+    height:100%;
+    margin:0 auto;
+}
+#cm_footer>.cm-content{
+    background-color: #A0A0A0;
+}
+.cm-button{
+    display: inline-block;
+    height: 36px;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 34px;
+    color: #503396;
+    font-weight: 400;
+    border-radius: 4px;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+    text-decoration: none;
+    border: 1px solid #503396;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+}
+.cm-button.cm-gred {
+    color: #fff;
+    line-height: 36px;
+    border: 0;
+    background: #037b94;
+}
+
+/******************************************** 
+    footer 영역 속성정의 시작
+*********************************************/
+/* footer 영역 스타일 시작 */
+#cm_footer{
+    background-color: #A0A0A0;
+    width:100%;
+    height:90px;
+    position: relative;
+    clear:both;
+}
+.cm-footerContent{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    color:white;
+}
+.cm-footerContent>span{
+    position: absolute;
+    top:20px;
+}
+.cm-footerContent>span:nth-child(2){
+    left:160px;
+    font-size:12px;
+}
+.cm-footerContent>span:nth-child(3){
+    right:0px;
+}
+.cm-footerContent>span:nth-child(2) li:nth-child(3){
+    font-weight:900;
+}
+.cm-footerLogo>img{
+    height:50px;
+}
+.cm-footer-findCinema{
+    overflow: hidden;
+    float: right;
+    display: block;
+    width: 106px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 28px;
+    color: #666;
+    font-size: .8667em;
+    border: 1px solid #d8d9db;
+    border-radius: 30px;
+    text-decoration: none;
+}
+.cm-ico-footer-search{
+    width: 15px;
+    height: 15px;
+    background-image: url(../../../img/ico-footer-search.png);
+    margin-left:4px;
+    overflow: hidden;
+    display: inline-block;
+    margin: -1px 0 0 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+/* footer 영역 스타일 끝 */
+/* looking-theater 영역 스타일 시작 */
+#cm_footer .cm-layer-looking-theater.on {
+    display: block;
+}
+.cm-layer-looking-theater {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    width: 100%;
+    background-color: #333;
+    z-index: 98;
+}
+#cm_footer>.cm-layer-looking-theater>.cm-looking-wrap {
+    position: relative;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+    background-color: #333;
+}
+.cm-layer-looking-theater>.cm-looking-wrap>.cm-tit{
+    padding: 0 0 30px 0;
+    font-size: 1.4666em;
+    color: #fff;
+    line-height: 1.1;
+}
+.cm-layer-looking-theater>.cm-looking-wrap>.cm-list{
+    padding: 39px 30px;
+    border: 1px solid #3c3c3c;
+}
+.cm-layer-looking-theater>.cm-looking-wrap>.cm-list>li {
+    position: relative;
+    padding: 20px 0 0 153px;
+    line-height: 1.1;
+}
+.cm-layer-looking-theater>.cm-looking-wrap>.cm-list>li>.cm-loca{
+    position: absolute;
+    left: 0;
+    top: 19px;
+    padding: 0;
+    color: #fff;
+}
+.cm-layer-looking-theater>.cm-looking-wrap>.cm-list>li>.cm-cont>a {
+    display: inline-block;
+    margin: 0 24px 10px 0;
+    color: #bbb;
+    text-decoration: none;
+    font-size: .9333em;
+    vertical-align: top;
+}
+.cm-layer-looking-theater>.cm-looking-wrap>.cm-btn-footer-layer-close {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 42px;
+    width: 36px;
+    height: 36px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-indent: -9999px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-footer-theater-close.png) no-repeat center;
+}
+.cm-layer-looking-theater>.cm-looking-wrap>.cm-btn-footer-layer-close:hover {
+    cursor:pointer;
+}
+/* looking-theater 영역 스타일 끝 */
+/******************************************** 
+    footer 영역 속성정의 끝
+*********************************************/

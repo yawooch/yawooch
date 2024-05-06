@@ -1,0 +1,52 @@
+https://drive.google.com/file/d/1i_fevmCbWIFJYHNIhd-lPmhcdbS2gXaj/view?usp=sharing
+
+프론트엔드로드맵
+
+recoil?
+jotai?
+
+rtk query?
+
+백엔드로드맵
+
+백엔드 에서의 노드?
+
+SQL/ORM?
+Prisma?
+
+Redis?
+
+ElasticSearch?
+
+
+자바로드맵
+
+java 보다는 코드쓰는 상황이 좋은 Kotlin?
+
+스프링 부트?
+
+QueryDSL?
+
+
+
+취업진입 장벽이 높아질수록 개발자의 몸값이 점점 비싸질수 있다.
+
+
+어느정도까지 공부해야 다 배웠다고 할수 있는가? 질물으
+
+
+
+어느정도 실력이어야 취업할 수 있는 건가요?
+--> 취업할 수 있어야 실력이 갖춰지는 것이다.
+
+
+
+신기술 공부, 
+업무로직에 부족한 공부, 
+개발자로서 부족한 공부 가 있다고 한다면 
+비율을 어떻게 잡고 공부하면 될까요?
+
+BFF(Backend For Frontend)
+
+모놀리식 프론트엔드?
+

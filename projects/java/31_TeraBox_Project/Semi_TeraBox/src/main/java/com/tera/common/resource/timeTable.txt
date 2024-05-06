@@ -1,0 +1,1012 @@
+<div class="reserve theater-list-box">
+<div class="tab-block tab-layer mb30" style="display: none;">
+<ul><li class="on"><a href="" class="btn" data-area-cd="10" title="서울 선택">서울</a></li><li><a href="" class="btn" data-area-cd="30" title="경기 선택">경기</a></li><li><a href="" class="btn" data-area-cd="35" title="인천 선택">인천</a></li><li><a href="" class="btn" data-area-cd="45" title="대전/충청/세종 선택">대전/충청/세종</a></li><li><a href="" class="btn" data-area-cd="55" title="부산/대구/경상 선택">부산/대구/경상</a></li><li><a href="" class="btn" data-area-cd="65" title="광주/전라 선택">광주/전라</a></li><li><a href="" class="btn" data-area-cd="70" title="강원 선택">강원</a></li><li><a href="" class="btn" data-area-cd="80" title="제주 선택">제주</a></li></ul>
+</div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-15"></p>
+<p><a href="/movie-detail?rpstMovieNo=23093500" title="시민덕희 상세보기">시민덕희</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 113분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">1관</p>
+<p class="chair">총 232석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372054" rpst-movie-no="23093500" theab-no="01" play-de="20240128" play-seq="2" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">13:15</p>
+<p class="chair">227석</p>
+<div class="play-time">
+<p>13:15~15:18</p>
+<p>2회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">2관</p>
+<p class="chair">총 103석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372043" rpst-movie-no="23093500" theab-no="02" play-de="20240128" play-seq="1" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-sun"></i></div>
+<p class="time">09:50</p>
+<p class="chair">97석</p>
+<div class="play-time">
+<p>09:50~11:53</p>
+<p>1회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372044" rpst-movie-no="23093500" theab-no="02" play-de="20240128" play-seq="2" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">12:10</p>
+<p class="chair">99석</p>
+<div class="play-time">
+<p>12:10~14:13</p>
+<p>2회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372045" rpst-movie-no="23093500" theab-no="02" play-de="20240128" play-seq="3" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">14:30</p>
+<p class="chair">82석</p>
+<div class="play-time">
+<p>14:30~16:33</p>
+<p>3회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372046" rpst-movie-no="23093500" theab-no="02" play-de="20240128" play-seq="4" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">16:50</p>
+<p class="chair">92석</p>
+<div class="play-time">
+<p>16:50~18:53</p>
+<p>4회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372047" rpst-movie-no="23093500" theab-no="02" play-de="20240128" play-seq="5" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">19:10</p>
+<p class="chair">101석</p>
+<div class="play-time">
+<p>19:10~21:13</p>
+<p>5회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372048" rpst-movie-no="23093500" theab-no="02" play-de="20240128" play-seq="6" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">21:30</p>
+<p class="chair">103석</p>
+<div class="play-time">
+<p>21:30~23:33</p>
+<p>6회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-12"></p>
+<p><a href="/movie-detail?rpstMovieNo=23085100" title="외계+인 2부 상세보기">외계+인 2부</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 122분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">4관</p>
+<p class="chair">총 103석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372070" rpst-movie-no="23085100" theab-no="04" play-de="20240128" play-seq="1" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">10:30</p>
+<p class="chair">103석</p>
+<div class="play-time">
+<p>10:30~12:42</p>
+<p>1회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372071" rpst-movie-no="23085100" theab-no="04" play-de="20240128" play-seq="2" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">13:00</p>
+<p class="chair">97석</p>
+<div class="play-time">
+<p>13:00~15:12</p>
+<p>2회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372072" rpst-movie-no="23085100" theab-no="04" play-de="20240128" play-seq="3" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">15:30</p>
+<p class="chair">85석</p>
+<div class="play-time">
+<p>15:30~17:42</p>
+<p>3회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372073" rpst-movie-no="23085100" theab-no="04" play-de="20240128" play-seq="4" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">18:00</p>
+<p class="chair">100석</p>
+<div class="play-time">
+<p>18:00~20:12</p>
+<p>4회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">6관</p>
+<p class="chair">총 103석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372079" rpst-movie-no="23085100" theab-no="06" play-de="20240128" play-seq="5" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">21:30</p>
+<p class="chair">103석</p>
+<div class="play-time">
+<p>21:30~23:42</p>
+<p>5회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-all"></p>
+<p><a href="/movie-detail?rpstMovieNo=23094700" title="위시 상세보기">위시</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 94분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">3관</p>
+<p class="chair">총 232석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372087" rpst-movie-no="23094700" theab-no="03" play-de="20240128" play-seq="1" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">10:40</p>
+<p class="chair">223석</p>
+<div class="play-time">
+<p>10:40~12:24</p>
+<p>1회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">7관</p>
+<p class="chair">총 104석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372083" rpst-movie-no="23094700" theab-no="07" play-de="20240128" play-seq="3" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">14:50</p>
+<p class="chair">80석</p>
+<div class="play-time">
+<p>14:50~16:34</p>
+<p>3회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372084" rpst-movie-no="23094700" theab-no="07" play-de="20240128" play-seq="4" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">16:55</p>
+<p class="chair">92석</p>
+<div class="play-time">
+<p>16:55~18:39</p>
+<p>4회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-12"></p>
+<p><a href="/movie-detail?rpstMovieNo=23081200" title="서울의 봄 상세보기">서울의 봄</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 141분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">4관</p>
+<p class="chair">총 103석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372080" rpst-movie-no="23081200" theab-no="04" play-de="20240128" play-seq="5" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">20:30</p>
+<p class="chair">103석</p>
+<div class="play-time">
+<p>20:30~23:01</p>
+<p>5회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">6관</p>
+<p class="chair">총 103석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372076" rpst-movie-no="23081200" theab-no="06" play-de="20240128" play-seq="2" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">12:50</p>
+<p class="chair">99석</p>
+<div class="play-time">
+<p>12:50~15:21</p>
+<p>2회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372077" rpst-movie-no="23081200" theab-no="06" play-de="20240128" play-seq="3" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">15:40</p>
+<p class="chair">94석</p>
+<div class="play-time">
+<p>15:40~18:11</p>
+<p>3회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-12"></p>
+<p><a href="/movie-detail?rpstMovieNo=23094800" title="세기말의 사랑 상세보기">세기말의 사랑</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 116분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">7관</p>
+<p class="chair">총 104석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372086" rpst-movie-no="23094800" theab-no="07" play-de="20240128" play-seq="6" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">21:15</p>
+<p class="chair">90석</p>
+<div class="play-time">
+<p>21:15~23:21</p>
+<p>6회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-19"></p>
+<p><a href="/movie-detail?rpstMovieNo=23097300" title="엔드 오브 에반게리온 상세보기">엔드 오브 에반게리온</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 87분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">5관</p>
+<p class="chair">총 96석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372064" rpst-movie-no="23097300" theab-no="05" play-de="20240128" play-seq="1" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-sun"></i></div>
+<p class="time">10:00</p>
+<p class="chair">89석</p>
+<div class="play-time">
+<p>10:00~11:37</p>
+<p>1회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372068" rpst-movie-no="23097300" theab-no="05" play-de="20240128" play-seq="5" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">18:30</p>
+<p class="chair">80석</p>
+<div class="play-time">
+<p>18:30~20:07</p>
+<p>5회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-12"></p>
+<p><a href="/movie-detail?rpstMovieNo=23068900" title="괴물 상세보기">괴물</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 126분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">5관</p>
+<p class="chair">총 96석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372069" rpst-movie-no="23068900" theab-no="05" play-de="20240128" play-seq="6" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">20:25</p>
+<p class="chair">84석</p>
+<div class="play-time">
+<p>20:25~22:41</p>
+<p>6회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-15"></p>
+<p><a href="/movie-detail?rpstMovieNo=23094100" title="도그맨 상세보기">도그맨</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 114분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">3관</p>
+<p class="chair">총 232석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372062" rpst-movie-no="23094100" theab-no="03" play-de="20240128" play-seq="2" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">12:45</p>
+<p class="chair">230석</p>
+<div class="play-time">
+<p>12:45~14:49</p>
+<p>2회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372051" rpst-movie-no="23094100" theab-no="03" play-de="20240128" play-seq="3" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">15:10</p>
+<p class="chair">220석</p>
+<div class="play-time">
+<p>15:10~17:14</p>
+<p>3회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372052" rpst-movie-no="23094100" theab-no="03" play-de="20240128" play-seq="4" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">17:35</p>
+<p class="chair">231석</p>
+<div class="play-time">
+<p>17:35~19:39</p>
+<p>4회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372053" rpst-movie-no="23094100" theab-no="03" play-de="20240128" play-seq="5" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">20:00</p>
+<p class="chair">232석</p>
+<div class="play-time">
+<p>20:00~22:04</p>
+<p>5회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-12"></p>
+<p><a href="/movie-detail?rpstMovieNo=23092700" title="노량: 죽음의 바다 상세보기">노량: 죽음의 바다</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 152분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">6관</p>
+<p class="chair">총 103석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372075" rpst-movie-no="23092700" theab-no="06" play-de="20240128" play-seq="1" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-sun"></i></div>
+<p class="time">09:50</p>
+<p class="chair">101석</p>
+<div class="play-time">
+<p>09:50~12:32</p>
+<p>1회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372078" rpst-movie-no="23092700" theab-no="06" play-de="20240128" play-seq="4" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">18:30</p>
+<p class="chair">101석</p>
+<div class="play-time">
+<p>18:30~21:12</p>
+<p>4회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-15"></p>
+<p><a href="/movie-detail?rpstMovieNo=23076300" title="레트리뷰션 상세보기">레트리뷰션</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 90분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">1관</p>
+<p class="chair">총 232석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372055" rpst-movie-no="23076300" theab-no="01" play-de="20240128" play-seq="1" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">11:15</p>
+<p class="chair">232석</p>
+<div class="play-time">
+<p>11:15~12:55</p>
+<p>1회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372056" rpst-movie-no="23076300" theab-no="01" play-de="20240128" play-seq="3" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">15:40</p>
+<p class="chair">231석</p>
+<div class="play-time">
+<p>15:40~17:20</p>
+<p>3회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372057" rpst-movie-no="23076300" theab-no="01" play-de="20240128" play-seq="4" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">17:40</p>
+<p class="chair">230석</p>
+<div class="play-time">
+<p>17:40~19:20</p>
+<p>4회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372058" rpst-movie-no="23076300" theab-no="01" play-de="20240128" play-seq="5" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">19:40</p>
+<p class="chair">232석</p>
+<div class="play-time">
+<p>19:40~21:20</p>
+<p>5회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372059" rpst-movie-no="23076300" theab-no="01" play-de="20240128" play-seq="6" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">21:40</p>
+<p class="chair">232석</p>
+<div class="play-time">
+<p>21:40~23:20</p>
+<p>6회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-12"></p>
+<p><a href="/movie-detail?rpstMovieNo=24000300" title="에반게리온 신극장판: 파 상세보기">에반게리온 신극장판: 파</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 112분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">5관</p>
+<p class="chair">총 96석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372066" rpst-movie-no="24000300" theab-no="05" play-de="20240128" play-seq="3" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">14:05</p>
+<p class="chair">86석</p>
+<div class="play-time">
+<p>14:05~16:07</p>
+<p>3회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-15"></p>
+<p><a href="/movie-detail?rpstMovieNo=24000400" title="에반게리온 신극장판: Q 상세보기">에반게리온 신극장판: Q</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 95분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">5관</p>
+<p class="chair">총 96석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372067" rpst-movie-no="24000400" theab-no="05" play-de="20240128" play-seq="4" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">16:25</p>
+<p class="chair">82석</p>
+<div class="play-time">
+<p>16:25~18:10</p>
+<p>4회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-12"></p>
+<p><a href="/movie-detail?rpstMovieNo=24000200" title="에반게리온 신극장판: 서 상세보기">에반게리온 신극장판: 서</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 100분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">5관</p>
+<p class="chair">총 96석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372065" rpst-movie-no="24000200" theab-no="05" play-de="20240128" play-seq="2" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">11:55</p>
+<p class="chair">84석</p>
+<div class="play-time">
+<p>11:55~13:45</p>
+<p>2회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-all"></p>
+<p><a href="/movie-detail?rpstMovieNo=24001300" title="넥스트 골 윈즈 상세보기">넥스트 골 윈즈</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 104분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">7관</p>
+<p class="chair">총 104석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372081" rpst-movie-no="24001300" theab-no="07" play-de="20240128" play-seq="1" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">10:20</p>
+<p class="chair">103석</p>
+<div class="play-time">
+<p>10:20~12:14</p>
+<p>1회차</p>
+</div>
+</a>
+</div>
+</div></td><td class="" brch-no="1372" play-schdl-no="2401281372085" rpst-movie-no="24001300" theab-no="07" play-de="20240128" play-seq="5" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">19:00</p>
+<p class="chair">104석</p>
+<div class="play-time">
+<p>19:00~20:54</p>
+<p>5회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div><div class="theater-list"><div class="theater-tit">
+<p class="movie-grade age-15"></p>
+<p><a href="/movie-detail?rpstMovieNo=23093200" title="덤 머니 상세보기">덤 머니</a></p>
+<p class="infomation"><span>상영중</span>/상영시간 105분</p></div><div class="theater-type-box">
+<div class="theater-type">
+<p class="theater-name">7관</p>
+<p class="chair">총 104석</p>
+</div>
+<div class="theater-time">
+<div class="theater-type-area">2D(자막)</div>
+<div class="theater-time-box">
+<table class="time-list-table">
+<caption>상영시간을 보여주는 표 입니다.</caption>
+<colgroup>
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+<col style="width:99px;">
+</colgroup>
+<tbody>
+<tr><td class="" brch-no="1372" play-schdl-no="2401281372082" rpst-movie-no="23093200" theab-no="07" play-de="20240128" play-seq="2" netfnl-adopt-at="N">
+<div class="td-ab">
+<div class="txt-center">
+<a href="" title="영화예매하기">
+<div class="ico-box"><i class="iconset ico-off"></i></div>
+<p class="time">12:35</p>
+<p class="chair">99석</p>
+<div class="play-time">
+<p>12:35~14:30</p>
+<p>2회차</p>
+</div>
+</a>
+</div>
+</div></td></tr></tbody>
+</table>
+</div>
+</div></div></div></div>

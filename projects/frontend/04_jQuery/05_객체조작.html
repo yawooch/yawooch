@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../97_bootstrap/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+
+    <style>
+        .item{
+            width:100px;
+            height:100px;
+            background-color:yellowgreen;
+            margin:5px;
+            text-align:center;
+            font-size: 40px;
+            font-weight:800;
+            /* display:inline; */
+        }
+        .bg-hotpink{
+            background-color:hotpink;
+        }
+    </style>
+    <title>객체조작</title>
+
+</head>
+<body id="iLoveMyBody">
+    <div class="container">
+    <h2>객체조작</h2>
+    <h3>1. Content 설정</h3>
+    <h4>1) html() 메소드</h4>
+    <h5 id="content1"><a>네이버로</a></h5>
+    <h5 id="content2"></h5>
+    
+    <p class="content">html() 테스트 1</p>
+    <p class="content">html() 테스트 2</p>
+    <p class="content">html() 테스트 3</p>
+
+    <h4>2) text() 메소드</h4>
+
+    <h5 id="content3"><a>네이버로</a></h5>
+    <h5 id="content4"></h5>
+    
+    <h5 id="content4"></h5>
+    <p class="content2">text() 테스트 1</p>
+    <p class="content2">text() 테스트 2</p>
+    <p class="content2">text() 테스트 3</p>
+
+    
+    <h3>2. 요소 추가</h3>
+    <h4>1) 요소 생성</h4>
+
+    <div id="div1"></div>
+
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="../resources/image/profileImage.jfif" alt="Card image" style="width:100%">
+        <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+    
+    <h4>2) 요소 추가 1</h4>
+    <p>
+        선택자에 의해 선택된 요소를 기준으로 다른 요소를 추가하는 메소드이다
+    </p>
+    <h2 id="add1"><span>A</span></h2>
+    <h2 id="add2"><span>A</span></h2>
+    <h2 id="add3"><span>A</span></h2>
+    <h2 id="add4"><span>A</span></h2>
+
+    <h4>3) 요소 추가 2</h4>
+    <p>
+        선택자에 의해 선택된 요소를 기준으로 다른 요소를 추가하는 메소드이다
+    </p>
+    <h2 id="add5"><span>A</span></h2>
+    <h2 id="add6"><span>A</span></h2>
+    <h2 id="add7"><span>A</span></h2>
+    <h2 id="add8"><span>A</span></h2>
+
+    <h4>3. 요소 복제</h4>
+    <p>
+        선택자로 선택된 요소를 복사하는 메소드이다
+    </p>
+    
+    <div>
+        <div id="item1" class="item"></div>
+    </div>
+    <button class="btn btn-outline-secondary" id="btnClone">복제</button>
+    
+    <div id="cloneResult" style="display: flex;"></div>
+
+
+    <h4>4. 요소 제거</h4>
+    <p>
+        선택자에 의해 선택된 요소를 제거하는 메소드이다
+    </p>
+    <div>
+        <div id="item2" class="item"></div>
+    </div>
+    <button class="btn btn-outline-danger" id="btnRemove">Remove</button>
+    <button class="btn btn-outline-secondary" id="btnDetach">Detach</button>
+    <button class="btn btn-outline-dark" id="btnEmpty">Empty</button>
+
+    <div id="removeResult" style="display: flex;"></div>
+
+    <h3>5. 배열 관리</h3>
+    <p>
+        객체나 배열을 반복적으로 처리할 때 사용하는 메소드이다
+    </p>
+    <div id="eachTest">
+        <h4 >배열 관리 테스트 1</h4>
+        <h4 >배열 관리 테스트 2</h4>
+        <h4 >배열 관리 테스트 3</h4>
+        <h4 >배열 관리 테스트 4</h4>
+    </div>
+    
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./05_객체조작.js"></script>
+    
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>

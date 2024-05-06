@@ -1,0 +1,274 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(ProfilePortfolioApp());
+
+class ProfilePortfolioApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: ProfilePage(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
+}
+
+class ProfilePage extends StatefulWidget {
+  @override
+  _ProfilePageState createState() => _ProfilePageState();
+}
+
+class _ProfilePageState extends State<ProfilePage> {
+  String email = ''; // 이메일
+  String residence = ''; // 거주지
+  int age = 0; // 나이
+  String profileImageUrl = 'https://cdn.pixabay.com/photo/2021/06/15/16/11/man-6339003_1280.jpg'; // 프로필 이미지 url
+
+  final imageUrlController = TextEditingController(); // 이미지 url 입력 컨트롤러
+  List<String> lstSkills = [
+    'Android',
+    'i-OS',
+    'Flutter',
+    'C',
+    'C++',
+    'Java',
+    'Python'
+  ];
+  List<String> lstCareers = ['안드로이드 앱 개발,5년차', '플러터 앱 개발,1년차'];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: Text(
+          '최고가 되기보단 최선을 다하는 개발자가 되겠습니다',
+          style: TextStyle(fontSize: 16, color: Colors.white),
+        ),
+      ),
+      body: Container(
+        height: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [Colors.blue, Colors.red],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+        ),
+        child: Column(
+          children: [
+            Expanded(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(height: 30.0),
+                    Center(
+                      child: Column(
+                        children: [
+                          _buildProfileImage(),
+                          SizedBox(height: 8.0),
+                          Text(
+                            '홍드로이드',
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 30.0),
+                    _buildTextField('이메일 주소',
+                        onChanged: (value) => email = value),
+                    const SizedBox(height: 20),
+                    _buildTextField('거주지',
+                        onChanged: (value) => residence = value),
+                    const SizedBox(height: 20),
+                    _buildTextField(
+                      '나이',
+                      onChanged: (value) => age = int.tryParse(value) ?? 0,
+                      keyboardType: TextInputType.number,
+                    ),
+                    SizedBox(height: 20.0),
+                    _buildSkillsSection(),
+                    SizedBox(height: 20.0),
+                    _buildCareerHistorySection(),
+                  ],
+                ),
+              ),
+            ),
+            _buildBottomButton(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildProfileImage() {
+    return GestureDetector(
+      onTap: _showImageUrlDialog,
+      child: CircleAvatar(
+        radius: 60.0,
+        backgroundImage: NetworkImage(profileImageUrl),
+      ),
+    );
+  }
+
+  Widget _buildTextField(String labelText, {
+    Function(String)? onChanged,
+    TextInputType? keyboardType,
+  }) {
+    return TextField(
+      cursorColor: Colors.white,
+      style: TextStyle(color: Colors.white),
+      decoration: InputDecoration(
+        labelText: labelText,
+        labelStyle: TextStyle(color: Colors.white),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.white, width: 1),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: Colors.white, width: 1),
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
+      textInputAction: TextInputAction.next,
+      onChanged: onChanged,
+      keyboardType: keyboardType,
+    );
+  }
+
+  Widget _buildSkillsSection() {
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Colors.white, Colors.grey[200]!],
+        ),
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+          Text('주요 기술 및 희망 직무', style: TextStyle(fontSize: 16.0)),
+      SizedBox(
+        height: 8,
+      ),
+      Wrap(
+          spacing: 8,
+          runSpacing: 8,
+          children: getSkillItems(),
+    ),]
+    ,
+    )
+    ,
+    );
+  }
+
+  Widget _buildSkillChip(String skill) {
+    return Chip(label: Text(skill));
+  }
+
+  Widget _buildCareerHistorySection() {
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [Colors.white, Colors.grey[200]!],
+        ),
+        borderRadius: BorderRadius.circular(10.0),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text('경력 사항', style: TextStyle(fontSize: 16.0)),
+          ListView.builder(
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            itemCount: lstCareers.length,
+            itemBuilder: (context, index) {
+              return getCareerItems(index);
+            },
+          )
+        ],
+      ),
+    );
+  }
+
+  Widget _buildBottomButton() {
+    return Container(
+      margin: EdgeInsets.all(16),
+      width: double.infinity,
+      height: 60,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.black,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+        ),
+        onPressed: () {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text('취업이 완료 되었습니다'),
+            ),
+          );
+        },
+        child: Text(
+          '좋은 회사 취업 하기',
+          style: TextStyle(fontSize: 20, color: Colors.white),
+        ),
+      ),
+    );
+  }
+
+  void _showImageUrlDialog() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('프로필 이미지 변경'),
+          content: TextField(
+            controller: imageUrlController,
+            decoration: InputDecoration(labelText: '이미지 URL 입력'),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: Text('취소'),
+            ),
+            TextButton(
+              onPressed: () {
+                setState(() {
+                  profileImageUrl = imageUrlController.text;
+                });
+                Navigator.of(context).pop();
+              },
+              child: Text('확인'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  List<Widget> getSkillItems() {
+    // 주요 기술 및 희망 직무를 android chip 위젯 형태로 리턴
+    List<Widget> lstWidgets = [];
+    for (String item in lstSkills) {
+      lstWidgets.add(_buildSkillChip(item));
+    }
+    return lstWidgets;
+  }
+
+  Widget getCareerItems(int index) {
+    // 경력 사항 리스트 타일 위젯 형태로 리턴
+    List<String> splitCareer = lstCareers[index].split(',');
+    return ListTile(
+      title: Text(splitCareer[0]), subtitle: Text(splitCareer[1]),
+    );
+  }
+}

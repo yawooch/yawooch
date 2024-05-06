@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OnePage Practice</title>
+    
+    <link rel="stylesheet" href="onepage.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.1.3.js" integrity="sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+    <script src="../../../../fullpage.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('nav a').click(function(e){
+                $.scrollTo(this.hash||0, 1500);
+                e.preventDefault();
+            })
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#1" class="nav-btn">Link1</a>
+        <a href="#2" class="nav-btn">Link2</a>
+        <a href="#3" class="nav-btn">Link3</a>
+        <a href="#4" class="nav-btn">Link4</a>
+    </nav>
+
+    <section id="1" class="page1">
+        <h2>Flat Design</h2>
+    </section>
+    <section id="2" class="page2">
+        <h2>Parallax Scrolling</h2>
+    </section>
+    <section id="3" class="page3">
+        <h2>Fullscreen Background</h2>
+    </section>
+    <section id="4" class="page4">
+        <h2>Typography</h2>
+    </section>
+</body>
+</html>

@@ -1,0 +1,55 @@
+nav {
+    /* border:1px solid red; */
+    width:1000px;
+    height:40px;
+}
+
+#navi {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    height:100%;
+    box-sizing: border-box;
+}
+#navi>li{
+    width:20%;
+    height:100%;
+    float:left;
+    text-align: center;
+    /* vertical-align: middle; */
+}
+#navi a{
+    color:orange;
+    display:block;
+    width:100%;
+    text-decoration: none;
+    font-weight:bold;
+    font-size:1.5em;
+    line-height:35px;
+}
+#navi a:hover{
+    color:-webkit-linear-gradient(92deg, #f35626, #feab3a);
+    animation: hue 1s infinite linear;
+}
+#navi>li>ul{
+    list-style-type: none;
+    padding:0;
+    display:none;
+}
+#navi>li>ul a{
+    font-size:1.2em;
+}
+#navi>li>a:hover+ul, #navi>li>ul:hover{
+    display:block;
+}
+
+@-webkit-keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+        -webkit-filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-360deg);
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}

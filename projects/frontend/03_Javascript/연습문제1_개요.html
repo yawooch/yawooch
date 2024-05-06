@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개요 실습 문제</title>
+    <script src="./연습문제1_개요.js"></script>
+    <style>
+        @keyframes hue{
+            from{
+                filter:hue-rotate(0deg);
+            }
+            to{
+                filter:hue-rotate(-360deg);
+            }
+        }
+        hr{
+            border:0px;
+            height:1px;
+            background-color: black;
+            background-image: linear-gradient(92deg, #f35626, #feab3a);
+            animation:hue 1s infinite linear;
+        }
+        span{
+            margin-top: 20px;
+            display: inline-block;
+            font-size: 1.5em;
+            background-image: linear-gradient(92deg, #f35626, #feab3a);
+            animation:hue 1s infinite linear;
+            background-clip: text;
+            margin:10px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        #imgSize{
+            width:100px;
+            height:100px;
+        }
+        #colorDiv{
+            width:100px;
+            height:100px;
+            margin-bottom: 10px;;
+            background-color: #CE3B98;
+        }
+        label{
+            display: inline-block;
+            width:60px;
+        }
+        button{
+            width:130px;
+            line-height: 15px;
+            padding:5px 10px;
+            margin:2px;
+        }
+        input[type="color"] {
+            margin-left:2px;
+            display:inline-block;
+            width:130px;
+        }
+        fieldset{
+            padding-top: 20px;
+            width:400px;
+            height:150px;
+        }
+    </style>
+</head>
+<body>
+    <h2>개요 실습 문제</h2>
+    <hr>
+    <h3>문제1. 색상 조절하기</h3>
+    <h4>색상 선택후 변경 버튼을 클릭하면 색상이 변경되도록 만들기</h4>
+
+    <div id="colorDiv"></div>
+    <input type="color" name="color" id="color" value="#CE3B98"><br>
+    <button onclick="changeColor();">변경</button>
+
+    <hr>
+    <h3>문제2. 크기 변경하기</h3>
+    <h4>버튼에 따라 크기 조절이 가능하도록 만들기</h4>
+    <img src="../resources/image/펭수.jpg" id="imgSize"><br>
+
+    <button onclick="setSize('50px')">50X50</button><br>
+    <button onclick="setSize('100px')">원본(100X100)</button><br>
+    <button onclick="setSize('200px')">200X200</button><br>
+    <button onclick="setSize('500px')">500X500</button><br>
+
+    <hr>
+    <h3>문제3. HTML 태그에 접근하기</h3>
+    <p>
+        텍스트 박스로  입력 받은 데이터를 가져와서 출력하기<br>
+        (단, 구매자는 태그이름, 상품명은 아이디, 구매 가격은 name 값으로 접근)
+    </p>
+    <form>
+        <fieldset>
+            <legend>상품구매</legend>
+            <label for="buyer">구매자 : </label>
+            <input type="text" name="buyer"   id="buyer"><br><br>
+            <label for="product">상품명 : </label>
+            <input type="text" name="product" id="product"><br><br>
+            <label for="price">가격 : </label>
+            <input type="text" name="price"   id="price">
+            <button type="button" onclick="textOutput();">입력값 출력하기</button><br>
+        </fieldset>
+        <span></span>
+    </form>
+
+    <br><br><br><br><br>
+    
+</body>
+</html>

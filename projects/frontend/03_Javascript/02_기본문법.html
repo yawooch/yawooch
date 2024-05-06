@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 문법</title>
+    <style>
+        @keyframes hue {
+            from{
+                filter : hue-rotate(0deg);
+            }
+            to{
+                filter : hue-rotate(-360deg);
+            }
+        }
+        button{
+            border:1px solid black;
+            color: black;
+            padding:8px;
+            background-color:transparent;
+            /* opacity:0; */
+        }
+        button:hover{
+            border:1px solid rgb(153, 153, 153);
+            color: whitesmoke;
+            padding:8px;
+            background-color:rgb(207, 207, 207);
+            transition: 0.3s;
+            /* opacity:0; */
+        }
+        div{
+            color: #020202;
+            background-image: linear-gradient(92deg, #f35626, #feab3a);
+            animation: hue 2s infinite linear;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .h4style{
+            margin: 5px;
+        }
+        .area{
+            border:1px solid;
+            width:600px;
+            height:400px;
+            margin-bottom:5px;
+            font-size: 2em;
+        }
+        
+        .area1{
+            border:1px solid;
+            width:600px;
+            height:600px;
+            margin-bottom:5px;
+            font-size: 2em;
+        }
+    </style>
+    <script src="./02_기본문법.js"></script>
+</head>
+<body>
+    <h2 id="heading2">기분 몬법</h2>
+    <h3>1. 변수</h3>
+    <h4>1) 변수 선언</h4>
+    <p>
+        변수를 선언할때는 var, let, const 키워드를 사용한다.
+    </p>
+    <h4>2) 변수의 초기화</h4>
+    <p>
+        변수를 선언할때는 대입연산자(=)를 사용한다.
+    </p>
+    
+    <h3>2. 자료형</h3>
+    <p>
+        자바스크립트에서는 변수에 자료형을 지정하지 않고<br>
+        변수에 대입되는 값에 의해 자료형이 결정된다.
+    </p>
+    
+    <div id="div1" class="area"></div>
+    <button onclick="typeTest();">실행확인</button>
+
+
+    <h3>3. 데이터 형변환</h3>
+    <h4>1) 문자열과 숫자의 '+'연산</h4>
+    <div id="div2" class="area"></div>
+    <button onclick="plusTest();">실행확인</button>
+    
+    <h4>2) 형 변환 함수</h4>
+    <div id="div3" class="area"></div>
+    <button onclick=" castingTest();">실행 확인</button>
+    
+    <h3>4. 연산자</h3>
+    <p>"==" 연산자와 "===" 연산자 비교</p>
+    <div id="div4" class="area"></div>
+    <button onclick="opTest();">실행 확인</button>
+
+    <h3>5. 제어문</h3>
+    <h4>1) for in / for of</h4>
+    <div id="div5" class="area1"></div>
+    <button onclick="forTest();">실행 확인</button>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

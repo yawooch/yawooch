@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./08_이벤트.js"></script>
+    <title>이벤트</title>
+</head>
+<body>
+    <h2>이벤트</h2>
+    <h3>1) 인라인 방식</h3>
+
+    <!-- <button onclick="eventTest();">실행 확인</button> -->
+    <button onclick="eventTest();">실행 확인</button>
+    <script>
+        function eventTest(){
+            // window 객체를 사용해서 최근 발생한 
+            // 이벤트 정보를 얻어올수 있다.
+            console.log(this);//window 객체를 얻어온다.
+            console.log(this.event);//이벤트가 발생한 요소에 접근할 수 있다.
+            console.log(this.event.target);
+            console.log(arguments);
+        }
+    </script>
+    <h3>2) 프로퍼티 방식</h3>
+
+    
+    <button id="btn1">실행 확인</button>
+    
+    <h3>3) 메소드 방식</h3>
+    
+    <button id="btn2">실행 확인</button>
+    
+    <h3>4) 기본 이벤트 제거 1</h3>
+    <a href="https://www.naver.com">네이버로 바로가기 1</a>
+    <br>
+    <!-- 
+        기본 이벤트가 있는 태그에 onclick 속성을 설정하면
+        이 코드가 우선적으로 실행되고 그 다음에 기본 이벤트가 실행된다. 
+    -->
+    <a href="https://www.naver.com" onclick="alert('네이버로 바로가기 클릭!')">네이버로 바로가기 2</a>
+    <br>
+    <!-- 
+        태그에 기본적으로 설정되어 있는 이벤트를 제거하기 위해서는
+        onclick 속성에 return 값을 false로 하면된다
+    -->
+    <a href="https://www.naver.com" onclick="return false;">네이버로 바로가(지않)기 3</a>
+
+    <h3>5) 기본 이벤트 제거 2</h3>
+    <!-- <form> (1)-->
+    <!-- <form onsubmit="return passwordCheck();"> (2)-->
+    <form>
+        <label for="pass1">비빌번호 입력 : </label>
+        <input type="password" id="pass1" name="pass1">
+        <br><br>
+        <label for="pass2">비빌번호 확인 : </label>
+        <!-- name 속성을 생략하면 서버로 데이터를 전송하지 않는다. -->
+        <input type="password" id="pass2">
+        <br><br>
+
+        <!-- <button onclick="return passwordCheck();">회원가입</button> (1)-->
+        <!-- <button>회원가입</button> (2)-->
+        <input type="submit" id="btnSubmit" value="회원가입">
+    </form>
+
+    <h3>6) 기본 이벤트 제거 3</h3>
+    
+    <form>
+        <label for="userId">아이디 : </label>
+        <input type="text" id="userId" name="userId">
+        <br><br>
+        <p>
+            영문자, 숫자로만 총 5~ 12자 사이로 입력해 주세요
+        </p>
+
+        <!-- <input type="submit" id="btnSubmit2" value="회원가입"> -->
+        <!-- <input type="submit" onclick="return checkId();" value="회원가입"> -->
+        <button onclick="return checkId();">회원가입</button>
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    
+</body>
+</html>

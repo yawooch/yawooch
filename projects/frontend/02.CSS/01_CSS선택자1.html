@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS선택자1</title>
+    <style>
+        /* 내부 스타일 시트  */
+        /* 현재 문서의 <style> 태그  */
+            /* CSS주석 */
+            /* 전체 선택자 */
+            /*     
+            * {
+                color:red;
+            } 
+            */
+            /* 태그 선택자 */
+            p {
+                color:green;
+                text-decoration:underline;
+                font-size:15pt;
+                font-weight:bold;
+            }
+
+            #div1 {
+                background-color: #FFC5C5;
+            }
+            #div2 {
+                background-color: #FFEBD8;
+            }
+            #div3 {
+                background-color: #C7DCA7;
+            }
+            #div4 {
+                background-color: #89B9AD;
+            }
+
+            
+            /* 아이디 선택자 */
+            #id1 {
+                background-color: yellow;
+                color:#2D9596;
+            }
+            #id2 {
+                background-color: #7ED7C1;
+                color:#2D9596;
+            }
+            #id3 {
+                background-color: #F0DBAF;
+                color:#994D1C;
+            }
+            #id4 {
+                background-color: #DC8686;
+                color:#6B240C;
+            }
+
+            /* 클래스 선택자 */
+            .test1 {
+                background-color: yellow;
+                color:#2D9596;
+            }
+            .test2 {
+                background-color: #7ED7C1;
+                color:#7B66FF;
+            }
+            .test {
+                color:rgb(66, 66, 66);
+                font-size:20pt;
+            }
+        </style>
+
+</head>
+<body>
+    
+    <div id="div1">
+        <h1>CSS선택자1</h1>
+        <p>
+            선택자란 ?<br>
+            특정 HTML 요소를 선택할 떄 사용하는 기능으로, 
+            요소를 선택하여 원하는 스타일을 적용할수 있다.
+        </p>
+    </div>
+    
+    <div id="div2">
+        <h3>1. 전체 선택자</h3>
+        <p>
+            HTML 문서 내부에 모든 태그를 선택할 때 사용한다
+        </p>
+        <pre>
+            * {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+        </pre>
+    </div>
+    
+    <div id="div3">
+        <h3>3. 아이디 선택자</h3>
+        <p>
+            HTML 문서 내부에 해당하는 아이디 속성값을 가진 태그만 선택할때 사용한다.
+        </p>
+        <pre>
+            #아이디 {
+                스타일 속성: 값;
+                스타일 속성: 값;
+            }
+        </pre>
+
+        <!-- ol>li#id$*4{아이디 선택자 테스트 $} -->
+        <ol>
+            <li id="id1">아이디 선택자 테스트 1</li>
+            <li id="id2">아이디 선택자 테스트 2</li>
+            <li id="id3">아이디 선택자 테스트 3</li>
+            <li id="id4">아이디 선택자 테스트 4</li>
+        </ol>
+    </div>
+    
+    <div id="div4">
+        <h3>4. 클래스 선택자</h3>
+        <p>
+            HTML 문서 내부에 해당하는 클래스 속성값을 가진 태그들을 선택할때 사용한다.
+        </p>
+        <pre>
+            .클래스 {
+                스타일 속성: 값;
+                스타일 속성: 값;
+            }
+        </pre>
+
+        <!-- ol>li*4{클래스 선택자 테스트 $}.class$ -->
+        <ol>
+            <li class="test1">클래스 선택자 테스트 1</li>
+            <li class="test2 test">클래스 선택자 테스트 2</li>
+            <li class="test1 test">클래스 선택자 테스트 3</li>
+            <li class="test2">클래스 선택자 테스트 4</li>
+            <li class="test1">클래스 선택자 테스트 5</li>
+        </ol>
+    </div>
+</body>
+</html>

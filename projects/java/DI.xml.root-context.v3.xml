@@ -1,0 +1,49 @@
+<!-- root-context.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 다른 설정파일을 가져오기 위한 요소 -->
+    <import resource="owner-context.xml"/>
+    <import resource="pet-context.xml"/>
+    
+</beans>
+
+
+<!-- owner-context.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="hong" class="com.kh.di.owner.Owner" p:name="홍길동" p:age="24" p:pet-ref="dog" primary="true"/>
+    
+    <bean id="lee" class="com.kh.di.owner.Owner" c:_0="이몽룡" c:_1="22" c:_2-ref="cat"/>
+    
+</beans>
+
+<!-- pet-context.xml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    
+    <bean id="dog" class="com.kh.di.pet.Dog" p:name="롬복희"/>
+    
+    <!-- 생성자에 매개변수 하나일 경우 index 번호 생략 가능  -->
+    <bean id="cat" class="com.kh.di.pet.Cat" c:_="배추"/>
+</beans>

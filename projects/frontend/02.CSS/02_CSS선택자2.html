@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자 2</title>
+    <link rel="stylesheet" href="./02_CSS선택자2.css">
+    <!-- 
+        외부 수타일 쉬트 
+        스타일만 따로 관리하는 .css 확장자를 가지는 외부 문서를 만들고 <link>
+        태그를 통해 연결하는 방법이다.
+    -->
+</head>
+<body>
+    <h1>CSS 선택자 2</h1>
+    
+    <h3>5. 속성 선택자</h3>
+    <p>
+        선택자 뒤에 []를 사용해서 요소를 선택할 때 사용한다.
+    </p>
+    <pre>
+        선택자[속성] {
+            수타일 속성: 값;
+            수타일 속성: 값;
+            ...
+        }
+    </pre>
+    
+    <div class="div-class" name="name1">div 1</div>
+    <div class="div-class" name="name2">div 2</div>
+    <div class="div-class" >div 3</div>
+    <div class="div-class" name="name3">div 4</div>
+    <div class="class-div" name="name3 name1">div 5</div>
+    <hr>
+    <h3>6. 자식 선택자 / 후손 선택자</h3>
+    <pre>
+        1) 자식 선택자
+            부모요소>자식요소 {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+        2) 후손 선택자
+            부모요소 자식요소 {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+    </pre>
+    <div id="test1">
+        <h4>나는 div의 자식입니다.</h4>
+        <h4>나도 div의 자식입니다.</h4>
+
+        <ul>
+            <h4>나는 div 의 후손입니다.</h4>
+            <li>나는 ul의 자식이면서 div의 후손입니다</li>
+            <li>나는 ul의 자식이면서 div의 후손입니다</li>
+        </ul>
+        <li>나는 div의 자식입니다.</li>
+    </div>
+    <hr>
+    <h3>7. 형제 선택자</h3>
+    <pre>
+        1) 인접 형제 선택자
+            a+b {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+        2) 형제 선택자
+            a~b {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+    </pre>
+    <div>
+        <div id="test2">div 1</div>
+        <div>div 2</div>
+        <div>div 3</div>
+        <div>div 4</div>
+        <div>div 5</div>
+    </div>
+    <hr>
+    <h3>8. 반응 선택자</h3>
+    <pre>
+        1) :active
+            선택자:active {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+        2) :hover
+            선택자:hover{
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+        3) :focus
+            선택자:focus{
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+    </pre>
+
+
+    <div id="test3">div 1</div>
+    <div>
+        <div>div 2</div>
+        <div>div 3</div>
+        <div>div 4</div>
+        <div>div 5</div>
+    </div>
+
+    <div id="test3">active 테스트</div>
+    <div id="test4">hover 테스트</div>
+
+    <br>
+
+    <form>
+        <label for="userId">아이디 : </label>
+        <input type="text" name="userId" id="userId">
+        <br><br>
+        <label for="pwd">비밀번호 : </label>
+        <input type="password" name="pwd" id="pwd">
+    </form>
+    </div>
+    <hr>
+    <h3>9. 상태 선택자</h3>
+    <pre>
+        1) :checked
+            선택자:checked {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+        2) :enabled
+            선택자:enabled {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+        3) :disabled
+            선택자:disabled {
+                스타일 속성 : 값;
+                스타일 속성 : 값;
+                ...
+            }
+    </pre>
+    <form>
+        <input type="checkbox" name="fruits" id="apple" value="apple">
+        <label for="apple">사과</label>
+        <input type="checkbox" name="fruits" id="banana" value="banana">
+        <label for="banana">바나나</label>
+        <input type="checkbox" name="fruits" id="peach" value="peach">
+        <label for="peach">복숭아</label>
+    </form>
+    <button>버튼 1</button>
+    <input type="text" disabled>
+    <button disabled>버튼 2</button>
+    
+    <hr>
+    <h3>10. 구조 선택자</h3>
+    <p>
+        특정위치에 있는 태그를 선택할 때 사용한다 (위치로 구분)
+    </p>
+    <div id="test5">
+        <p>구조 선택자 테스트1</p>
+        <p>구조 선택자 테스트2</p>
+        <p>구조 선택자 테스트3</p>
+        <p>구조 선택자 테스트4</p>
+        <p>구조 선택자 테스트5</p>
+        <pre>구조 선택자 테스트 6</pre>
+        <div>구조 선택자 테스트 7</div>
+    </div>
+    <hr>
+    <p>
+        특정위치에 있는 태그를 선택할 때 사용한다 (태그로 구분)
+    </p>
+    <div id="test6">
+        <p>구조 선택자 테스트 1</p>
+        <p>구조 선택자 테스트 2</p>
+        <p>구조 선택자 테스트 3</p>
+        <p>구조 선택자 테스트 4</p>
+        <p>구조 선택자 테스트 5</p>
+        <pre>구조 선택자 테스트6</pre>
+    </div>
+    
+
+    <hr>
+    <h3>11. 문자 선택자</h3>
+    <div id="test7">
+        <p>카카오는 27일 새벽 김범수 창업자 겸 경영쇄신위원장 주재로 주요 공동체 최고경영자(CEO) 등 20여 명이 참석한 가운데 카카오 판교 아지트(본사)에서 제 5차 공동체 경영회의를 진행했다.
+
+            이 자리에서 김 위원장은 CEO들과 카카오의 컨트롤 타워 부재와 맞물려 내부 통제가 약하다는 외부 비판과 관련해, ‘인적 쇄신’을 위한 경영 시스템 제고 방안을 논의했다. 이는 카카오 공동체 주요 경영진의 ‘스톡옵션 먹튀’ 사건을 비롯해 카카오 내부 재무 임원이 사적으로 법인카드를 유용하는 등 잦은 ‘인사 리스크’를 고려한 조치로 분석된다.
+            
+            카카오 측은 이날 회의에서 김 위원장이 카카오 공동체의 인사, 재무, 법무 등 내부 경영 프로세스를 점검해 책임을 명확히 하는 구조로 강화하기로 했다고 밝혔다.
+            
+            김범수 경영쇄신위원장은 이날 회의에서 “관리 프로세스에 느슨한 부분이 있는지 철저히 돌아보고, 전 공동체 차원에서 준법, 인사, 재무 등 측면에서 밀착 관리할 수 있는 방향으로 제도를 개편하기를 강력히 권고한다”고 말했다. 이어 그는 “경영진들은 이러한 변화에 적극 협력하기 바라며, 어려운 시기를 보내며 많은 걱정을 하고 계실 크루(임직원)들도 잘 챙겨주시기 바란다”고 덧붙였다.
+            
+            이 외에도 이 자리에선 지난주 논의한 ‘준법과 신뢰위원회’(카카오 첫 외부 감시기구) 관계사 협약을 구체화한 내용을 공유하고 의견을 수렴했다고 회사는 설명했다.
+            
+            앞서 김 위원장은 지난 3차 회의를 주재하는 자리에 앞서 “모든 서비스와 사업을 원점에서 검토해 국민 눈높이에 맞도록 최선의 노력을 다하겠다”고 밝힌 바 있다. 그러면서 그는 카카오 쇄신 시점에 대해 “올해 안에는 가시적인 방안을 내고 내년에는 많은 일이 일어나도록 달려볼 테니 지켜봐달라”고 강조하기도 했다.
+            
+            한편 카카오에선 내년 3월을 기점으로 공동체 주요 계열사의 대표 임기가 연이어 만료된다.
+            
+            현재 임기 만료를 앞둔 대표급 인사는 홍은택 카카오 대표를 비롯해 이진수 카카오엔터테인먼트 대표, 류긍선 카카오모빌리티 대표, 문태식 카카오VX 대표, 신원근 카카오페이 대표, 조계현 카카오게임즈 대표 등이 있다.
+        </p>
+    </div>
+    <hr>
+    <h3>12. 부정 선택자</h3>
+    <div id="test8">
+        <p>부정 선택자 민트초코 테스트 1</p>
+        <p class="p">부정 선택자 민트초코 테스트 2</p>
+        <p>부정 선택자 민트초코 테스트 3</p>
+        <p>부정 선택자 민트초코 테스트 4</p>
+        <p>부정 선택자 민트초코 테스트 5</p>
+    </div>
+</body>
+</html>

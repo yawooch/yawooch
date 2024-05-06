@@ -1,0 +1,65 @@
+//홍드로이드 동영상 정리하기
+//픽사베이
+//https://dartpad.dev/?id=116ff2203e4c3a7d87587469189dda09
+
+https://dartpad.dev/?
+
+
+Dart Pad 코드 공부 내용 
+====================================================================
+void start() {
+  print('Hello 양우찬');//프린트 함수(괄호안의 내용물들을 실행!)
+  
+}
+
+void main(){ //apdls gkatn - function 프로그램의 출발지점!
+  //start(); //call function- 함수 호출
+
+  //변수 - 변할수 있는 수(값)
+//   String name= '양우찬';
+//   int age = 30;
+//   bool isChild = false;
+//   double tall = 157.3;
+  //스트링 인터폴레이션???
+//   print(tall);
+  for(int i = 0; i < 5; i++){
+    print('변수 반복중 \$ $i');
+  }
+  
+  List<int> numbers = [1,2,3,4,5];
+  List<dynamic> anythings = [1,'둘',3,4.0,false];//List<var> 같은 기능을 생각했다면
+  
+  var i = 'sk';
+  
+  print('$numbers[3],  $i');
+  print('${numbers[3]},  $i');
+  print(anythings);
+  
+  //print(getTitle1());//에러발생
+  getTitle1();
+  print(getTitle2());
+  print(getTitle3());
+  
+  Person ps = Person('양우찬', 30, '축구');
+  
+  ps.sayHello();
+}
+
+void getTitle1(){}
+//void getTitle1(String name){print(name);}//에러 발생 오버로드는 불가능한듯
+String getTitle2(){return 'String';}
+dynamic getTitle3(){}
+
+//클래스(class) - 객체를 생성하기 위한 템플릿 또는 청사진(blue pritn)로 사용됩니다.
+//객체의 상태(변수), 객체의 행동(메소드 - 함수)들을 정의할 수 있다.
+class Person{
+  String name;
+  int age;
+  String hobby;
+  
+  Person(this.name, this.age, this.hobby);
+  
+  void sayHello(){
+    print('안녕하세요 저는 $name 이고, 나이는 $age 살이며,취미는 $hobby 입니다.');
+  }
+}

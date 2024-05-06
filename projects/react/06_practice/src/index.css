@@ -1,0 +1,27 @@
+html, body {
+  width:100%;
+  height:100%;
+  background-color: #4c4141;
+  background-image: url('./츠어여3.png');
+  background-size: cover;
+  color:white;
+  background-repeat: no-repeat;
+}
+#root {
+  width:80%;
+  margin:auto;
+  height:100%;
+}
+.container{
+  display:flex;
+  justify-content: space-between;
+}
+.box{
+  width:150px;
+  padding:15px;
+  margin: 15px;
+}
+a{
+  
+  color:white;
+}

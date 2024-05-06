@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습문제4</title>
+</head>
+<body>
+    <h1>주문하기</h1>
+    <form>
+        <label>고객명 :   <input name="customer" type="text"></label><br><br>
+        <label>전화번호 : <input name="phone" type="tel"></label><br><br>
+        <label>E-mail :   <input name="email" type="email"></label><br><br>
+
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <label for="small" ><input type="radio" name="pizza" value="small"  id="small" >Small</label><br>
+            <label for="medium"><input type="radio" name="pizza" value="medium" id="medium">Medium</label><br>
+            <label for="large" ><input type="radio" name="pizza" value="large"  id="large" >Large</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <label for="bacon"   ><input type="checkbox" name="topping" value="bacon"    id="bacon"   >베이컨</label><br>
+            <label for="cheese"  ><input type="checkbox" name="topping" value="cheese"   id="cheese"  >치즈</label><br>
+            <label for="onion"   ><input type="checkbox" name="topping" value="onion"    id="onion"   >양파</label><br>
+            <label for="mushroom"><input type="checkbox" name="topping" value="mushroom" id="mushroom">버섯</label><br>
+        </fieldset>
+        <label>희망배송시간 : <input type="time" name="hopetime" id=""></label><br><br>
+        <label for="requestComment">배송시 요청 사항 : </label><textarea name="requestComment" id="requestComment" cols="20" rows="5" placeholde="배송 시 요청사항"></textarea><br><br>
+        <input type="submit" value="주문하기">
+    </form>
+</body>
+</html>

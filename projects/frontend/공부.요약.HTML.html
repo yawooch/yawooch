@@ -1,0 +1,165 @@
+C:\workspace\3_frontend\01.HTML\01_HelloWorld.html
+
+<!DOCTYPE html>:  문서 유형
+<br lang="ko"> : HTML 문서의 시작
+<head> : 문서의 각종 정보와 문서 제목, 문서에 대한 설명
+            스타일 시트, 스크립트 파일의 링크 또는 선언을 포함하는 태그이다.
+<meta charset="UTF-8"> : 인코딩 방식 설정
+<meta http-equiv="X-UA-Compatible" content="ie=edge">  : 익스 플로러에서 현재문서를 최신 표준모드로 해석하도록 설정한다
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> : 접속한 기기의 화면에 맞춰 확대/축소하도록 설정한다.
+<meta name="keywords" content="KH, 정보교육원"> : 검색엔진에서 검색어로 사용될 키워드 지정
+<meta name="description" content="이 페이지는 HTML 구조와 관련된 태그를 공부하는 페이지 입니다."> : 현재문서에 대한 설명
+<title> : 현재문서에 제목을 나타내는 태그이다
+<hn> - 태그 h1 ~ h6 : 제목을 지정하는 태그
+<hr> : 수평선
+<br/> : 줄바꿈
+&amp;nbsp; : 엔티티 기호
+    <!-- https://html.spec.whatwg.org/multipage/named-characters.html 엔티티 기호 정리 사이트 -->
+
+C:\workspace\3_frontend\01.HTML\02_글자관련태그.html
+<mark> : 텍스트에 음영색 표시
+<p> : 단락을 구분하는 태그
+        태그는 문단영역을 나누는 태그이지만 한개의 공백만               표시하며, 줄바꿈 입력을 별도의 태그로 지정해 주어야<br>한다
+<pre> : 입력하는 대로 화면에 표시하는 태그
+            pre 태그는 여러칸 띄우기             혹은 줄바꿈 등을
+            포함하여 입력한 내용 그대로 표시하는 태그이다.
+<code> : 소스코드를 작성하는 태그
+<hr> : 수평줄 태그
+<b> : 굵게 강조 표시
+<strong> : 강조하여 굵게 표시 - 시각장애인들이 홈페이지를 이용할때 <strong>태그는 더 강조해서 읽어준다.
+<i> : 기울임 표시 - Itelic의 줄임말
+<em> : 기울임 표시 - Emphasized의 줄임말
+<u> : 밑줄 태그
+<s> : 취소선 태그
+<mark> : 형광펜 효과 태그
+인용문구를 나타내는 태그
+<blockquote> : 인용문구 출력 후 줄바꿈이 일어난다.
+                    cite 속성도 검색조건에서 검색될수 있다.
+<q> : 인용문구 출력 후 줄바꿈이 일어나지 않는다.
+                    cite 속성도 검색조건에서 검색될수 있다.
+<cite> : 인용문구
+<sup> : 글자에 위첨자 - 위 첨자 (Superscript Text)
+<sub> : 아래 첨자 - 아래 첨자 (Subscript Text)
+<abbr> : 약어 표시 태그- Abbreviation의 줄임말
+        속성 : title
+태그들은 중첩으로 사용이 가능하다
+
+
+C:\workspace\3_frontend\01.HTML\03_목록관련태그.html
+순서 없는 목록 태그
+    순서 없는 목록을 만들 때 사용하는 태그이다.
+    Unordered List의 줄임말로 시작 태그와 종료 태그 사이에 항목을 표시한다.
+    각 항목은 <li> 태그(List Item)를 사용한다. (종료 태그 생략 가능)
+    순서 없는 목록은 각 항목 앞에 원이나 사각형의 불릿(Bullet)이 붙는다.
+
+
+순서 있는 목록 태그
+    순서 있는 목록을 만들 때 사용하는 태그이다.
+    ordered list의 줄임말로 시작 태그와 종료 태그 사이에 항목을 표시한다.
+    각 항목은 <li> 태그(List Item)를 사용한다. (종료 태그 생략 가능)
+    속성 값에 따라 다른 형태로 항목을 표시할 수 있다.
+<ol type="1" start="5" reversed>
+type : [1 | a | A | i | I]
+start 속성으로 항목의 시작 번호를 변경할 수 있다. (기본값 1)
+reversed 속성은 항목을 역순으로 표시한다.
+
+설명 목록 태그
+    용어나 문장에 대한 설명 목록을 만들 때 사용하는 태그이다.
+    Description List의 줄임말로 시작 태그와 종료 태그 사이에 항목을 표시한다.
+    제목은 <dt> 태그(Description Title)로 설명은 <dd> 태그(Description Data)로 표시한다.
+    제목과 설명은 들여 쓰기로 구분된다.
+
+
+C:\workspace\3_frontend\01.HTML\04_표관련태그.html
+    <table> [border : 표의 테두리 두께]
+    <figure> 하위 <figcaption>Top 이 표는 웹 브라우저에 대한 내용을 정리한 표입니다.
+                                Bottom 이 표는 웹 브라우저에 대한 내용을 정리한 표입니다.
+                                설명 내용을 여러줄로 표시할 수 있다.
+    <td> [colspan | rowspan | width | height>
+
+
+C:\workspace\3_frontend\01.HTML\05_영역관련태그.html
+div 태그
+    블록레벨 요소의 태그로 레이아웃 분할을 위해 사용한다.
+    콘텐츠가 없으면 높이는 0, 너비는 100% 이다
+span 태그
+    인라인레벨 요소의 태그로 콘텐츠를 감싸는 역할을 한다
+    콘텐츠가 없으면 높이는 0, 너비도 0이다.
+
+ifram 태그
+상대경로
+    현재파일을 기준으로 상대적인 경로를 지정하는 방법
+        현재 파일과 동일한 경로일 때
+            src="04_표관련태그.html"
+            src="./04_표관련태그.html"
+        현재 파일의 하위 경로일때
+            src="./img/04_표관련태그.html"
+        현재 파일의 상위 경로일때
+            src="../04_표관련태그.html"
+<iframe [src | frameborder]>
+src : 내부문서 나 URL도 가능하다.
+
+
+
+C:\workspace\3_frontend\01.HTML\06_이미지관련태그.html
+<img [src | alt | width | height | usemap]>
+img 에 대한 설명을 작성한다
+
+[width | height]
+고정 크기 단위
+    ex) width="200px"
+가변 크기 단위
+    ex) width="15%"
+
+이미지 맵
+    이미지 구역을 나누어 각각 링크 설정
+
+<map [ name ]>
+    <area [shape | coords | href | target ]>
+    [shape="rect" coords="0,0,300,300"]
+    [shape="circle" coords="300, 150, 100"]
+    [target="_blank"]
+</map>
+
+
+C:\workspace\3_frontend\01.HTML\07_미디어관련태그.html
+<audio [ src | controls | autoplay | loop | muted]>
+<video [ width | src | controls | loop | autoplay | mute]>
+
+
+C:\workspace\3_frontend\01.HTML\08_하이퍼링크태그.html
+<a [ href | target] >
+href 속성
+target 속성
+[ _self | _parent | _blank]
+
+
+C:\workspace\3_frontend\01.HTML\09_폼관련태그.html
+<form [name | action | method ]>
+name 속성
+    form 태그 안에서 input 태그들을 구분하는 역할을 한다.
+    서버로 값을 전달할 때 name 속성과 사용자가 입력한 값을 묶어서 전송한다.
+    (name=value)
+action | method
+submit 버튼을 눌렀을때 action 속성에서 지정한 서버로 사용자가 입력한 값들을 method 속성에 지정된 전송 방식으로 전송한다
+method - [ get | post ]
+<fieldset> 하위 <legend>
+<input [ type | name | id | value | autocomplete | autofocus | required | readonly | placeholder | maxlength | size]>
+type 속성
+    [ text | password | hidden | search | url | email | tel ]
+    [ number | range ] - [ min | max | step ]
+    [ color | file ] - [multiple]
+    [ radio | checkbox ] - [ checked ]
+    [ date | month | week | time | datetime-local ] - [ min | max ]
+        Week : 2023-W34
+        Time : 23:59:37  - min="22:00" max="23:00" min/max는 적용되지 않음
+        datetime-local : 2023-11-24T22:10:32
+    [ button | submit | reset ] - [ onclick | ]
+        form 태그안에서 button 을 사용하면 submit 기능을 수행하게된다.
+<select> 하위 [<optgroup label> | <option [value | label ]> ]
+<datalist> 하위 <option [value]>
+<form>
+    <textarea [ cols | rows ] >
+    <progress [ value | max ] >
+    <meter    [ value | min | max | low | high] >
+</form>

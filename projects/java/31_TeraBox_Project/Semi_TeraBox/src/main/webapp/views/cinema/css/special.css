@@ -1,0 +1,299 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: #666;
+    text-decoration: none;
+    outline: 1px dotted #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+ol, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+table {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+    empty-cells: show;
+}
+button {
+    cursor: pointer;
+    letter-spacing: -.5px;
+    font-weight: 400;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    min-width: 1100px;
+    min-height: 100%;
+    margin: 0;
+    padding-bottom: 80px;
+}
+/* body 중 메뉴바 */
+
+.inner-wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+.inner-wrap:after, .inner-wrap:before {
+    content: '';
+    display: table;
+}
+.page-util .location a:before, .page-util .location span .no-link:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -14px;
+    top: 0;
+    width: 5px;
+    height: 42px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-arr.png) no-repeat left center;
+}
+.page-util {
+    display: block;
+    position: static;
+    width: 100%;
+    height: 42px;
+    background-color: #f8f8fa;
+}
+
+.page-util .location {
+    float: left;
+    height: 42px;
+}
+.page-util .location span {
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 13px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-home.png) no-repeat center;
+}
+.page-util .location a {
+    display: block;
+    position: relative;
+    float: left;
+    height: 42px;
+    margin: 0 0 0 25px;
+    padding: 0;
+    line-height: 46px;
+    color: #666;
+}
+
+.page-util .location a:hover{
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    float: left;
+    height: 42px;
+    margin: 0 0 0 25px;
+    padding: 0;
+    line-height: 46px;
+    color: #666;
+}
+#tk_contents{
+    width: 100%;
+    margin: 0;
+    padding: 40px 0 0 0;
+    padding-top: 0;
+}
+#tk_contents.no-padding
+{
+    padding-top: 0;
+}
+
+/* 테라박스 특별관을 소개합니다 시작 */
+.theater-special-main.bg {
+    position: absolute;
+    height:426px;
+    width:100%;
+    background-image: linear-gradient(135deg  ,#CC7171 ,#AD6E6E,#A06C6C ,#C6A2B6 );
+}
+.theater-special-main p {
+    margin: 0;
+    padding: 0;
+}
+.theater-special-main .brn-link {
+    position: relative;
+    height: 870px;
+}
+.theater-special-main .brn-link .cell {
+    overflow: hidden;
+    position: absolute;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.theater-special-main .brn-link .slogun {
+    overflow: hidden;
+    display: inline-block;
+    height: 22px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 7px;
+    color: #fff;
+    font-size: .8em;
+    background-color: #832727;
+}
+.theater-special-main .brn-link .cell {
+    overflow: hidden;
+    position: absolute;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.theater-special-main .brn-link .cell a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+}
+.theater-special-main .brn-link .cell a .hover {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    border-radius: 10px;
+}
+.theater-special-main .brn-link .cell a:hover .hover {
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
+}
+.theater-special-main .brn-link .cell a .link-txt {
+    padding: 30px 20px 30px 30px;
+}
+.theater-special-main .brn-link .cell a .link-txt:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    z-index: 10;
+    width: 29px;
+    height: 12px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-sp-link.png);
+}
+.theater-special-main .brn-link .cell a .link-txt .tit {
+    padding: 0 0 15px 0;
+    font-size: 1.4666em;
+    line-height: 1.1;
+    font-family: Roboto;
+}
+
+
+/* .brn-link 자식들먼저 */
+.theater-special-main .brn-link .tit-area {
+    padding: 94px 0 0 0;
+}
+.theater-special-main .brn-link .cell.link-boutique {
+    top: 50px;
+    left: 279px;
+    width: 540px;
+    height: 260px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/theater/bg-bou.png);
+}
+.theater-special-main .brn-link .link-boutique a:focus .hover, 
+.theater-special-main .brn-link .link-boutique a:hover .hover {
+    background: rgba(81,46,26,.9) url(https://img.megabox.co.kr/static/pc/images/theater/bg-bou-logo.png) center no-repeat;
+}
+.theater-special-main .brn-link .cell.link-private {
+    top: 50px;
+    right: 0;
+    width: 260px;
+    height: 260px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/theater/bg-private.png);
+}
+.theater-special-main .brn-link .link-private a:focus .hover, 
+.theater-special-main .brn-link .link-private a:hover .hover {
+    background: rgba(71,53,38,.9) url(https://img.megabox.co.kr/static/pc/images/theater/bg-private-logo.png) center no-repeat;
+}
+.theater-special-main .brn-link .cell.link-db {
+    top: 330px;
+    left: 0;
+    width: 820px;
+    height: 260px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/theater/bg-db.png);
+}
+.theater-special-main .brn-link .link-db a:focus .hover, 
+.theater-special-main .brn-link .link-db a:hover .hover {
+    background: rgba(26,36,77,.9) url(https://img.megabox.co.kr/static/pc/images/theater/bg-dolby-logo.png) center no-repeat;
+}
+.theater-special-main .brn-link .cell.link-mx {
+    top: 610px;
+    left: 0;
+    width: 820px;
+    height: 260px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/theater/bg-dbatmos.png);
+}
+.theater-special-main .brn-link .link-comfort a:focus .hover, 
+.theater-special-main .brn-link .link-comfort a:hover .hover {
+    background: rgba(49,29,57,.9) url(https://img.megabox.co.kr/static/pc/images/theater/bg-comfort-logo.png) center no-repeat;
+}
+.theater-special-main .brn-link .cell.link-kids {
+    top: 610px;
+    right: 0;
+    width: 260px;
+    height: 260px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/theater/bg-kids.png);
+}
+.theater-special-main .brn-link .link-mx a:focus .hover, 
+.theater-special-main .brn-link .link-mx a:hover .hover {
+    background: rgba(55,53,105,.9) url(https://img.megabox.co.kr/static/pc/images/theater/bg-dbatmos-logo.png) center no-repeat;
+}
+.theater-special-main .brn-link .cell.link-comfort {
+    top: 330px;
+    right: 0;
+    width: 260px;
+    height: 260px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/theater/bg-comfort.png);
+}
+.theater-special-main .brn-link .link-kids a:focus .hover, 
+.theater-special-main .brn-link .link-kids a:hover .hover {
+    background: rgba(207,141,0,.9) url(https://img.megabox.co.kr/static/pc/images/theater/bg-kids-logo.png) center no-repeat;
+}
+
+/* .tit-area : 테라박스 특별관을 소개합니다. 타이틀 설정 */
+.theater-special-main .brn-link .tit-area .tit {
+    font-size: 0;
+    line-height: 0;
+}
+.theater-special-main .brn-link .tit-area .txt {
+    padding: 20px 0 0 0;
+    font-size: 2.1333em;
+    color: #832727;
+    line-height: 1.2;
+}
+
+/* .link-boutique 하위 스타일 */

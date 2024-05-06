@@ -1,0 +1,16 @@
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\department\model\mapper\DepartmentMapper.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\department\model\service\DepartmentService.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\department\model\service\DepartmentServiceImpl.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\department\model\vo\Department.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\HomeController.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\member\model\mapper\MemberMapper.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\professor\controller\ProfessorController.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\professor\model\mapper\ProfessorMapper.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\professor\model\service\ProfessorService.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\professor\model\service\ProfessorServiceImpl.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\professor\model\vo\Professor.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\subject\controller\SubjectController.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\subject\model\mapper\SubjectMapper.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\subject\model\service\SubjectService.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\subject\model\service\SubjectServiceImpl.java
+C:\workspace\6_framework\08_SpringPractice\src\main\java\com\kh\practice\subject\model\vo\Subject.java

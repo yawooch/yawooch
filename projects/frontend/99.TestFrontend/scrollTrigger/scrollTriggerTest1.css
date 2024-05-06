@@ -1,0 +1,53 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.container .bg {
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-size: 50px;
+    line-height: 100vh;
+}
+
+.container>div {
+    text-align: center;
+}
+
+
+.box {
+    margin-top: 100px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    line-height: 150px;
+}
+
+.box span {
+    background-color: #000;
+    display: inline-block;
+    height: auto;
+    line-height: 40px;
+    width: 100%;
+}
+
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: orange
+}
+
+.box3 {
+    background-color: yellow;
+}
+
+.box4 {
+    background-color: green;
+}

@@ -1,0 +1,367 @@
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'NanumBarunGothic', sans-serif;
+    line-height: 22px;
+
+}
+
+main {
+    height: 2000px;
+    margin: auto;
+}
+
+.mv-main-nav {
+    background-color: #f8f8fa;
+}
+
+.mv-main-navbox {
+    width: 1100px;
+    margin: auto;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.mv-main-navbox>img {
+    width: 15px;
+    height: 15px;
+}
+
+.mv-main-navbox span {
+    margin-left: 10px;
+}
+.mv-main-navbox>span>img {
+    width: 5px;
+    height: 10px;
+    margin-right: 5px;
+}
+
+.mv-main-navbox>span>a {
+    text-decoration: none;
+    color: #444;
+}
+
+.mv-main-navbox>span>a:hover {
+    text-decoration: underline;
+}
+
+main section {
+    width: 1100px;
+    margin: auto;
+}
+
+/* 탑 메뉴 */
+
+.mv-main-menu {
+    margin-top: 20px;
+    position: relative;
+}
+
+.mv-main-menu>ul {
+    list-style: none;
+    margin: auto;
+    padding-left: 0;
+    height: 40px;
+    display: flex;
+    justify-content: left;
+}
+
+.mv-menu-first {
+    width: 200px;
+    border-top: 1px solid #AF2D2D;
+    border-left: 1px solid #AF2D2D;
+    border-right: none;
+    border-bottom: none;
+}
+
+.mv-menu-second {
+    width: 200px;
+    border-top: 1px solid #EBEBEB;
+    border-left: 1px solid #AF2D2D;
+    border-right: 1px solid #EBEBEB;
+    border-bottom: 1px solid #AF2D2D;    
+}
+
+main nav>ul li:nth-child(2) {
+    margin: 0 -1px;
+}
+
+.mv-main-menu a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+.mv-menu-hidden {
+    width: 700px;
+    border-bottom: 1px solid #AF2D2D;
+}
+
+
+/* 개봉작 버튼, 검색창 div */
+.mv-main-wrap-top {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mv-main-result {
+    display: flex;
+}
+
+.mv-main-result>button {
+    background-color: #ffffff;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.mv-main-result>button>span {
+    margin-left: 5px;
+}
+
+.mv-main-result>span {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.mv-main-search {
+    border: 1px solid #ebebeb;
+}
+
+.mv-main-search form {
+    display: flex;
+}
+
+.mv-main-search input{
+    border: none;
+    outline: none;
+}
+
+
+.mv-main-btnSearch {
+    border: none;
+    background-color: white;
+    width: 35px;
+    height: 35px;
+}
+
+.mv-main-btnSearch>img {
+    margin-top: 5px;
+}
+
+
+/* 영화 리스트 */
+.mv-main-ul {
+    margin-left: -60px;
+    margin-top: 30px;
+    padding: 0;
+}
+
+.mv-main-mvlist {
+    width: 230px;
+    height: 440px;
+    list-style: none;
+    position: relative;
+    float: left;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+
+/* 포스터 부분 */
+
+.mv-main-mv-poster {
+    position: relative;
+    height: 330px;
+}
+
+.mv-main-mv-poster>img {
+    width: 100%;
+    position: absolute;
+}
+
+.mv-main-poster-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+}
+
+.mv-main-poster-bg:hover {  /* show, hide 사용 */
+    opacity: 1;
+}
+
+.mv-main-poster-a {
+    position: absolute;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    height: 330px;
+}
+
+.mv-main-poster-ex {
+    height: 50%;
+    overflow: hidden;
+}
+
+.mv-main-poster-ex>span{
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 15px;
+}
+
+
+.mv-main-poster-score>div {
+    margin-top: 110px;
+}
+
+
+/* 제목 부분 */
+.mv-main-mv-name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 23px;
+    margin-top: 10px;
+}
+
+.mv-main-mv-name>img {
+    width: 23px;
+}
+
+.mv-main-mv-name>span {
+    height: 100%;
+    margin-left: 5px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* ...으로 말 줄이기 */
+    word-break: break-all;  /* 단어 쪼개는 속성 */
+    white-space: nowrap; /* 줄바꿈, 공백 설정 - 한줄정렬 */
+    line-height: 26px;
+}
+
+
+/* 정보 부분 */
+.mv-main-mv-info {
+    margin-top: 10px;
+}
+
+.mv-main-mv-info>span {
+    font-size: 14px;
+}
+
+.mv-main-mv-op {
+    margin-left: 10px;
+}
+
+
+
+
+/* 버튼 부분 */
+.mv-main-mv-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mv-main-mv-btn button {
+    height: 36px;
+    border-radius: 5px;
+
+}
+
+.mv-main-btn-like {
+    width: 70px;
+    border: 1px solid #c4c4c4;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mv-main-btn-like:hover {
+    background-color: #f4f4f4;
+}
+
+
+.mv-main-btn-like>span {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.mv-main-btn-tk {
+    width: 150px;
+    border: none;
+    background-color: #AF2D2D;
+    color: white;
+}
+
+.mv-main-btn-tk:hover {
+    background-color: #812020;
+}
+
+.mv-main-btn-tk>span {
+    font-size: 15px;
+    line-height: 34px;
+}
+
+
+
+/* 하단 더보기 버튼 설정 */
+.mv-btn-more {
+    display: block;
+    margin: auto;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 35px;
+    border: 1px solid #eaeaea;
+    background-color: white;
+}
+
+.mv-btn-more:hover {
+    border: 1px solid #444;
+    background-color: white;
+}
+
+
+main button {
+    cursor: pointer;
+}
+
+

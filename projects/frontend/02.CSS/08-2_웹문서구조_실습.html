@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 문서구조 실습1</title>
+    <style>
+        #wrap{
+            border:1px solid red;
+            border-color: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+            animation: hue 2s infinite linear;
+            width:1000px;
+            height:800px;
+            margin:auto;
+        }
+        #wrap div{
+            box-sizing: border-box;
+            border:1px solid red;
+            border-color: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+            animation: hue 2s infinite linear;
+            border-radius:50%;
+        }
+        @-webkit-keyframes hue {
+            from {
+                filter: hue-rotate(0deg);
+                -webkit-filter: hue-rotate(0deg);
+            }
+            to {
+                filter: hue-rotate(-360deg);
+                -webkit-filter: hue-rotate(-360deg);
+            }
+        }
+        #wrap>div{
+            width:100%;
+        }
+        #top{
+            height:20%;
+        }
+        #body{
+            height:60%;
+        }
+        #bottom{
+            height:20%;
+        }
+        #body>div{
+            float:left;
+            height:100%;
+        }
+        #side{
+            width:15%;
+        }
+        #content{
+            width:85%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="top"><h2>웹 문서구조 실습1 </h2></div>
+        <div id="body">
+            <div id="side"></div>
+            <div id="content"></div>
+        </div>
+        <div id="bottom"></div>
+    </div>
+</body>
+</html>

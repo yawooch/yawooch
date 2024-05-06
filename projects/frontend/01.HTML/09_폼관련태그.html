@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+    <style>
+        fieldset{
+            width:300px;
+        }
+        th{
+            text-align:right;
+        }
+    </style>
+</head>
+<body>
+    <h2>폼 관련 태그</h2>
+    <h3>검색 폼</h3>
+
+    <form name="search_form" action="" method="get">
+
+        <!-- 
+            name 속성
+                form 태그 안에서 input 태그들을 구분하는 역할을 한다.
+                서버로 값을 전달할 때 name 속성과 사용자가 입력한 값을 묶어서 전송한다.
+                (name=value)
+        -->
+        <label for="keyword">검색할 내용 : </label><input type="text" name="search_keyword" id="keyword" autocomplete="off">
+        <!-- </label> -->
+        <!--         
+        submit 버튼을 눌렀을때 
+            action 속성에서 지정한 서버로 사용자가 입력한 값들을 method 속성에 지정된 전송 방식으로 전송한다
+        -->
+        <input type="submit" value="검색">
+    </form>
+    <hr>
+    <h3>회원가입폼</h3>
+    <form name="signUp_form" action="" method="get" >
+        <fieldset>
+            <legend>회원정보</legend>
+            <table>
+                <tr>
+                    <th><label for="">아이디   : </label></th>
+                    <td><input type="text" name="userId" id="userId" autofocus required></td>
+                </tr>
+                <tr>
+                    <th><label for="">비밀번호 : </label></th>
+                    <td><input type="password" name="userPwd" id="userPwd" required></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>배송정보</legend>
+            <table>
+                <tr>
+                    <th><label for="userName">수령인 : </label></th>
+                    <td><input type="text" name="userName" id="userName" value="고길동" readonly></td>
+                </tr>
+                <tr>
+                    <th><label for="address">주소 : </label></th>
+                    <td><input type="text" name="address" id="address" placeholder="서울특별시 동작구 사당동" autocomplete="off"></td>
+                </tr>
+            </table>
+        </fieldset>        
+        <br>
+        <input type="submit" value="회원가입">
+        <input type="reset"  value="초기화">
+    </form>
+    <hr>
+    <h3>input 태그</h3>
+    <h4>type="hidden"</h4>
+    <form>
+        <label for=""> : </label>
+        <input type="hidden" name="hiddenValue" value="1234">
+        <input type="submit" value="전송">
+    </form>
+    <hr>
+    <h4>type="text|password|search|url|email|tel"</h4>
+    <form>
+        <label for="id">아이디 : </label>
+        <input type="text" name="id" id="id" value="hong" size="20" maxlength="5" placeholder="아이디를 입력하세요">
+
+        <br><br>
+
+        <label for="pwd">비밀번호 : </label>
+        <input type="password" name="pwd" id="pwd" size="30" maxlength="30" value="1234" placeholder="비밀번호를 입력하세요">
+
+        <br><br>
+
+        <label for="search">검색 : </label>
+        <input type="search" name="search" id="search" size="30" maxlength="10" placeholder="검색할 내용을 입력하세요">
+
+        <br><br>
+
+        <label for="homepage">홈페이지 : </label>
+        <input type="url" name="homepage" id="homepage" value="https://www.naver.com">
+
+        <br><br>
+
+        <label for="email">이메일 : </label>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력하세요" value="yoc0421@naver.com">
+
+        <br><br>
+
+        <label for="tel">전화번호 : </label>
+        <input type="tel" name="tel" id="tel">
+        
+        <br><br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="다시입력">
+    </form>
+    <hr>
+    <h4>type="number|range"</h4>
+    <form>
+        <label for="amount">수량 : </label>
+        <input type="number" name="amount" id="amount" min="10" max="100" step="10" value="0" style="width:150px;">
+
+        <br><br>
+        
+        <label for="point">포인트 : </label>
+        <input type="range" name="point" id="point" min="10" max="100" step="10" style="width:200px;">
+
+        <br><br>
+
+        <input type="submit" value="전송">
+    </form>
+    <hr>
+    <h4>type="color|file"</h4>
+    <form>
+        <label for="color">색상 : </label>
+        <input type="color" name="color" id="color" value="#520052">
+
+        <br><br>
+        
+        <label for="file">파일첨부 : </label>
+        <input type="file" name="file" id="file" multiple >
+
+        <br><br>
+
+        <input type="submit" value="전송">
+    </form>
+    <hr>
+    <h4>type="radio|checkbox"</h4>
+    <form>
+        <fieldset>
+            <legend>성별</legend>
+            <label><input type="radio" name="gender" value="남자" checked>남자</label>
+            <input type="radio" name="gender" id="female" value="여자" >
+            <label for="female">여자</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>취미</legend>
+            <label><input type="checkbox" name="hobby" value="football">축구</label>
+            <label><input type="checkbox" name="hobby" value="baseball">야구</label>
+            <label><input type="checkbox" name="hobby" value="basketball">농구</label>
+            <label><input type="checkbox" name="hobby" value="music">음악감상</label>
+        </fieldset>
+        <br><br>
+
+        <input type="submit" value="전송">
+    </form>
+    <hr>
+    <h4>type="date|month|week|time|datetime-local"</h4>
+    <form>
+        <label for="date">Date : </label>
+        <input type="date" name="date" id="date" min="2023-12-01" max="2023-12-15" value="2023-12-07">
+        
+        <br><br>
+        <label for="month">Month : </label>
+        <input type="month" name="month" id="month" min="2023-09" max="2023-12">
+
+        <br><br>
+        <label for="week">Week : </label>
+        <input type="week" name="week" id="week" min="2023-W34" max="2023-W40" value="2023-W36">
+
+        <br><br>
+        <label for="time">Time : </label>
+        <input type="time" name="time" id="time" value="23:59:37"> <!-- min="22:00" max="23:00" min/max는 적용되지 않음 -->
+
+        <br><br>
+        <label for="datetime">Datetime : </label>
+        <input type="datetime-local" name="datetime" id="datetime" value="2023-11-24T22:10:32">
+
+        <br><br>
+
+        <input type="submit" value="전송">
+    </form>
+    <hr>
+    <h4>type="button|submit|reset"</h4>
+    <form>
+        <input type="text" placeholder="값을 입력해주세요" name="message">
+        
+        <br><br>
+
+        <!-- input 태그 사용 -->
+        <!-- <input type="submit" value="전송">
+        <input type="reset" value="다시입력">
+        <input type="button" value="버튼" onclick="alert('버튼 클릭!!!');"> -->
+
+        <!-- button 태그 사용 -->
+        <!-- form 태그안에서 button 을 사용하면 submit 기능을 수행하게된다. -->
+        <button>전송</button>
+        <button type="submit">전송</button>
+        <button type="reset">다시입력</button>
+        <br>
+        <button type="button" onclick="alert('button Click!!');">버튼</button>
+        <button type="button" onclick="alert('button Click!!');"style="padding:0px;"><img src="../resources/image/뽀삡뽀2.jpg" alt=""></button>
+    </form>
+    <hr>
+    <h4>select 태그</h4>
+    <form>
+        <label for="national">국적 : </label>
+        <select name="national" id="national">
+            <optgroup label="아시아">
+                <option value="kr" label="한국"></option>
+                <option value="ch" label="중국"></option>
+                <option value="jp">일본</option>
+            </optgroup>
+            <optgroup label="guitar">
+                <option value="us">미국</option>
+                <option value="fr">프랑스</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <button>전송</button>
+    </form>
+    <hr>
+    <h4>datalist 태그</h4>
+    <form>
+        <label for="color2">색상 : </label>
+        <input type="text" name="color2" id="color2" list="colors">
+        <datalist id="colors">
+            <option value="black">검정색</option>
+            <option value="white">흰색</option>
+            <option value="skyblue">하늘색</option>
+        </datalist>
+
+        <br><br>
+        <button>전송</button>
+    </form>
+    <hr>
+    <h4>textarea 태그</h4>
+    <form>
+        <textarea name="textarea" cols="30" rows="10" placeholder="하고싶은 말을 입력해 주세요"></textarea>
+
+        <br><br>
+        <button>전송</button>
+    </form>
+    <hr>
+    <h4>progress | meter 태그</h4>
+    <form>
+        <progress name="progress" value="10" max="100"></progress>
+        <br>
+        <meter  name="meter" value="100" min="0" max="100" low="50" high="70"></meter>
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 관련 태그</title>
+    <style>
+        #transition1,#transition2,#transition3,#transition4 {
+    width: 100px;
+  }
+  
+  #transition1:hover,#transition2:hover,#transition3:hover,#transition4:hover {
+    width: 100%;
+    /* animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    transition: width 2s, height 2s, transform 2s;
+  }
+    </style>
+</head>
+<body>
+    <h2>이미지 관련 태그</h2>
+    <h3>img 태그</h3>
+    <h4>src 속성</h4>
+    <img src="../resources/image/맑눈광.jpg" alt="맑눈광">    
+    <img src="../resources/image/맑눈광2.jpg" alt="맑눈광2" width="550px">    
+    <img src="../resources/image/티벳여우.jpg" alt="티벳여우">
+    <img src="../resources/image/city1.png" alt="city1">
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxNzAxMjRfMjUx%2FMDAxNDg1MjUzMTMwMzEw.chwdaWlQIX7AeyQJHyfJ7Xv9EOlYN5cNDM8nmJWNC-Ig.BKxX_kqMulCnrAZYsQIS5CbBKrPdM1FiPy1slYoPHb0g.GIF.tjwls1624%2F20140322_204010_-740467690.gif&type=sc960_832_gif" alt="티벳여우">
+
+    <h4>alt 속성</h4>
+    <img src="../resources/image/flower11.png" alt="이사진은 벚꽃사진입니다.">
+
+    <h4>width, height 속성</h4>
+    <h5>고정 크기 단위</h5>
+    <img width="200" height="150" src="../resources/image/flower1.PNG" alt="flower1">
+    <img width="200px" height="150px" src="../resources/image/flower1.PNG" alt="flower1">
+    <img width="200px" src="../resources/image/flower1.PNG" alt="flower1">
+    <img height="150px" src="../resources/image/flower1.PNG" alt="flower1">
+
+    <h5>가변 크기 단위</h5>
+    <img width="15%" src="../resources/image/flower2.png" alt="flower2">
+    <img width="15%" src="../resources/image/flower2.png" alt="flower2">
+    <img width="50%" src="../resources/image/뽀삡뽀.jfif" alt="노주현"><br>
+    <img height="225" src="../resources/image/맑눈광2.jpg" alt="맑눈광2" id="transition1"><br>
+    <img height="225"  src="../resources/image/뽀삡뽀2.jpg" alt="노주현" id="transition2"><br>
+    <img height="225" src="../resources/image/티벳여우2.jpg" alt="티벳여우" id="transition3"><br>
+    <img height="225" src="../resources/image/티벳궁녀.jpg" alt="티벳궁녀" id="transition4"><br>
+    <img height="25%" src="../resources/image/flower2.png" alt="flower2">
+
+    <h3>이미지 맵</h3>
+    <h4>이미지 구역을 2개로 나누어 각각 링크 설정</h4>
+    
+    <img width="600px" height="300px" src="../resources/image/forest1.png" alt="" usemap="#rect_map">
+    <map name="rect_map">
+        <!-- <area shape="rect" coords="0,0,300,300" href="https://www.naver.com" alt="" target="_self"> -->
+        <area shape="rect" coords="0,0,300,300" href="https://www.naver.com" target="_blank">
+        <area shape="rect" coords="300,0,600,300" href="https://www.google.com" target="_blank">
+    </map>
+
+    <img width="600px" height="300px" src="../resources/image/forest1.png" alt="" usemap="#circle_map">
+    <map name="circle_map">
+        <area shape="circle" coords="300, 150, 100" href="https://www.daum.net/" target="_blank">
+    </map>
+    
+    <img width="760" height="300" src="../resources/image/맑눈광2.jpg" alt="맑눈광2" usemap="#circle_map2">
+    <map name="circle_map2">
+        <area shape="circle" coords="195, 141, 40" href="https://www.daum.net/" target="_blank">
+    </map>
+
+</body>
+</html>

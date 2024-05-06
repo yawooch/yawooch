@@ -1,0 +1,1203 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+element.tk-style {
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+body {
+    overflow: auto;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #444;
+    font-weight: 400;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+em {
+    font-style: normal;
+}
+
+/* body 중 메뉴바 */
+.tk-page-util {
+    display: block;
+    position: static;
+    width: 100%;
+    height: 42px;
+    background-color: #f8f8fa;
+}
+
+.tk-inner-wrap {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.tk-page-util .tk-location a {
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    float: left;
+    height: 42px;
+    margin: 0 0 0 25px;
+    padding: 0;
+    line-height: 46px;
+    color: #666;
+}
+
+.tk-page-util .tk-location a:hover{
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    float: left;
+    height: 42px;
+    margin: 0 0 0 25px;
+    padding: 0;
+    line-height: 46px;
+    color: #666;
+}
+
+.tk-page-util .tk-location span {
+    overflow: visible;
+    display: block;
+    float: left;
+    width: 13px;
+    height: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    text-indent: -9999px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-home.png) no-repeat center;
+}
+
+.tk-page-util .tk-location a:before, .tk-page-util .tk-location span .tk-no-link:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -14px;
+    top: 0;
+    width: 5px;
+    height: 42px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-arr.png) no-repeat left center;
+}
+
+a:visited {
+    color: #666;
+    text-decoration: none;
+    outline: 1px dotted #000;
+}
+/* innerwrap */
+.sp-wrap {
+padding-top: 40px;
+padding-bottom: 100px;
+height: 857px;
+width: 1100px;
+margin: auto;
+}
+/* 빠른예매제목 */
+.tit-util {
+    padding-bottom: 25px;
+}
+
+.tit-util::before {
+    content: '';
+    display: block;
+}
+.tit-util::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+h2.tit {
+    padding: 0 0 26px 0;
+    font-size: 1.8666em;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    color: #222;
+}
+.tit-util {
+    padding: 0 0 26px 0;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    color: #222;
+}
+.time-schedule.quick .wrap {
+    height: 40px;
+    border-top: 1px solid #555;
+    border-left: 1px solid #d8d9db;
+    border-right: 1px solid #d8d9db;
+    border-bottom: #d8d9db;
+}
+/* 내부박스 */
+.sp-wrap-include {
+    width: 1100px;
+    height: 570.67px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+}
+.time-schedule::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.time-schedule {
+    width: 100%;
+    height: 40px;
+}
+.wrap {
+    overflow: visible;
+    height: 40px;
+    border: 1px solid #d8d9db;
+}
+.button{
+    overflow: visible;
+    cursor: pointer;
+    letter-spacing: -5px;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+}
+.wrap .ico-cld-pre{
+    margin-right: 1px;
+}
+.ico-cld-pre {
+    width: 7px;
+    height: 12px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-cld-pre.png);
+}
+.iconset {
+    overflow: hidden;
+    display: inline-block;
+    margin: -1px 0 0 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.btn-prev-date {
+    cursor: pointer;
+    padding: 6 1 6 1;
+    width: 30px;
+    height: 39px;
+    border: 0!important;
+    background-color: transparent!important;
+    float: left;
+}
+.date-list {
+    position: relative;
+    overflow: visible;
+    width: 980px;
+    float: left;
+}
+
+/* 년도 월 표시 */
+
+.date-list .year {
+    position: absolute;
+    top: 0;
+    height: 20px;
+    margin-top: -10px;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: .8667em;
+    width: 70px;
+    border: 1px solid #d8d9db;
+    text-align: center;
+    background-color: #fff;
+}  
+.year-area {
+    content:""; 
+    display:block; 
+    clear:both; 
+    height: 0px;
+}
+.year-area .year{
+    height: 20px;
+}
+.date-area {
+    height: 39px;
+    float: left;
+}
+
+.time-schedule.quick .year {
+    top: 0;
+    height: 20px;
+    line-height: 18px;
+    margin-top: -10px;
+    border-radius: 10px;
+    font-weight: 300;
+}
+.time-schedule .year {
+    position: absolute;
+    top: 0;
+    font-size: .8667em;
+    width: 70px;
+    height: 20px;
+    margin-top: -10px;
+    border: 1px solid #d8d9db;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #fff;
+    font-weight: 300;
+}
+
+/* datelist */
+/* .wrap{
+    display: inline;
+} */
+.time-schedule .bg-line {
+    margin-left: 8px
+}
+
+.time-schedule .date-area button {
+    width: 70px;
+    height: 39px;
+    font-size: .8667em;
+    border: 0;
+    background-color: transparent;
+    float: left;
+    border-bottom: 1px solid #d8d9db;
+    font-weight: 400;
+}
+.ir {
+    text-indent: -9999px;
+    position: fixed;
+    top: -9999px;
+    font-size: 1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+.time-schedule .date-area button.sat {
+    color: #3b5fcb;
+}
+.time-schedule .date-area button.holi {
+    color: #e81002;
+}
+.time-schedule .date-area button span {
+    vertical-align: bottom;
+}
+
+.time-schedule .date-area button.holi:hover,
+.time-schedule .date-area button.sat:hover,
+.time-schedule .date-area button:focus,
+.time-schedule .date-area button:hover {
+    border-bottom: 2px solid #872727
+}
+
+.time-schedule .date-area button.on {
+    background-color: #f7f8f9;
+    border-bottom: 2px solid #872727
+}
+
+.time-schedule .date-area button em {
+    font-style: normal;
+    position: relative;
+    display: inline-block;
+    line-height: 1.1;
+    padding: 0 9px 0 0;
+    vertical-align: middle;
+}
+
+.time-schedule .date-area button em:after {
+    content: '';
+    position: absolute;
+    right: 3px;
+    top: 6px;
+    display: block;
+    width: 3px;
+    height: 3px;
+    background-color: #888
+}
+
+.time-schedule .date-area button em+span {
+    display: inline-block;
+    line-height: 1.1;
+    font-weight: 400;
+    vertical-align: bottom
+}
+
+.time-schedule .bg-line:before {
+    height: calc(100% - 1px);
+    top: 0;
+    background-color: #ebebeb
+}
+/* 다음날짜 */
+.time-schedule .ico-cld-next {
+    margin-left: 1px
+}
+.time-schedule .btn-next-date {
+    width: 30px;
+    height: 39px;
+    border: 0!important;
+    background-color: transparent!important;
+    float: left;
+}
+
+.ico-cld-next {
+    /* position: relative; */
+    width: 7px;
+    height: 12px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-cld-next.png);
+}
+/* 달력 */
+.time-schedule .bg-line {
+    margin-left: 8px;
+    float: left;
+    position: relative;
+}
+.time-schedule .btn-calendar-large {
+    float: right;
+    width: 50px;
+    height: 39px;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999px;
+    border-bottom: 0!important;
+    background-color: transparent!important;
+}
+.btn-calendar-large {
+    background: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-calendar-w20.png) no-repeat center;
+}
+
+/* 
+ */
+.quick-reserve-area {
+    border: 1px solid #d8d9db;
+    border-top: 0
+}
+
+.quick-reserve-area:after,.quick-reserve-area:before {
+    content: '';
+    display: block
+}
+
+.quick-reserve-area:after {
+    clear: both
+}
+
+.quick-reserve-area p {
+    margin: 0;
+    padding: 0
+}
+
+.quick-reserve-area button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    letter-spacing: -1px;
+    background-color: transparent;
+}
+
+.quick-reserve-area .tit {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    font-size: 1.2em;
+    line-height: 38px
+}
+
+.quick-reserve-area .tit-area {
+    overflow: hidden;
+    height: 38px
+}
+
+.quick-reserve-area .tit-area .tit {
+    float: left;
+    width: auto
+}
+
+.quick-reserve-area .tit-area .ico-theater-chk {
+    display: block;
+    float: right;
+    margin-top: 15px;
+    font-size: 0;
+    line-height: 0
+}
+
+.quick-reserve-area .tit-area .right {
+    float: right;
+    padding: 10px 20px 0 0
+}
+
+.quick-reserve-area .list-area {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 40px 0 0 0
+}
+
+/* 영화버튼 - 전체/큐레이션 */
+.quick-reserve-area .list-area .btn-tab {
+    display: block;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 30px;
+    font-size: .9333em;
+    color: #222;
+    border: 1px solid #d9d8dd;
+    border-bottom: 1px solid #666;
+    background-color: #fff
+}
+
+.quick-reserve-area .list-area .btn-tab.on {
+    border-color: #666;
+    border-bottom: 0
+}
+/* 영화선택 */
+.quick-reserve-area .movie-choice {
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 529px;
+    padding: 0 20px 17px 20px;
+    border-right: 1px solid #d8d9db;
+}
+.quick-reserve-area .movie-choice {
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 529px;
+    padding: 0 20px 17px 20px;
+    border-right: 1px solid #d8d9db
+}
+
+.quick-reserve-area .movie-choice .list-area .btn-tab {
+    width: 230px
+}
+
+.quick-reserve-area .movie-choice .list-area .other-list .btn-tab {
+    left: 115px
+}
+
+/* 영화 목록 */
+.quick-reserve-area .list-area .list {
+    display: block;
+    width: 100%;
+    height: 320px;
+    margin-top: 10px
+}
+
+.quick-reserve-area .list-area .list .scroll {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quick-reserve-area .list-area .list .scroll ul li button {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 28px;
+    padding: 3px 30px 3px 30px;
+    text-align: left;
+    font-size: .8667em;
+    background-color: transparent;
+    letter-spacing: -1px
+}
+
+.quick-reserve-area .list-area .list .scroll ul li button span.txt {
+    display: inline
+}
+
+/* 버튼공통 */
+.quick-reserve-area .list-area .list .scroll ul li button span {
+    display: inline-block;
+    margin: 0 2px 0 0;
+    vertical-align: middle;
+}
+/* 연령가 아이콘 */
+.movie-grade.small {
+    width: 20px;
+    height: 20px;
+}
+.movie-grade {
+    overflow: hidden;
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    text-indent: -9999px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.quick-reserve-area .list-area .list .scroll ul li button span.movie-grade {
+    position: absolute;
+    left: 5px;
+    top: 3px
+}
+.movie-grade.small.age-19 {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/txt/18_40x40.png);
+    background-size: 20px 20px;
+}
+.movie-grade.small.age-12 {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/txt/12_40x40.png);
+    background-size: 20px 20px;
+}
+.movie-grade.small.age-15 {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/txt/15_40x40.png);
+    background-size: 20px 20px;
+}
+.movie-grade.small.age-all {
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/txt/ALL_40x40.png);
+    background-size: 20px 20px;
+}
+/* 좋아요 아이콘 */
+.iconset {
+    overflow: hidden;
+    display: inline-block;
+    margin: -1px 0 0 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.ico-heart-small {
+    width: 12px;
+    height: 11px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-heart-small.png);
+}
+.quick-reserve-area .list-area .list .scroll ul li button i {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    display: block;
+    margin: 0 2px 0 0;
+}
+/* 영화목록스크롤 */
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: 0;
+}
+.mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+.m-scroll .mCSB_inside>.mCSB_container {
+    margin-right: 5px;
+}
+
+.m-scroll .mCSB_scrollTools {
+    width: 5px;
+    opacity: 1;
+}
+.mCSB_scrollTools{
+    transition: opacity .2s ease-in-out,background-color .2s ease-in-out;
+}
+.mCSB_scrollTools {
+    position: absolute;
+    height: auto;
+    left: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    z-index: 1;
+}
+.m-scroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    position: relative;
+    width: 5px;
+    height: 48px;
+    background-color: #555;
+    margin: 0 auto;
+    border-radius: 2px;
+    text-align: center;
+}
+.m-scroll .mCSB_scrollTools .mCSB_draggerRail {
+    position: absolute;
+    background-color: #ebebeb;
+    width: 5px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* view-area */
+/* 영화선택X */
+.quick-reserve-area .view-area {
+    width: 100%;
+    padding: 0;
+    
+}
+
+.quick-reserve-area .view-area .choice-all {
+    overflow: hidden;
+    width: 100%;
+    height: 90px;
+    margin: 10px 0 0 0;
+    padding: 25px 0 0 0;
+    font-size: .9333em;
+    line-height: 1.3;
+    text-align: center;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+}
+.quick-reserve-area .view-area .choice-all strong {
+    display: block;
+    padding: 0;
+    font-weight: 400;
+}
+.quick-reserve-area .view-area .choice-all span {
+    display: block;
+    padding: 0;
+}
+/* 하나라도 영화선택 */
+.quick-reserve-area .view-area .choice-list {
+    overflow: hidden;
+    margin: 10px 0 0 0;
+    height: 90px;
+}
+
+.quick-reserve-area .view-area .choice-list .bg .wrap .img {
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+.quick-reserve-area .view-area .choice-list .bg {
+    overflow: hidden;
+    float: left;
+    width: 63px;
+    height: 90px;
+    background: url(https://img.megabox.co.kr/static/pc/images/reserve/bg-empty-cell.png) no-repeat center;
+}
+.quick-reserve-area .view-area .choice-list .bg .wrap .img img {
+    width: 100%;
+    height: 100%;
+}
+.quick-reserve-area .view-area .choice-list .bg .wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.quick-reserve-area .view-area .choice-list .bg .wrap .del {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    line-height: 0;
+    background: url(https://img.megabox.co.kr/static/pc/images/reserve/btn-choice-dell.png) no-repeat 0 0;
+}
+.quick-reserve-area .view-area .choice-list .bg+.bg {
+    margin-left: 20px;
+}
+
+/* 극장 선택 : theater-choice */
+.quick-reserve-area .theater-choice {
+    float: left;
+    width: 350px;
+    height: 530px;
+    padding: 0 20px 20px 20px;
+    border-right: 1px solid #d8d9db;
+}
+.quick-reserve-area .tit-area {
+    overflow: hidden;
+    height: 38px;
+}
+.quick-reserve-area .tit-area .tit {
+    float: left;
+    width: auto;
+}
+/* 극장 list-area */
+.quick-reserve-area .list-area {
+    width: 100%;
+    height: 370px;
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+.quick-reserve-area .theater-choice .list-area {
+    position: relative;
+}
+/* 극장목록전체 */
+.quick-reserve-area .theater-choice .list-area .btn-tab {
+    width: 310px;
+}
+.quick-reserve-area .list-area .list .scroll {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.quick-reserve-area .theater-choice .list .scroll ul {
+    position: relative;
+    height: 100%;
+}
+.quick-reserve-area .list-area .list .scroll ul li button.on {
+    color: #fff;
+    font-weight: 400;
+    background-color: #666;
+}
+/* 극장목록상세 */
+li {
+    display: list-item;
+}
+.quick-reserve-area .theater-choice .list .scroll ul li .btn {
+    overflow: visible;
+    position: relative;
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 0px;
+}
+.quick-reserve-area .theater-choice .list .scroll ul li .btn.on {
+    color: #444;
+    background-color: #ebebeb;
+    font-weight: 400;
+}
+.quick-reserve-area .theater-choice .list .scroll ul li .depth {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 320px;
+    padding: 0;
+}
+.quick-reserve-area .theater-choice .list .scroll ul li .depth.on {
+    display: block;
+}
+.quick-reserve-area .theater-choice .list .scroll ul li .depth .detail-list {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+/* 자바스크립트로 별도로 처리를 해 주지 않는 이상) 무시된다. */
+.mCustomScrollbar {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom;
+}
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    outline: 0;
+    direction: ltr;
+}
+.m-scroll .mCSB_inside>.mCSB_container {
+    margin-right: 5px;
+}
+.mCSB_container {
+    overflow: hidden;
+    width: auto;
+    height: auto;
+}
+/* 서울상세 */
+.quick-reserve-area .theater-choice .list .scroll ul li .depth .detail-list ul li button {
+    height: 28px;
+    padding-left: 12px;
+    padding-right: 0;
+}
+.quick-reserve-area .theater-choice .list .scroll ul:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 100%;
+    background-color: #ecf0f4;
+}
+.quick-reserve-area .theater-choice .list .scroll ul li .depth .detail-list ul li button.on {
+    color: #fff;
+    background-color: #666;
+}
+.quick-reserve-area .theater-choice .list .scroll ul li .btn.on:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    z-index: 2;
+    width: 6px;
+    height: 11px;
+    margin: -6px 0 0 0;
+    background: url(https://img.megabox.co.kr/static/pc/images/reserve/bg-arr-theater-choice.png) no-repeat 0 0;
+}
+/* 극장스크롤바 */
+.m-scroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    position: relative;
+    width: 5px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: #555;
+    text-align: center;
+}
+
+
+/* 극장 view-area */
+.quick-reserve-area .theater-choice .view-area .choice-list {
+    overflow: hidden;
+    height: 100px;
+    margin: 0 0 0 -18px;
+    padding: 10px 0 0 0;
+}
+.quick-reserve-area .theater-choice .view-area .choice-list .bg {
+    overflow: visible;
+    display: table;
+    table-layout: fixed;
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin: 0 0 0 18px;
+    background: url(https://img.megabox.co.kr/static/pc/images/reserve/bg-empty-cell-circle.png) no-repeat center;
+}
+
+/* 상영시간표 선택 */
+.quick-reserve-area .time-choice {
+    float: left;
+    width: calc(100% - 620px);
+    height: 530px;
+    padding: 0;
+}
+/* 상영시간표 제목 */
+.quick-reserve-area .time-choice .tit {
+    padding-left: 20px;
+}
+.quick-reserve-area .tit-area .right {
+    float: right;
+    padding: 10px 20px 0 0;
+}
+.quick-reserve-area .time-choice .tit-area .legend {
+    font-size: .8em;
+    font-weight: 400;
+}
+.quick-reserve-area .time-choice .tit-area .legend .iconset {
+    margin-left: 5px;
+}
+.ico-sun {
+    width: 14px;
+    height: 14px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-greeting-option-sun.png);
+}
+.ico-brunch {
+    width: 14px;
+    height: 14px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-time-brunch.png);
+}
+.ico-moon {
+    width: 12px;
+    height: 12px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-greeting-option-moon.png);
+}
+/* 상영시간선택영역 */
+.hour-schedule {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    padding: 0;
+}
+.hour-schedule .btn-prev-time {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    left: 20px;
+    padding: 0;
+    top: 1px;
+    width: 44px;
+    height: 28px;
+    text-indent: -9999px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-prev-time.png) no-repeat center;
+}
+.hour-schedule .wrap {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    width: 350px;
+    height: 30px;
+    margin: 0 64px;
+    border: 0px;
+    background-color: transparent;
+}
+.hour-schedule .wrap .view {
+    /* position: relative; */
+    height: 30px;
+}
+.hour-schedule .wrap .view .hour {
+    display: block;
+    float: left;
+    width: 35px;
+    height: 30px;
+    color: #444;
+    font-size: 1.1333em;
+    font-family: Roboto,Dotum,'돋움',sans-serif!important;
+    font-weight: 600!important;
+}
+.hour-schedule .wrap .view .hour.on {
+    background-color: #555;
+    color: #fff;
+}
+.hour-schedule .btn-next-time {
+    overflow: hidden;
+    display: block;
+    padding: 0;
+    position: absolute;
+    right: 20px;
+    top: 1px;
+    width: 44px;
+    height: 28px;
+    text-indent: -9999px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/btn/btn-next-time.png) no-repeat center;
+}
+
+/* 시간표출력영역 */
+.quick-reserve-area .movie-schedule-area {
+    overflow: hidden;
+    margin-top: 10px;
+    height: 430px;
+    background-color: #fff;
+}
+.quick-reserve-area .movie-schedule-area .result {
+    height: 100%;
+    padding: 0;
+    text-align: center;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll {
+    height: 100%;
+}
+/* 시간표출력상세 */
+.quick-reserve-area .movie-schedule-area .result .scroll ul {
+    height: 100%;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li {
+    border-top: 1px solid #ebebeb;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn {
+    overflow: hidden;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding: 0;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .legend {
+    display: table-cell;
+    width: 30px;
+    height: 66px;
+    padding: 10px 0 0 0;
+    vertical-align: top;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .legend .iconset {
+    display: block;
+    margin: 0 auto;
+}
+.ico-sun {
+    width: 14px;
+    height: 14px;
+    background-image: url(https://img.megabox.co.kr/static/pc/images/common/ico/ico-greeting-option-sun.png);
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .time {
+    display: table-cell;
+    width: 60px;
+    padding: 10px 0;
+    text-align: left;
+    vertical-align: top;
+    font-family: Roboto,Dotum,'돋움',sans-serif!important;
+    font-weight: 300;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .time strong {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .time em {
+    display: block;
+    padding: 3px 0 0 0;
+    font-size: .8667em;
+    font-weight: 300;
+}
+
+.movie-schedule-area .mCSB_container .btn:hover, #mCSB_1_container button:hover, #brchList button:hover{
+    background-color: #d8d9db;
+    cursor:pointer;
+}
+
+/* 제목 */
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .title {
+    display: table-cell;
+    width: 275px;
+    padding: 10px 0;
+    text-align: left;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .title strong {
+    display: block;
+    font-weight: 400;
+    padding: 0 5px 0 0;
+    line-height: 1.3;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .title em {
+    display: block;
+    padding-top: 7px;
+    font-size: .8em;
+}
+/* 오른쪽 */
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .info {
+    display: table-cell;
+    width: 110px;
+    padding: 0 5px 0 0;
+    font-size: .8em;
+    vertical-align: middle;
+    text-align: right;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .info .theater {
+    overflow: hidden;
+    display: block;
+    height: 35px;
+    padding: 0;
+    line-height: 1.5;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .info .seat .now {
+    display: inline-block;
+    color: #01738b;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.quick-reserve-area .movie-schedule-area .result .scroll ul li .btn .info .seat {
+    overflow: hidden;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+    padding: 0;
+    letter-spacing: 0;
+    text-align: center;
+    border: 1px solid #f2f4f5;
+}
+.quick-reserve-area .theater-choice .view-area .choice-list .bg {
+    overflow: visible;
+    display: table;
+    table-layout: fixed;
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin: 0 0 0 18px;
+    background: url(https://img.megabox.co.kr/static/pc/images/reserve/bg-empty-cell-circle.png) no-repeat center;
+}
+.quick-reserve-area .theater-choice .view-area .choice-list .bg .wrap {
+    display: table-cell;
+    position: relative;
+    width: 90px;
+    height: 90px;
+    border-radius: 90px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #ebebeb;
+}
+.quick-reserve-area .theater-choice .view-area .choice-list .bg .wrap .txt {
+    display: inline-block;
+    padding: 0 10px;
+    color: #222;
+    font-size: .8667em;
+    letter-spacing: 0;
+}
+
+.ui-datepicker-trigger{
+    width: 35px;
+    height: 35px;
+    padding: 5px 5px;
+    border: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -999px;
+    border-bottom: 0!important;
+    background-color: transparent!important;
+}
+
+#ui-datepicker-div{
+    z-index: 4!important;
+}

@@ -1,0 +1,258 @@
+@charset "UTF-8";
+/******************************************** 
+    영화 영역 속성 정의 시작
+*********************************************/
+.main-button {
+    display: inline-block;
+    height: 36px;
+    margin: 0;
+    padding: 0 15px;
+    text-align: center;
+    line-height: 34px;
+    color: #503396;
+    font-weight: 400;
+    border-radius: 4px;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+    text-decoration: none;
+    border: 1px solid #503396;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+}
+.main-button.main-gred {
+    color: #fff;
+    line-height: 36px;
+    border: 0;
+    background: #AF2D2D;
+}
+#main_movieSection{
+    background-color: rgba(3,1,21,0.7);
+    width:100%;
+    display: block;
+    height: 600px;
+    position: relative;
+}
+#main_movieSection>.bg:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(85,63,5,1) 0%, rgba(23,17,1,0) 50%, rgba(85,63,5,1) 100%);
+}
+#main_movieSection>.bg{
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    min-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
+#main_movieSection>.bg:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: rgba(3,1,21,0.7);
+}
+#main_movieSection>.bg .bg-pattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-movie-detail-pattern.png) repeat 0 0;
+}
+#main_movieSection>.bg img {
+    display: block;
+    width: 100%;
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(15px);
+}
+#main_movieSection>.main-content{
+    z-index: 3;
+    overflow: hidden;
+    position: relative;
+}
+.main-content>.content-title{
+    text-align: center;
+    width:100%;
+}
+.main-content>.content-title>.content-title-text{
+    margin:auto;
+    color: #fff;
+    border-bottom: 2px solid rgba(255,255,255,0.2);
+    display: inline-block;
+    vertical-align: top;
+    margin: 50px 0 20px 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 38px;
+}
+.list>li{
+    display:list-item;
+}
+.movie-list>ol li.first {
+    margin-left: 0;
+}
+.movie-list>ol li .list-info img.poster {
+    display: block;
+    width: 245px;
+    height: 352px;
+    border-radius: 5px;
+}
+.movie-list>ol li .movie-list-info img.poster {
+    display: block;
+    width: 245px;
+    height: 352px;
+    border-radius: 5px;
+}
+.movie-list>ol li {
+    float: left;
+    margin-left: 40px;
+    padding: 0;
+}
+.movie-list>ol li .movie-list-info .rank {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    margin:0px;
+    color: #fff;
+    padding: 10px 0 0 15px;
+    line-height: 1.1;
+    font-size: 2em;
+    font-style: italic;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    background: url(../img/bg-main-movie-rank.png) no-repeat 0 0;
+}
+.movie-list-info{
+    position:relative;
+    cursor:pointer;
+}
+.movie-list>ol li .btn-util {
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    padding: 0 0 0 85px;
+    text-align: left;
+}
+.ico-heart-toggle-gray {
+    background-image: url(../img/ico-heart-toggle-main.png);
+}
+.movie-list>ol li .btn-util .btn-like {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 36px;
+    line-height: 34px;
+    margin: 0;
+    padding: 0 5px;
+    color: #fff;
+    font-size: 0.8667em;
+    border-color: #555;
+    background-color: rgba(0,0,0,0.4);
+}
+.movie-list>ol li .btn-util .case .main-button {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+.iconset{
+    margin: -2px 4px 0px 0px;
+    width: 17px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.movie-list-info>.movie-wrap{
+    position: absolute;
+    z-index: 300;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 25px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    border-radius:5px;
+    
+}
+
+.movie-wrap .summary{
+    overflow: hidden;
+    text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 7; 
+	-webkit-box-orient: vertical;
+    font-size:15px;
+}
+
+.movie-wrap .score{
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 0 0 0;
+    text-align: center;
+    border-top: 1px solid #3c3c3c;
+    text-align: center;
+}
+.score .preview{
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 36px;
+}
+.preview .tit{
+    display: block;
+    float: left;
+    margin: 0 19px 0 0;
+}
+.preview .number{
+    float: left;
+    font-size: 24px;
+    color: #59bec9;
+    margin: 0;
+}
+.ir {
+    text-indent: -9999px;
+    position: fixed;
+    top: -9999px;
+    font-size: 1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.movie-list-info:hover .movie-wrap{
+	display: block;
+	
+}
+
+
+/******************************************** 
+    영화 영역 속성 정의 끝
+*********************************************/

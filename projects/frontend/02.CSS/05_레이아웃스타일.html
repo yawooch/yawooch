@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 스타일</title>
+    <link rel="stylesheet" href="./05_레이아웃스타일.css">
+    <!-- <link rel="stylesheet" href="../99.TestFrontend/doit.practice/onepage/onepage.css" type="text/css"> -->
+    <script src="https://code.jquery.com/jquery-2.1.3.js" integrity="sha256-goy7ystDD5xbXSf+kwL4eV6zOPJCEBD1FBiCElIm+U8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+    <script src="../fullpage.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('nav a').click(function(e){
+                $.scrollTo(this.hash||0, 1500);
+                e.preventDefault();
+            })
+        });
+    </script>
+</head>
+<body>
+    
+    <nav>
+        <a href="#1" class="nav-btn">width, height</a>
+        <a href="#2" class="nav-btn">여백 스타일</a>
+        <a href="#3" class="nav-btn">테두리 스타일</a>
+        <a href="#4" class="nav-btn">포지셔닝</a>
+        <a href="#5" class="nav-btn">플렉스 박스</a>
+        <a href="#6" class="nav-btn">CSS 그리드 레이아웃</a>
+    </nav>
+    <h2 class="header">레이아웃 스타일</h2>
+    <h3>박스 모델</h3>
+    <section id="1">
+    </section>
+    <h4>width, height</h4>
+    <h5>고정 크기</h5>
+    <div id="fixed-size"></div>
+    <h5>가변 크기</h5>
+    <div id="variable-size"></div>
+    <hr>
+    <h4>display</h4>
+    <p>
+        블록 레벨 요소와 레벨의 속성을 변경해서 배치 할 수 있다.
+    </p>
+    <h5>블록 레벨 요소를 인라인 레벨 요소로 변경</h5>
+    <div class="display display-inline" id="div1">1번째 영역</div>
+    <div class="display display-inline" id="div2">2번째 영역</div>
+    <div class="display display-inline" id="div3">3번째 영역</div>
+    <div class="display display-inline" id="div4">4번째 영역</div>
+    <div class="display display-inline" id="div5">5번째 영역</div>
+
+    <h5>인라인 레벨 요소를 블록 레벨 요소로 변경</h5>
+    <span class="display display-block" id="span1">1번째 영역</span>
+    <span class="display display-block" id="span2">2번째 영역</span>
+    <span class="display display-block" id="span3">3번째 영역</span>
+    <span class="display display-block" id="span4">4번째 영역</span>
+    <span class="display display-block" id="span5">5번째 영역</span>
+
+    <h5>블록 레벨 요소를 인라인 블록 레벨 요소로 변경</h5>
+    <div class="display display-inline-block" id="divIB1">1번째 영역</div>
+    <div class="display display-inline-block" id="divIB2">2번째 영역</div>
+    <div class="display display-inline-block" id="divIB3">3번째 영역</div>
+    <div class="display display-inline-block" id="divIB4">4번째 영역</div>
+    <div class="display display-inline-block" id="divIB5">5번째 영역</div>
+    <hr>
+    <section id="2">
+    </section>
+    <h4>여백 스타일</h4>
+    <h5>padding</h5>
+    <p>
+        테두리와 컨텐츠 영역 사이의 여백
+    </p>
+    <div id="padding1">전체 padding</div>
+    <div id="padding2">부분 padding</div>
+
+
+    <h5>margin</h5>
+    <p>
+        요소와 요소 사이의 여백
+    </p>
+    <div class="space" id="margin1">전체 margin</div>
+    <div class="space" id="margin2">부분 margin</div>
+    <hr>
+    <section id="3">
+    </section>
+    <h4>테두리 스타일</h4>
+    <!-- div.border#border$*10{board $} -->
+    <div class="border" id="border1">border none</div>
+    <div class="border" id="border2">border hidden<br>box-shadow: 10px -10px 20px 0px gray inset;</div> 
+    <div class="border" id="border3">border dashed<br>border-width:20px 30px 10px 20px;</div>
+    <div class="border" id="border4">border dotted<br>border-color:hotpink yellowgreen orangered slateblue;</div>
+    <div class="border" id="border5">border double<br>border-top: 15px double blue;<br>border-bottom: 15px double red;<br>border-left: 15px double slateblue;<br>border-right: 15px double plum;</div>
+    <div class="border" id="border6">border groove</div>
+    <div class="border" id="border7">border ridge</div>
+    <div class="border" id="border8">border inset</div>
+    <div class="border" id="border9">border outset</div>
+    <div class="border" id="border10">border solid<br>border-radius: 50%;</div>
+    
+    <div class="areaPresent">
+        문제1: '200x40'부분의 수평정렬은 어떻게...?<br>
+        <s>문제2: hover1 : 왜 다 한번에 적용됨..?<br></s>
+        <s>문제3: hover2 : 부모를 선택하는 선택자는 없나?</s>
+        <div id="areaDiv1">margin
+            <div id="areaDiv2">border
+                <div id="areaDiv3">padding
+                    <div id="areaDiv4"><span>200x40</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section id="4">
+    </section>
+    <h4>포지셔닝</h4>
+    <h5>CSS 를 이용해서 여러 요소를 적절하게 배치하는 것을 뜻한다</h5>
+    <p>
+        float, clear
+    </p>
+    
+    <div class="float">01</div>
+    <div class="float">02</div>
+    <div class="float">03</div>
+    <div class="float">04</div>
+    <div class="float">05</div>
+    <hr>
+    <h5 id="float-clear">position</h5>
+    <p>
+        웹 문서 안에서 요소들을 자유롭게 배치하는 속성이다
+    </p>
+    
+    <div id="fixed1"></div>
+    <div id="fixed2"></div>
+    <div id="fixed3"></div>
+    <div id="fixed4"></div>
+    <div id="outer">
+        <div id="first">
+            <div id="second">
+                <div id="third"></div>
+            </div>
+        </div>
+    </div>
+    
+    <h5>visibility</h5>
+    <div class="visibility" id="visibility1"></div>
+    <div class="visibility" id="visibility2"></div>
+    <div class="visibility" id="visibility3"></div>
+
+
+    <h5>z-index</h5>
+    <div id="z-outer">
+        <div class="z-index" id="z-index1"></div>
+        <div class="z-index" id="z-index2"></div>
+        <div class="z-index" id="z-index3"></div>
+    </div>
+    <hr>
+    
+    <section id="5">
+    </section>
+    <h4>플렉스 박스</h4>
+    <h5>flex-direction</h5>
+    <div class="container" id="fd-1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+    <div class="container" id="fd-2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+    <div class="container" id="fd-3">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+    <div class="container" id="fd-4">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+    <hr>
+    <h4>flex-wrap</h4>
+    <h5>flex-wrap:nowrap</h5>
+    <div class="container" id="fw-1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box"><p>6</p></div>
+    </div>
+    <h5>flex-wrap:wrap</h5>
+    <div class="container" id="fw-2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box"><p>6</p></div>
+    </div>
+    <h5>flex-wrap:wrap-reverse</h5>
+    <div class="container" id="fw-3">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box"><p>6</p></div>
+    </div>
+    
+    <hr>
+    <h4>flex-flow</h4>
+    <!-- div.container1>(div.box1>p{$})*6 -->
+    <h5>flex-flow:row nowrap</h5>
+    <div class="container" id="ff-1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box"><p>6</p></div>
+    </div>
+    <h5>flex-flow:row-reverse wrap</h5>
+    <div class="container" id="ff-2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+        <div class="box"><p>5</p></div>
+        <div class="box"><p>6</p></div>
+    </div>
+    
+    <h4>justify-content</h4>
+    <!-- div.container1>(div.box1>p{$})*4 -->
+    <h5>justify-content:flex-start</h5>
+    <div class="container" id="jc-1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+    </div>
+    <h5>justify-content:flex-end</h5>
+    <div class="container" id="jc-2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+    </div>
+    <h5>justify-content:center </h5>
+    <div class="container" id="jc-3">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+    </div>
+    <h5>justify-content:space-between </h5>
+    <div class="container" id="jc-4">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+    </div>
+    <h5>justify-content:space-around </h5>
+    <div class="container" id="jc-5">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+    </div>
+    <h4>align-items</h4>
+    <h5>align-items : flex-start</h5>
+    <div class="container" id="ai-1">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+    </div>
+    <h5>align-items : flex-end</h5>
+    <div class="container" id="ai-2">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+    </div>
+    <h5>align-items : center</h5>
+    <div class="container" id="ai-3">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+    </div>
+    <h5>align-items : baseline</h5>
+    <div class="container" id="ai-4">
+        <div class="box" ><p>1</p></div>
+        <div class="box" style="font-size:14px;"><p>2</p></div>
+        <div class="box" style="font-size:2em;"><p>3</p></div>
+        <div class="box" style="font-size:14px;"><p>4</p></div>
+    </div>
+    <h5>align-items : stretch</h5>
+    <div class="container" id="ai-5">
+        <div class="box"><p>1</p></div>
+        <div class="box"><p>2</p></div>
+        <div class="box"><p>3</p></div>
+        <div class="box"><p>4</p></div>
+    </div>
+    <section id="6"></section>
+    <h4>CSS 그리드 레이아웃</h4>
+    <h5>그리드 레이아웃 속성</h5>
+    <!-- div#cg-1>div.item*6 -->
+    <div id="cg-1">
+        <div class="item">CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br>CSS 그리드 레이아웃<br>CSS 그리드 레이아웃</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <!-- <div class="item">9</div> -->
+        <div class="item">9<img src="../resources/image/flower1.PNG" alt=""></div>
+        <h2 class="item">10</h2>
+        <p class="item">11</p>
+        <span class="item">12</span>
+    </div>
+    
+    <div id="cg-2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+        <div class="item">14</div>
+        <div class="item">15</div>
+        <div class="item">16</div>
+    </div>
+    <h5>그리드 레이아웃 속성</h5>
+    <div id="cg-3">
+        <div id="gl-1">box1</div>
+        <div id="gl-2">box2</div>
+        <div id="gl-3">box3</div>
+        <div id="gl-4">box4</div>
+    </div>
+    <h5>템플릿 영역</h5>
+    <div id="cg-4">
+        <div id="ga-1">box1</div>
+        <div id="ga-2">box2</div>
+        <div id="ga-3">box3</div>
+        <div id="ga-4">box4</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

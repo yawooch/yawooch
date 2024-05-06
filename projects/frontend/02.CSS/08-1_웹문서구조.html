@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 문서 구조</title>
+    <style>
+        #outer{
+            width:300px;
+            height:300px;
+            border:20px solid red;
+            box-sizing: border-box;
+            padding:20px;
+            border-radius: 50%;
+        }
+        #inner {
+            width:100%;
+            height:100%;
+            border:20px solid red;
+            background-color: blue;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+        #inner>img{
+            width:100px;
+            height:100px;
+            margin: 41px;
+        }
+        .wrap{
+            border:5px solid blue;
+            width:80%;
+            height: 300px;
+            /* padding:5px; */
+            box-sizing: border-box;
+        }
+
+        #inner1, #inner2{
+            width     : 100%;
+            padding   : 5px;
+            border    : 5px solid red;
+            box-sizing: border-box;
+        }
+        #inner1{
+            height: 70%;
+        }
+        #inner2{
+            height: 30%;
+        }
+        
+        #inner3, #inner4{
+            height    : 100%;
+            padding   : 5px;
+            border    : 5px solid red;
+            box-sizing: border-box;
+            /* display:inline-block; 을 사용해도 되지만 영역간에 공백이 존재하여
+            정확히 옆에 붙지 않는다.*/
+            float:left;
+        }
+        #inner3{
+            width: 60%;
+        }
+        #inner4{
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <h2>웹 문서 구조</h2>
+    <h3>div 안에 또 다른 div 넣기</h3>
+    <div id="outer">
+        <div id="inner"><img src="../resources/image/흰별.png" ></div>
+    </div>
+
+    <h3>div 안에 다른 div 여러개 넣기</h3>
+    <h4>div를 상/하로 2등분 하기</h4>
+    <div class="wrap">
+        <div id="inner1"></div>
+        <div id="inner2"></div>
+    </div>
+    <h4>div를 좌/우로 2등분 하기</h4>
+    <div class="wrap">
+        <div id="inner3"></div>
+        <div id="inner4"></div>
+    </div>
+</body>
+</html>

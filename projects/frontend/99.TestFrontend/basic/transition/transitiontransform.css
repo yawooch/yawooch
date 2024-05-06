@@ -1,0 +1,37 @@
+#div1 {
+    width: 100px;
+    height: 100px;
+    background: #92B901;
+    transition: background 2s;
+  }
+  
+  #div1:hover {
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+    /* animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    transition: width 2s, height 2s, transform 2s;
+    background: #1EC7E6;
+  }
+  
+#div2 {
+    width: 100px;
+    height: 100px;
+    background: #92B901;
+    transition: width 2s, height 4s;
+  }
+  
+  #div2:hover {
+    width: 300px;
+    height: 300px;
+    /* animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    /* background: #1EC7E6; */
+  }
+  @keyframes example {
+    from {background-color: #92B901;}
+    to {background-color: #1EC7E6;}
+  }

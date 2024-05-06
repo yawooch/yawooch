@@ -1,0 +1,68 @@
+vercel이 개발한 오픈소스 자바스크립트 프레임워크
+리액트를 더 편리하게 이용할수 있는 API 기능 제공
+
+next 와 react 의 가장 큰 차이 Server Side Rendering 
+
+CSR
+SSR
+SSG
+ISR
+
+CSR Client Side Rendering
+    렌더링이 있을때 깜빡임을 없애자!
+
+https://www.flavienbonvin.com/data-building-strategy-for-nextjs-app/
+
+Hydration : 수분공급
+
+https://www.mongodb.com/atlas/database
+몽고DB 회원가입
+
+https://www.codeit.kr/tutorials/70/mongodb-atlas
+
+
+
+
+npx create-next-app@13 --ts
+
+
+
+
+
+
+
+
+
+
+
+====================================
+공지사항
+강의 자료!
+2023-12-12 pm 15:51:36
+깃허브
+
+https://github.com/lorraine98/notice-board-fullstack
+
+
+
+질문은 여기에!
+
+https://padlet.com/hyosung0425/padlet-6lamtj3o5hi1ql2
+
+
+
+환경 설정 (미리 해오면 좋아요)
+
+- nvm 설치
+
+- node v20.0.0 이상
+
+
+
+강의 자료
+
+https://www.figma.com/file/iayVKXZPZdAB9T6OLctxIm/%EC%9C%A0%EB%8D%B0%EB%AF%B8%EC%BD%94%EB%94%A9%ED%8E%98%EC%8A%A4%ED%8B%B0%EB%B2%8C?type=whiteboard&node-id=74%3A25&t=INVTKQyEJpfjVXDq-1
+
+npm install mongodb
+
+mongodb+srv://yawooch:dughdhk77!@cluster0.pjpmhdz.mongodb.net/?retryWrites=true&w=majority

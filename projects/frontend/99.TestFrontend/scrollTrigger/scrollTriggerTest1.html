@@ -1,0 +1,38 @@
+<!DOCTYPE html> <!-- 문서 유형 -->
+<html lang="ko"> <!-- HTML 문서의 시작 -->
+<head>
+<!-- 문서의 각종 정보와 문서 자체에 대한 내용 -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>greensock scroll trigger</title>
+
+    <link rel="stylesheet"  type="text/css" href="./scrollTriggerTest1.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script src="./scrollTriggerTest1.js"></script>
+
+</head>
+<body>
+<!-- 화면에 출력해서 보여주는 내용 -->
+<div class="container">
+    <div class="bg">
+        화면..
+    </div>
+    <div>
+        <div class="box box1 ani_lr"><span></span></div>
+    </div>
+    <div>
+        <div class="box box1 ani_lr" data-dur="0.5"><span>data-dur="0.5"</span></div>
+    </div>
+    <div>
+        <div class="box box1 ani_lr" data-dur="1.5" data-delay="0"><span>data-delay="1"</span></div>
+    </div>
+    <div>
+        <div class="box box1 ani_lr" data-dur="1.5" data-delay="0" data-tp="20%"><span>data-tp="80%"</span></div>
+    </div>
+</div>
+</body>
+</html> <!-- HTML 문서의 끝 -->

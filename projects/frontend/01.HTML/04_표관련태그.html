@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 관련 태그</title>
+    <style>
+        /* 
+        셀렉터 {
+            속성명: 값;
+            속성명: 값;
+            ...
+        } 
+        */
+        /*         
+        table{
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+        */
+        /* 
+        th{
+            border:solid 1px;
+            width: 3cm;
+        }
+        td{
+            border:solid 1px;
+            width: 2cm;
+            height: 2cm;
+        }
+        */
+    body {
+        font-family: 나눔고딕코딩;
+    }
+    thead{
+        background-color: #A7D397;
+        color:white;
+    }
+    /* 
+    기존 테이블에도 스타일이 적용된다
+    구조를 나누지 않으면 모두 본문이라 여겨진다.
+     */
+    tbody{
+        /* background-color: #F5EEC8; */
+        color:#525252;
+        /* font-size:22pt; */
+    }
+    tfoot{
+        background-color: #D0D4CA;
+        color:darkolivegreen;
+    }
+    </style>
+</head>
+<body>
+    <h2>표 관련 태그</h2>
+    <h3>기본적인 표 만들기</h3>
+    <figure>
+        <figcaption>Top 이 표는 웹 브라우저에 대한 내용을 정리한 표입니다.</figcaption>
+        <!-- Emmit 약어 : table[border="1"]>(tr>th*3)+tr*2>td*3 -->
+        <!-- border : 표의 테두리 두께 -->
+        <table border="1">
+            <caption>웹 브라우니의 종류</caption>
+            <tr>
+                <th>브라우니명</th>
+                <th>제조사</th>
+                <th>홈페이지</th>
+            </tr>
+            <tr>
+                <td>엣지</td>
+                <td>마이크로소프트</td>
+                <td>https://www.microsoft.com</td>
+            </tr>
+            <tr>
+                <td>크롱</td>
+                <td>글루글루~</td>
+                <td>https://www.google.com</td>
+            </tr>
+            <tr>
+                <td>사파리</td>
+                <td>서울대공원</td>
+                <td>https://grandpark.seoul.go.kr/main/ko.do</td>
+            </tr>
+            <caption>웹 브라우니의 종류</caption>
+        </table>
+        <figcaption>Bottom 이 표는 웹 브라우저에 대한 내용을 정리한 표입니다.</figcaption>
+        <figcaption>설명 내용을 여러줄로 표시할 수 있다.</figcaption>
+    </figure>
+    <hr>
+    <h2>셀합치기</h2>
+    <table border="1">
+        <tr>
+            <td><img src="./img/셀1-1.png" alt=""></td>
+            <td><img src="./img/셀1-2.png" alt=""></td>
+            <td><img src="./img/셀1-3.png" alt=""></td>
+        </tr>
+        <tr>
+            <td><img src="./img/셀2-1.png" alt=""></td>
+            <td><img src="./img/셀2-2.png" alt=""></td>
+            <td><img src="./img/셀2-3.png" alt=""></td>
+        </tr>
+        <tr>
+            <td><img src="./img/셀3-1.png" alt=""></td>
+            <td><img src="./img/셀3-2.png" alt=""></td>
+            <td><img src="./img/셀3-3.png" alt=""></td>
+        </tr>
+    </table>
+    <hr>
+    <h3>표의 행과 열 합치기</h3>
+    <h4>회원 정보</h4>
+    <table border="1">
+        <tr>
+            <td colspan="2" rowspan="2" width="130px" height="130">사진</td>
+            <!-- <td></td> -->
+            <td width="80px">이름</td>
+            <td width="200px"></td>
+        </tr>
+        <tr>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <td>연락처</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="65px" height="50">주소</td>
+            <td colspan="3"></td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <td height="120">자기소개</td>
+            <td colspan="3"></td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+    </table>
+    <hr>
+    <!-- 표 구조 태그 -->
+    <h3>표 구조 태그</h3>
+    <!-- table[border="1"]>(thead>tr>td*3)+(tbody>tr*4>td*3)+(tfoot>tr>td*3) -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>주소</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>문인수</td>
+                <td>22</td>
+                <td>경기도 파주</td>
+            </tr>
+            <tr>
+                <td>홍길동</td>
+                <td>24</td>
+                <td>율도국 율도시</td>
+            </tr>
+            <tr>
+                <td>고길동</td>
+                <td>34</td>
+                <td>서울특별시</td>
+            </tr>
+            <tr>
+                <td>이몽룡</td>
+                <td>24</td>
+                <td>서울특별시</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">총인원</th>
+                <td>3명</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+</body>
+</html>

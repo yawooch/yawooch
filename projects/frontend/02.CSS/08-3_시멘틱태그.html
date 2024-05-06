@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시멘틱 태그</title>
+    <style>
+        div, div * {
+            border:2px solid red;
+            box-sizing:border-box;
+        }
+        .wrap{
+            width:1000px;
+            height:800px;
+            margin:auto;
+        }
+        header{
+            height:20%;
+        }
+        main{
+            height:60%;
+        }
+        footer{
+            height:20%;
+        }
+        aside, article{
+            float:left;
+        }
+        aside{
+            width:15%;
+            height:100%;
+        }
+        article{
+            width:85%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <h2>시멘틱 태그</h2>
+    <div class="wrap">
+        <header>header</header>
+        <main>
+            <aside>aside</aside>
+            <article>article</article>
+        </main>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

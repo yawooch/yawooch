@@ -1,0 +1,48 @@
+할일목록 Drill Down
+개발언어관련
+    Java
+        SocketNetwork
+        FileSaveUtil
+            TextPrint 기능
+                - 테이블 생성 기능
+                - txt 저장기능
+    Vue.js
+    Reacts
+    CSS + HTML
+    
+
+프로젝트 관련
+    DevOps
+    DevOps의 방법론으로는 스크럼(Scrum), 칸반(Kanban), 애자일(Agile) 등이 있으며, 이러한 방법론은 개발과 운영의 협업과 효율성을 향상시키는 데 도움을 줍니다.
+        Waterfall
+        Agile
+        Scrum
+        Sprint
+        Kanban
+    ERD
+    피그마
+    
+    ReferenceSource Site
+
+공부관련
+    Network 보안 동영상
+    AWS - server, storage, DB 비용 확인
+    Design패턴
+        - 리팩토링
+        
+시간, 돈 계획
+
+
+
+평소에
+자기소개서작성
+네트워크 강의 동영상 공부 틈틈히
+AWS서버 방법
+UML/ERD 수업자료 필기
+조코딩 보면서 주제 탐색?
+
+
+취업지원서에 내용 추가해서 컨펌
+
+
+

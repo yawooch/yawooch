@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./07_DOM.js"></script>
+    <style>
+        .area{
+            border: 1px solid;
+            width:600px;
+            height:400px;
+            margin-bottom:5px;
+            font-size: 1.5em;
+            overflow-y : scroll;
+            line-height:0px;
+        }
+    </style>
+    <title>DOM(Document Object Model)</title>
+</head>
+<body>
+    <h2>DOM</h2>
+    <h3>1. 노드 생성</h3>
+    <h4>1) 텍스트 노드가 있는 요소 노드 생성</h4>
+    <div id="div1" class="area"></div>
+    <button id="btn1">실행 확인 </button>
+    
+    <h4>2) 텍스트 노드가 없는 요소 노드 생성</h4>
+
+    <div id="div2" class="area"></div>
+    <button id="btn2">실행 확인 </button>
+
+    
+    <h4 id="parentNodeDel">2. 노드삭제</h4>
+
+    <div id="div3" class="area"></div>
+    <button id="btn3">실행 확인 </button>
+
+</body>
+</html>

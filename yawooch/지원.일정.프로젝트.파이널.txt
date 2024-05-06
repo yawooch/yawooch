@@ -1,0 +1,458 @@
+파이널 프로젝트 조 편성
+1조
+김서하, 김정아, 송은정, 양우찬, 이영우
+
+2조
+백성연, 손연희, 이주연, 이준석, 진병만
+
+파이널 프로젝트 일정
+1. 주제 선정 (02/01 ~ 02/04)
+  - 간단하게 주제만 단톡방에 공유해 주세요.
+
+2. 기획 및 화면(UI), DB 설계 (02/05 ~ 02/18)
+  - 회의록 및 PPT(PDF) 메일로 보내주세요.
+  - 피드백 진행 후 메일로 회신드리겠습니다.
+
+3. 프로젝트 구현 (02/19 ~ 03/18)
+  - 위 설계 내용을 바탕으로 실제 프로젝트를 구현합니다.
+
+4. 프로젝트 발표 (03/19)
+  1) 프로젝트 발표
+    - 발표 순서 : 조장님들이 제비뽑기로 정하겠습니다.
+    - PPT(PDF) 발표 및 프로젝트 시연 (40 ~ 50분)
+       1) 발표 및 프로젝트 시연
+    - 질의 및 피드백 (10분)
+  2) 제출 파일
+    - 프로젝트 소스코드, 테이블 스크립트
+    - 최종 발표 PPT(PDF) 문서, 프로젝트 계획서
+    - 조장님이 정리해서 03/22(금)까지 메일로 제출해 주세요.
+
+
+
+
+========================================================================
+
+maven-archetype-quickstart
+
+========================================================================
+
+주제 선정 기간
+
+
+- 02/01(목) 회의 내용
+
+프로젝트 진행 방향 설명
+    - 공공 데이터 활용 예정 (각자 공공데이터 활용방안 찾기)
+
+    - 화면 구현 속도 향상을 위해 부트스트랩을 사용할 예정
+
+    - SNS 로그인 기능이나 지도 라이브러리를 하나 이상 사용할 예정
+
+    - 문서 담당을 지정하여 조장의 업무 부하 최소화
+
+회의 일정 조율
+
+    2/2(금) : 각자 아이디어 생각한거 가지고 회의
+        (활용할 API 및 참고사이트 1~2개 정도 가져오기)
+
+    2/3(토) : 가지고 있는 아이디어를 변형하여 주제로 채택할 수 있도록 카톡으로 회의
+
+    2/4(일) : 투표로 주제 선정
+
+
+주제 선정 후 설계 회의 진행
+
+
+2/3(토) - 아이디어 제안
+
+아이디어 제안
+
+이영우
+    - 공통 API : 구글, 카카오, 네이버 ... 로그인 API
+    - 쇼핑몰 사이트
+        => 참고 사이트 : https://alvinclo.co.kr/ , https://spao.com/
+
+    - 여행 및 맛집 추천 사이트
+        => 사용 API : Google Places API, 위치 정보 API
+        => 참고 사이트 : https://korean.visitkorea.or.kr/main/main.do
+    - 미세먼지 관련 사이트
+        => 사용 API : 한국환경공단_에어코리아_대기오염정보, 위치 정보 API(Geolocation API)
+        => 참고 사이트 : https://www.airkorea.or.kr/web/
+
+
+송은정
+    - 날씨별 옷차림 추천 웹사이트
+        : 시간별, 요일별 날씨 정보 + 그에 맞는 옷차림 추천
+        - 참고 사이트 : https://devfolio.kr/project/136
+    - 최적의 모임장소 정해주는 웹사이트
+        - 참고 사이트 : https://devfolio.kr/project/147
+
+양우찬 - 아이디어 종합
+    - 여행장려 사이트
+        - 자신이 여행 갔던 곳/갈만한 곳을 간단한 텍스트나 사진을 통해 지도어플에 로그를 남기는 사이트.
+        - 로그가 많을수록 자신의 여행 캐릭터를 성장시킨다.
+        - 최종체로 진화한 캐릭터는 다시 1번 단계로 돌아가며 리워드를 전달 받는다.
+
+김정아
+    -  반려동물 동반가능 여행지 안내 웹 사이트(예약사이트 아님!!)
+          [참고 API]
+          한국관광공사 관광정보 서비스(반려동물 동반 여행 정보 조회 기능 별도로 있음!!)
+          https://www.data.go.kr/data/15101578/openapi.do#tab_layer_detail_function
+          [참고 자료]
+          https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=a074bcc0-cee0-4b22-a9f5-372bf19f2309&con_type=11700
+
+    - 서울 맛집 예약 서비스 웹 사이트 (like 캐치테이블)
+          [참고 자료]
+          (타 프로젝트) https://velog.io/@kmh9250/Project-%EC%8B%9D%EB%8B%B9-%EC%98%88%EC%95%BD-%EC%84%9C%EB%B9%84%EC%8A%A4
+
+          [참고 API]
+          서울시 스마트 서울맵(주소 -> 좌표 변환 가
+
+
+김서하
+    - 헬기택시 예약 사이트 (사실 아이디어가 미래지향적이게 보이고싶어서 헬기택시라는것을 차용한것)
+        - api : 날씨, 실시간 교통량, 지도
+        - 참고: 카카오택시 (앱이긴하지만 앱을 참고해서 웹사이트로 재구성해도될 것같단생각)
+
+
+2/4(일) - 주제 선정 투표 진행
+
+투표로 주제 선정
+
+반려동물 동반가능 여행지 안내 사이트
+
+
+========================================================================
+추가 구현 희망 컨텐츠
+
++ 날씨 관련 정보 추가
++ 반려동물용품판매
++ 코스별여행 + 테마별여행 + 대형견추천여행 = '추천여행코스'
++ 교통정보
++ 챗봇
++ 찜 기능
++ 댓글/답변 기능
+
+
+========================================================================
+
+
+2/5 회의 - 화면 설계 및 DB 설계
+
+
+
+문서담당 지정
+    - 회의록
+    - 발표자료
+    - ERD( + DB)
+    - 패키지
+    - 피그마
+
+빠른 화면 구현을 위해 부트스트랩 사용 결정
+
+부트스트랩 테마 템플릿 몇가지 선정하여 투표로 결정
+
+구현 파트의 설정 : 백엔드, 프론트엔드로 나누지 않고 자신이 맡은 페이지를 선택하여 기능 구현할 수 있도록 결정
+
+이메일 주소 받기
+
+2/6 투표로 부트스트랩 템플릿 선택
+
+========================================================================
+
+부트스트랩 테마 목록
+
+https://startbootstrap.com/previews/landing-page
+https://startbootstrap.com/previews/stylish-portfolio
+https://startbootstrap.com/previews/modern-business
+https://startbootstrap.com/previews/business-casual
+https://startbootstrap.com/previews/new-age
+https://bootswatch.com/
+
+https://bootstrapmade.com/demo/Append/
+https://bootstrapmade.com/demo/Impact/
+
+https://technext.github.io/zay-shop/
+https://technext.github.io/tournest/
+https://technext.github.io/rettro/index.html
+https://themewagon.github.io/feane/
+https://themewagon.github.io/elearning/
+https://themewagon.github.io/titan/index_mp_fullscreen_video_background.html
+
+--------------------------------------------------------------------------
+
+부트스트랩 테마 후보
+
+영우쓰
+https://themewagon.github.io/fruitables/
+간단하고 수정이 편할것 같은
+https://startbootstrap.com/previews/stylish-portfolio
+그냥 버튼색이나 전체적인 색감만 따오기 좋은
+https://bootswatch.com/
+슬라이드를 사용하기 좋은
+https://technext.github.io/zay-shop/
+여행위주로 검색하려고할때 좋을것같은
+https://technext.github.io/tournest/
+슬라이드있고, 카드형 사진을 사용하기 좋은
+https://themewagon.github.io/feane/
+갬성 사이트
+https://themewagon.github.io/titan/index_mp_fullscreen_video_background.html
+
+
+2/6 투표로 부트스트랩 템플릿 선택
+
+========================================================================
+
+양우찬 : dncks0421@gmail.com
+김정아 : jeongah0611@gmail.com
+이영우 : ywlee0528@gmail.com
+송은정 : inspiteofthatt@gmail.com
+김서하 : kkoma627@naver.com
+
+
+링크 공지
+피그잼    : https://www.figma.com/file/eWAJsTeUYtDY5WluWFgDlO/FinalProject?type=whiteboard&node-id=0-1&t=D4L66AfWWXuKloOb-0
+피그마    : https://www.figma.com/file/8XlhlOj38RIHEAPmsFagTO/KH-Final-Project?type=design&node-id=0-1&mode=design&t=xgWWm9Eti6zjhOfN-0
+github    : https://github.com/yawooch/KHFinalProject.git
+Pitch     :
+
+https://inpa.tistory.com/entry/BootStrap5-%F0%9F%93%9A-%EB%B6%80%ED%8A%B8%EC%8A%A4%ED%8A%B8%EB%9E%A9-%ED%85%9C%ED%94%8C%EB%A6%BF-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%95%EB%A6%AC
+
+
+
+============================================
+
+펫플로우   (PetFlow)
+모험꼬리   (AdventureTails)
+동반여행   (CompanionVoyages)
+페티웨이   (PettyWay)
+러브펫투어 (LovePetTours)
+포포트립   (PawPawTrips)
+냥냥길잡이 (NyangNyangGilJabi)
+멍멍대탐험 (MungMungDaeTamheom)
+집사루트   (JibsaRoute)
+꼬리피크닉 (KkoriPicnic)
+펫펫나비   (PetPetNavi)
+
+
+펫플로우   (PetFlow)
+포포트립   (PawPawTrips)
+견과You    (Dog And You)
+댕겨오개   (WithDog)위독
+
+============================================
+
+
+2/7 회의 내용
+
+프로젝트 링크 공유
+
+
+논의 내용 설명
+    - 메뉴 도출
+    - 메뉴 분담해서 화면 레이아웃 도출
+    - 팀 이름 제안/의견 수렴
+    - 폰트 설정
+
+
+서하님 의견
+
+https://mypettrip.com/
+
+tour  시간이 되면 반려동물 여행갈때
+애견용품 판매 메뉴도 어떨지...
+댕댕여지도 댕댕여행지 > 동물병원부분
+네이버예약처럼 병원예약까지
+가능하게 한다던지.. 이것도그냥 아이디어만..
+
+
+-댕댕여행지
+전체
+관광지
+숙박     HOTELS
+식음료   RESTAURANTS
+체험     ACTIVITIES
+동물병원
+나만의 여행 코스 짜기
+
+-추천여행
+추천여행코스
+나만의여행코스
+
+-커뮤니티
+공지사항&이벤트
+댕댕이자랑
+댕댕여지도 수정요청
+댕댕여지도 등록
+
+
++반려동물용품판매
+추천여행
+코스별여행 + 테마별여행 + 대형견추천여행 = '추천여행코스'
+
+
+============================================
+
+2/8 회의 내용
+
+- 화면 설계하여 설날연휴 후에 회의하여 화면 통일성 설정
+
+- 메뉴이름 정하기
+
+- 화면 기능 간략히 정하기
+
+- 로고는 도움 받아 생성하기
+
+
+- 기본 폰트 설정
+    Noto Sans KR
+    Spoqa Han Sans Neo
+
+
+============================================
+
+링크 공지(ERD 추가)
+링크 공지
+피그잼    : https://www.figma.com/file/eWAJsTeUYtDY5WluWFgDlO/FinalProject?type=whiteboard&node-id=0-1&t=D4L66AfWWXuKloOb-0
+피그마    : https://www.figma.com/file/8XlhlOj38RIHEAPmsFagTO/KH-Final-Project?type=design&node-id=0-1&mode=design&t=xgWWm9Eti6zjhOfN-0
+github    : https://github.com/yawooch/KHFinalProject.git
+ERD Cloud : https://www.erdcloud.com/team/C5vhfbrNfxQaWAZhq
+
+============================================
+2/13(화) 회의 내용
+
+양우찬 : 회의록 - 2/16(금) 까지 작성후 git에 push
+김정아 : ERD / 화면정의서 완성 후 - 2/18(일) 17시까지 발표자료 작성후  git에 push
+이영우 : ERD - 2/15(목)까지 작성후 2/17(토) 15시까지 git에 push
+송은정 : 2/15(목)에 작성한 URL / 패키지 전달 받아 관리
+김서하 : 화면(테마) 정의 되는대로 색상들어가는 모든 컴포넌트 정의해서 2/16(금) 까지 화면 정리
+
+다음 회의 2/14(수) 18시 ~ 20시
+
+
+
+============================================
+
+포포트립 화면
+
+포포맵
+포포트립
+전체
+관광지
+관광지 상세
+숙박지
+숙박지 상세
+소계 3개
+
+커뮤니티
+입력
+수정
+삭제
+목록
+상세
+소계 4개
+
+소개
+소계 1개
+
+관리자 화면
+공지사항 입력
+회원관리 목록
+회원관리 수정
+관광지 관리(update)
+숙박 업소 관리(update)
+게시판 답변(기능)
+소계 4개
+
+마이페이지
+회원정보
+댕댕이자랑
+소계 2개
+
+공통
+메인화면
+로그인 / 회원가입 (화면 5개)
+에러페이지
+소계 7개
+
+총 21개
+update date
+2024-02-13
+
+
+메뉴 네이밍 기본
+common    : 공통
+map       : 포포맵
+trip      : 포포여행
+community : 커뮤니티
+about     : 소개
+admin     : 관리자
+member    : 회원/마이페이지
+
+적용 범위
+controller
+service
+mapper.java
+mapper.xml
+url
+/WEB-INF/views/
+/webapp/resources/js/
+/webapp/resources/css/
+/webapp/resources/img/
+
+
+유의사항 - resources가 다른경로에 두개인점
+src\main\resources
+src\main\webapp\resources
+
+============================================
+
+
+2/14 회의 내용
+
+조원 변경 사항
+김서하 - 팀 탈퇴
+양우찬 - 조장 사퇴
+
+1. 메인화면 디자인 완료
+2. 글꼴 크기  지정 완료
+3. 사이드바 디자인 완료
+4. 관리자 대시보드 구현 결정
+5. 송은정 - 마이페이지 회원정보(회원수정, 회원탈퇴)
+          , 게시글 관리
+6. DB 제외 컬럼 : 성별
+7. 각자 피그마 디자인한 영역 frontend 구현(애니메이션 기능 없음)
+8. 메인페이지
+    양우찬 - 틀, hover (반응형위주)
+    김정아 - css(상세조정)
+
+화면 설계 약속
+    - 쉐도우 없음
+    - 애니메이션 효과 없음
+
+
+
+============================================
+
+2/20 오후 자습시간 회의
+
+이영우
+    - ERD 테이블 간략 설명
+    - 미디어태그 설명
+
+ 
+============================================
+       
+대시보드 접속 로그 입력
+실시간은 ....보류
+
+
+현재 접속자 수 알 수 있는 방법
+세션 카운트 ; 
+
+============================================
+
+db.driver=oracle.jdbc.driver.OracleDriver
+접속 주소      : 112.156.11.186:8100
+사용자계정     : C##MEAL
+사용자비밀번호 : MEAL

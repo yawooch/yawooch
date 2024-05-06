@@ -1,0 +1,295 @@
+<mxfile host="app.diagrams.net" modified="2023-12-11T11:18:36.322Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="nsO2zLeRUtkJKrUf2Tz5" version="22.1.7" type="google">
+  <diagram id="eiLCsx9a382ffd4mmKyj" name="페이지-1">
+    <mxGraphModel dx="1434" dy="768" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="79WoWXTD6kcsODTm-If7-14" value="" style="group;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" connectable="0" vertex="1">
+          <mxGeometry x="39" y="51" width="750" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry width="750" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-2" value="전공자 CS" style="rounded=1;whiteSpace=wrap;html=1;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="315" y="14" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="79WoWXTD6kcsODTm-If7-14" source="79WoWXTD6kcsODTm-If7-3" target="79WoWXTD6kcsODTm-If7-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-3" value="&lt;b&gt;네트워크&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="315" y="54" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="79WoWXTD6kcsODTm-If7-14" source="79WoWXTD6kcsODTm-If7-4" target="79WoWXTD6kcsODTm-If7-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="79WoWXTD6kcsODTm-If7-14" source="79WoWXTD6kcsODTm-If7-4" target="79WoWXTD6kcsODTm-If7-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-4" value="&lt;b&gt;자료구조&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="20" y="54" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="79WoWXTD6kcsODTm-If7-14" source="79WoWXTD6kcsODTm-If7-5" target="79WoWXTD6kcsODTm-If7-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-5" value="&lt;b&gt;데이터베이스&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="460" y="54" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="79WoWXTD6kcsODTm-If7-14" source="79WoWXTD6kcsODTm-If7-6" target="79WoWXTD6kcsODTm-If7-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-6" value="&lt;b&gt;운영체제&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="610" y="54" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="79WoWXTD6kcsODTm-If7-14" source="79WoWXTD6kcsODTm-If7-7" target="79WoWXTD6kcsODTm-If7-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-7" value="&lt;b&gt;알고리즘&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="170" y="54" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="스택, 큐,&lt;br&gt;트리, 그래프,&lt;br&gt;딕셔너리" link="https://inf.run/xphn" id="79WoWXTD6kcsODTm-If7-9">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+            <mxGeometry x="20" y="144" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="79WoWXTD6kcsODTm-If7-10" value="코딩테스트 대비" style="rounded=0;whiteSpace=wrap;html=1;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="170" y="144" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-11" value="HTTP, 쿠키, 헤더,&lt;br&gt;바디, 토큰, 요청, 응답&lt;br&gt;OSI 7계층" style="rounded=0;whiteSpace=wrap;html=1;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="315" y="144" width="120" height="60" as="geometry" />
+        </mxCell>
+        <UserObject label="CRUD, JOIN, PK, FK,인덱스, 트랜잭션, EXPLAIN" link="https://inf.run/QypL" linkTarget="_blank" id="79WoWXTD6kcsODTm-If7-12">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CCE5FF;strokeColor=#0066CC;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+            <mxGeometry x="460" y="144" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="79WoWXTD6kcsODTm-If7-13" value="스레드, 프로세스,&lt;br&gt;리눅스" style="rounded=0;whiteSpace=wrap;html=1;" parent="79WoWXTD6kcsODTm-If7-14" vertex="1">
+          <mxGeometry x="610" y="144" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="79WoWXTD6kcsODTm-If7-20" target="79WoWXTD6kcsODTm-If7-79" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="417" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-94" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="79WoWXTD6kcsODTm-If7-20" target="79WoWXTD6kcsODTm-If7-65" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="99" y="381" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PuvxPtNd8qpjCFrjXk5U-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-20" target="79WoWXTD6kcsODTm-If7-66" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-20" value="&lt;b&gt;HTML, CSS, JS&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="357" y="333" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-22" target="79WoWXTD6kcsODTm-If7-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9lzjzu3V9SzgI9hWh6tF-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-22" target="9lzjzu3V9SzgI9hWh6tF-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-22" value="&lt;b&gt;Java&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="357" y="486" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-24" target="79WoWXTD6kcsODTm-If7-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PuvxPtNd8qpjCFrjXk5U-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-24" target="PuvxPtNd8qpjCFrjXk5U-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PuvxPtNd8qpjCFrjXk5U-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-24" target="PuvxPtNd8qpjCFrjXk5U-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-24" value="&lt;b&gt;스프링부트&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="357" y="655" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="627" y="511" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s629v_LPfe5KZuPKy_8V-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="657" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.13;entryY=-0.04;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="79WoWXTD6kcsODTm-If7-44" target="79WoWXTD6kcsODTm-If7-101" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="417" y="965" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-44" target="KnzegnE8oy5bkBTZcOQS-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PuvxPtNd8qpjCFrjXk5U-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-44" target="79WoWXTD6kcsODTm-If7-104" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-44" value="&lt;b&gt;JPA/MyBatis&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="357" y="809" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-54" value="백엔드(자바)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="357" y="285" width="120" height="30" as="geometry" />
+        </mxCell>
+        <UserObject label="MDN 웹 강좌" link="https://developer.mozilla.org/ko/docs/Web" linkTarget="_blank" id="79WoWXTD6kcsODTm-If7-65">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+            <mxGeometry x="39" y="301" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="모던 자바스크립트&lt;br&gt;튜토리얼" link="https://ko.javascript.info/" linkTarget="_blank" id="79WoWXTD6kcsODTm-If7-66">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+            <mxGeometry x="169" y="301" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Git 강좌(무료)" link="https://www.youtube.com/watch?v=cEg9hiZax8U&amp;list=PLcqDmjxt30RvjqpIBi4mtkK5LkzYtXluF" linkTarget="_blank" id="79WoWXTD6kcsODTm-If7-67">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+            <mxGeometry x="50" y="967" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="79WoWXTD6kcsODTm-If7-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;" parent="1" source="79WoWXTD6kcsODTm-If7-91" target="79WoWXTD6kcsODTm-If7-67" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-68" value="&lt;b&gt;Git/GitHub&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="50" y="809" width="120" height="50" as="geometry" />
+        </mxCell>
+        <UserObject label="제로초 슬랙&lt;br&gt;커뮤니티&lt;br&gt;(타임어택, 질의응답, 고민상담)" link="https://zerocho.com/slack" linkTarget="_blank" id="79WoWXTD6kcsODTm-If7-73">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+            <mxGeometry x="592" y="1290" width="197" height="138" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="79WoWXTD6kcsODTm-If7-74" value="필수" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="39" y="10" width="69" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-75" value="관심/취직" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="130" y="10" width="69" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-76" value="강의 링크" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="220" y="10" width="69" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-81" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="79WoWXTD6kcsODTm-If7-79" target="79WoWXTD6kcsODTm-If7-22" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-91" value="협업 및 소스 관리를&lt;br&gt;위한 Git" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="32" y="886" width="156" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-92" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" parent="1" source="79WoWXTD6kcsODTm-If7-68" target="79WoWXTD6kcsODTm-If7-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="859" as="sourcePoint" />
+            <mxPoint x="110" y="967" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-79" value="백엔드도 웹 백엔드라면 간단한 HTML, CSS, JS는 알아야..." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="197" y="400" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-82" value="애증의 Java... 마음속으로는 Kotlin을 열렬히 추천하나&lt;br&gt;Java가 너무 건재하다. 하지만 코틀린+스프링은 갓갓" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="197" y="560" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" target="KnzegnE8oy5bkBTZcOQS-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="930" as="sourcePoint" />
+            <mxPoint x="580" y="1011" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="417" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-107" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="79WoWXTD6kcsODTm-If7-104" target="79WoWXTD6kcsODTm-If7-106" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-104" value="&lt;b&gt;QueryDSL&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="215" y="809" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-106" value="동적 쿼리" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="210" y="886" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="KnzegnE8oy5bkBTZcOQS-6" target="KnzegnE8oy5bkBTZcOQS-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="417" y="1040" />
+              <mxPoint x="417" y="1040" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="KnzegnE8oy5bkBTZcOQS-6" target="KnzegnE8oy5bkBTZcOQS-20" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-6" value="&lt;b&gt;AWS&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="357" y="967" width="120" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.127;exitY=1.06;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="KnzegnE8oy5bkBTZcOQS-7" target="KnzegnE8oy5bkBTZcOQS-10" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-7" value="클라우드는 대표적으로 AWS 하나를 배우면 된다. 회사서 NCP, GCP나 Azure를 쓰더라도 AWS랑 기능이 거의 비슷하다." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1040" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="KnzegnE8oy5bkBTZcOQS-10" target="KnzegnE8oy5bkBTZcOQS-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="417" y="1183" />
+              <mxPoint x="417" y="1183" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-10" value="&lt;b&gt;CI/CD&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="357" y="1110" width="120" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-11" value="&amp;nbsp;배포 자동화를 위해 Github Action과 AWS Code Deploy를 학습하는 걸 추천한다" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="1183" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="KnzegnE8oy5bkBTZcOQS-13" target="KnzegnE8oy5bkBTZcOQS-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-16" value="&lt;b&gt;MongoDB&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="657" y="809" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="KnzegnE8oy5bkBTZcOQS-20" target="KnzegnE8oy5bkBTZcOQS-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-20" value="&lt;b&gt;서버리스(S3, 람다, SQS, SNS)&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="520" y="967" width="120" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-22" value="&lt;b&gt;도커&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="680" y="967" width="120" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-24" value="도커나 마이크로서비스는 인프라쪽에&lt;br&gt;더 가까워서 제외&lt;br&gt;&lt;br&gt;여기는 순전히 코딩하는&lt;br&gt;백엔드 개발자를 위한 로드맵" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="30" y="1053" width="301" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="159" y="1095" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="KnzegnE8oy5bkBTZcOQS-13" value="&lt;b&gt;&amp;nbsp;Redis&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="507" y="809" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-101" value="SQL은 꼭 배우자, MySQL, MariaDB, PostgreSQL 등 상관없다&lt;br&gt;JPA을 배우면 된다. QueryDSL도 추천&lt;br&gt;Redis는 필수 학습, 몽고디비는 NoSQL 관심 있으면 배우기" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="886" width="440" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="79WoWXTD6kcsODTm-If7-96" value="스프링은 설정이 너무 복잡하니 스프링부트부터 배우자.&lt;br&gt;스프링 시큐리티가 상당히 복잡했다.&lt;br&gt;JSP보다는 타임리프!" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="207" y="730" width="440" height="50" as="geometry" />
+        </mxCell>
+        <UserObject label="강좌&lt;br&gt;OSI7계층,TCP/IP&lt;br&gt;DNS,HTTP(S),웹소켓" link="https://inf.run/7DmV" linkTarget="_blank" id="8MVHmHX5r2Kor7Jsg5Y_-1">
+          <mxCell style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+            <mxGeometry x="354" y="195" width="120" height="60" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="8MVHmHX5r2Kor7Jsg5Y_-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="60" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PuvxPtNd8qpjCFrjXk5U-3" value="&lt;b&gt;스프링 시큐리티&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="507" y="655" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PuvxPtNd8qpjCFrjXk5U-6" value="&lt;b&gt;JSP/Thymeleaf&lt;br&gt;&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="207" y="655" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="9lzjzu3V9SzgI9hWh6tF-1" value="&lt;b&gt;Kotlin&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="507" y="486" width="120" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

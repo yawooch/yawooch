@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 1) CDN(Content Delivery Network)을 통한 다운로드 -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <!-- 2) jQuery 라이브러리를 다운로드 -->
+    <script src="./js/jquery-3.7.1.js"></script>
+    <!-- <script src="./js/jquery-3.7.1.min.js"></script> -->
+    <title>jQuery 개요</title>
+
+</head>
+<body>
+    <h2>jQuery 개요</h2>
+    <h3>1. jQuery 적용</h3>
+    <h4>1) CDN(Content Delivery Network)을 통한 다운로드</h4>
+    <h4>2) jQuery 라이브러리를 다운로드</h4>
+    <h3>2. jQuery 시작</h3>
+
+    <p>
+        제이쿼리는 ready 메소드를 통해 웹 문서의 모든 요소가 로드 된 후에 실행되어야 한다
+    </p>
+    <script>
+        // $('p').css('color','red');
+        // 자바스크립트 방식
+        window.onload = function() {
+            console.log('문서 읽어들이기 완료');
+        }
+        // jQuery방식
+        //일반적으로 가장 많이 사용한다.
+        $(document).ready(() => {
+            console.log('문서 읽어들이기 완료1');
+        });
+        //$ 대신에 jQuery 식별자를 사용할 수 있다.
+        jQuery(document).ready(() => {
+            console.log('문서 읽어들이기 완료2');
+        });
+        //축약형
+        $(() => {
+            console.log('문서 읽어들이기 완료3');
+
+            //h3 태그들을 선택해서 글자를 녹색으로 변경
+            //1) 자바 스크립트
+            let tags = document.getElementsByTagName('h3');
+            for(const h3 of tags){
+                h3.style.color = 'green';
+            }
+
+            //2) jQeury 
+            $('h4').css('color','yellowgreen');
+
+
+        });
+    </script>
+    
+    
+</body>
+</html>

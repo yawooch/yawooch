@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivLayoutFloat</title>
+    <style>
+    html, body{
+        width:100%;
+        height:100%;
+    }
+    body{
+        margin:0;
+    }
+    div{
+        width:100%;
+        height:100%;
+    }
+    div.container>div{
+        float:left;
+    }
+    #div1{
+        width:100%;
+        height:8%;
+        background-color: #053B50;
+    }
+    #div2{
+        width:20%;
+        height:84%;
+        background-color: #176B87;
+    }
+    #div3{
+        width:80%;
+        height:84%;
+        background-color: #EEEEEE;
+    }
+    #div4{
+        width:100%;
+        height:8%;
+        background-color: #64CCC5;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+        <div id="div4"></div>
+    </div>
+</body>
+</html>

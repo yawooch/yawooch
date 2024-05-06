@@ -1,0 +1,107 @@
+*{
+    color:green;
+}
+.trans{
+    width:250px;
+    height:200px;
+    margin-left:40px;
+}
+#trans2-1:hover{
+    /* transform:translate(50px); */
+    transform: translateX(-50px);
+}
+#trans2-2:hover{
+    transform: translateY(-50px);
+}
+.myStyle{
+    width:650px;
+}
+#myStyle1-1:hover{
+    transform: perspective(300px) translateZ(50px);
+}
+#myStyle1-2:hover{
+    transform: perspective(300px) translateZ(50px);
+}
+#myStyle1-3:hover{
+    transform: perspective(300px) translateZ(50px);
+}
+#myStyle1-4:hover{
+    transform: perspective(300px) translateZ(50px);
+}
+#trans2-3:hover{
+    transform: translate(50px, 50px);
+}
+#trans2-4{
+    width:300px;
+    height:250px;
+    transform:scaleX(-1);
+}
+#trans2-4:hover{
+    transform:scaleX(2);
+}
+#trans2-5{
+    width:300px;
+    height:250px;
+    transform:scaleY(-1);
+}
+#trans2-5:hover{
+    transform:scaleY(2);
+}
+#trans2-6{
+    margin:50px;
+    width:300px;
+    height:250px;
+}
+#trans2-6:hover{
+    transform:scale(2, 2);
+}
+#trans2-7:hover{
+    /* transform:rotate(45deg); */
+    transform:rotate(1rad);
+}
+/* skew */
+#trans2-8:hover{
+    transform:skewX(30deg);
+}
+#trans2-9:hover{
+    transform:skewY(30deg);
+}
+#trans2-10:hover{
+    transform:skew(20deg, 20deg);
+}
+#trans3-1:hover{
+    transform:perspective(300px) translateZ(200px);
+}
+#trans3-2:hover{
+    transform:perspective(200px) translate3d(60px, 100px, 120px);
+}
+#trans3-3:hover{
+    transform:perspective(300px) rotateX(30deg);
+}
+#trans3-4:hover{
+    transform:perspective(300px) rotateY(30deg);
+}
+#trans3-5:hover{
+    transform:rotateZ(30deg);
+}
+#trans3-6{
+    font-size: 50pt;
+    font-family: 'East Sea Dokdo';
+}
+#trans3-6:hover{
+    transform:perspective(300px) rotate3d(10, 10, 10, 45deg);
+}
+/* transform-origin */
+#to:hover{
+    /* transform-origin:right top; */
+    /* transform-origin:left bottom; */
+    /* transform-origin:right bottom; */
+    transform-origin:50px 50px;
+    transform:rotate(-20deg);
+}
+/* backface-visibility */
+#bv:hover{
+    /* backface-visibility:visible; */
+    backface-visibility:hidden;
+    transform:rotateX(180deg);
+}

@@ -1,0 +1,638 @@
+/* 
+    처리할 문제점: 
+    2. 테이블 안쪽 간격 늘리기
+    4. 설명글을 더보기 버튼으로 늘이고 줄이기 -> 기능인가
+*/
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'NanumBarunGothic', sans-serif;
+    line-height: 22px;
+}
+
+
+main section {
+    width: 100%;
+}
+
+.mv-movie-detail {
+    position: relative;
+    background-color: #0F0F0F;
+    min-width: 1100px;
+    height: 520px;
+}
+
+.mv-div-black * {
+    color: white;
+}
+
+.mv-div-black {
+    margin: auto;
+    width: 1100px;
+    height: 100%;
+    background-blend-mode: multiply;
+    background: url('https://img.megabox.co.kr/SharedImg/2023/10/25/UEatauRh0hZO3UZSo07PnHebGTskbXCY_1100.jpg') 
+                no-repeat top/cover, rgba(0, 0, 0, 0.7);
+}
+
+.mv-div1 {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+}
+
+
+.mv-kr-name {
+    font-size: 45px;
+    margin: 0px;
+    margin-top: 80px;
+}
+
+.mv-eng-name {
+    font-size: 20px;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.mv-btn-util {
+    padding-top: 10px;
+    display: flex;
+}
+
+.mv-btn-black {
+    min-width: 100px;
+    background-color: black;
+    border-radius: 5px;
+    border: 1px solid gray;
+    display: flex;
+    height: 34px;
+    padding: 0 10px;
+}
+
+.mv-btn-black > span {
+    margin: auto;
+    font-size: 15px;
+}
+.mv-span-likescore {
+    line-height: 33px;
+}
+
+.mv-btn-util :last-child {
+    margin-left: 10px;
+}
+
+.mv-btn-black:hover {
+    background-color: white;
+}
+
+.mv-btn-black:hover span {
+    color: black;
+}
+
+.mv-icon {
+    margin-top: 5px;
+}
+
+
+main table {
+    position: absolute;
+    bottom: 50px;
+}
+
+main th {
+    font-weight: lighter;
+    text-align: left;
+}
+
+
+
+main thead {
+    height: 40px;
+}
+
+main tr>:not(:first-child) {
+    padding-left: 20px;
+}
+
+
+main em {
+    font-style: normal;
+    font-size: 30px;
+    padding: 0;
+}
+
+.mv-div2 {
+    float: right;
+    width: 30%;
+    height: 100%;
+}
+
+.mv-poster {
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    width: 260px;
+    height: 374px;
+}
+
+.mv-poster>img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.mv-movie-age {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.mv-download-poster {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+.mv-ticketing {
+    background-color: darkred;
+    width: 260px;
+    height: 46px;
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-style: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    
+}
+
+/* 주요 정보 섹션 */
+
+/* 네비게이션 */
+.mv-com-sec1 {
+    width: 1100px;
+    margin: auto;
+}
+
+main nav {
+    margin-top: 20px;
+    position: relative;
+}
+
+main nav>ul {
+    list-style: none;
+    width: 1100px;
+    margin: auto;
+    padding-left: 0;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main nav>ul li {
+    width: 100%;
+    border: 1px solid black;
+    height: 100%;
+}
+
+.mv-first {
+    border-top: 1px solid #EBEBEB;
+    border-left: 1px solid #EBEBEB;
+    border-right: none;
+    border-bottom: 1px solid #AF2D2D;
+}
+
+.mv-second {
+    
+    border-top: 1px solid #AF2D2D;
+    border-left: 1px solid #AF2D2D;
+    border-right: 1px solid #AF2D2D;
+    border-bottom: none;    
+}
+
+.mv-last {
+    border-top: 1px solid #EBEBEB;
+    border-left: none;
+    border-right: 1px solid #EBEBEB;
+    border-bottom: 1px solid #AF2D2D;
+}
+
+main nav>ul li:nth-child(2) {
+    margin: 0 -1px;
+}
+
+main a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+    text-align: center;
+    line-height: 2.5em;
+}
+/* 네비게이션 끝 */
+
+
+/* 섹션 - 코멘트 */
+.mv-com-head {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mv-com-head>h2 {
+    display: inline-block;
+}
+
+/* 본 영화 등록 버튼 */
+.mv-com-addMovie {
+    min-width: 100px;
+    border-radius: 5px;
+    border: 1px solid #AF2D2D;
+    background-color: #ffffff;
+    height: 34px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.mv-com-addMovie:hover {
+    background-color: #f8f6f6;
+}
+
+.mv-com-selection {
+    margin-top: 20px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mv-com-selection>div>button{
+    margin-left: 10px;
+    background-color: #ffffff;
+    border: none;
+}
+
+.mv-com-selection>div>.on {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.mv-com-selection>div>:not(.on) {
+    font-weight: normal;
+}
+
+
+/* 실관람평 시스템 */
+.mv-com-main {
+    margin-top: 10px;
+}
+
+.mv-com-main-ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+
+}
+
+.mv-com-main-li {
+    display: flex;
+    height: 84px;
+    flex-wrap: wrap;
+}
+
+.mv-com-main-li-icon {
+    width: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mv-com-main-li-icon>img{
+    width: 50px;
+    height: 50px;
+
+}
+.mv-com-main-li-icon>span{
+    text-align: center;
+}
+
+.mv-com-main-textbox {
+    height: 84px;
+    width: 90%;
+    display: flex;
+    border: 1px solid #EBEBEB;
+    border-radius: 0 10px 10px 10px;
+}
+
+.mv-com-main-textbox-text {
+    padding-left: 20px;
+    padding-top: 15px;
+    width: 85%;
+}
+.mv-com-main-textbox-btn {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.mv-com-btn-write {
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.mv-com-btn-write>img {
+    width: 20px;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.mv-com-btn-write>span {
+    font-size: 1.1em;
+
+}
+
+.mv-com-main-li {
+    margin-bottom: 20px;
+}
+
+
+
+/* 유저가 등록한 실관람평 */
+.mv-com-main-list {
+    display: flex;
+    height: 84px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.mv-textbox-user {
+    background-color: #f7f3f3;
+}
+
+.mv-textbox-user div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mv-com-main-name {
+    width: 95px;
+}
+
+.mv-com-main-score {
+    width: 90px;
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+.mv-com-main-point {
+    width: 85px;
+    text-align: center;
+}
+
+.mv-com-main-story {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 600px;
+    text-align: left;
+    justify-content: left !important;
+}
+
+.mv-com-main-like {
+    width: 90px;
+    
+}
+
+.mv-com-main-btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border: none;
+    background-color: #f7f3f3;
+}
+
+.mv-com-main-date {
+    padding-top: 10px;
+    width: 100%;
+    text-align: right;
+}
+
+
+
+
+/* 페이지 이동 버튼 리스트 */
+.mv-com-btnlist {
+    position: relative;
+    text-align: center;
+}
+
+.mv-com-btnlist button {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 5px;
+}
+
+.mv-com-btnlist button:hover {
+    border: 1px solid #AF2D2D;
+    background-color: #ffffff;
+    color: #AF2D2D;
+}
+
+.mv-com-btnlist img {
+    vertical-align: middle;
+}
+
+.mv-com-btnFunction {
+    border: none;
+}
+
+.mv-com-btnNumber {
+    border: 1px solid #EBEBEB;
+    background-color: #ffffff;
+}
+
+
+/* 관람평 작성하기 모달  */
+.mv-com-write-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.mv-com-write-wrap {
+    position: absolute;
+    width: 500px;
+    height: 680px;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -340px;
+    background-color: #ffffff;
+
+}
+
+/* 관람평 헤드 */
+.mv-com-write-head {
+    height: 50px;
+    background-color: #AF2D2D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mv-com-write-head>span {
+    display: block;
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.mv-com-write-head>button {
+    background-color: rgb(175, 45, 45);
+    border-style: none;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+
+/* 관람평 메인 */
+.mv-com-write-main {
+    height: 565px;
+    overflow-y: scroll;
+    padding: 20px 20px 0 20px;
+}
+
+
+/* 점수 부분 */
+.mv-com-write-score {
+    text-align: center;
+}
+
+.mv-com-write-score>p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+}
+
+.mv-com-write-score>div {
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.mv-com-write-star>div {
+    display: inline-block;
+}
+
+.mv-com-write-star>span {
+    display: inline-block;
+    font-size: 25px;
+    margin-left: 30px;
+}
+
+
+/* 관람평 텍스트 부분 */
+.mv-com-write-textbox {
+    background-color: white;
+}
+
+.mv-com-write-textbox>div {
+    text-align: end;
+    padding: 5px;
+}
+
+.mv-com-write-score textarea {
+    resize: vertical;
+    width: 100%;
+}
+
+
+/* 관람 포인트 부분 */
+.mv-com-write-point {
+    text-align: center;
+}
+
+.mv-com-write-point>p:first-child {
+    font-size: 20px;
+}
+.mv-com-write-point>p:not(:first-child) {
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+
+.mv-com-write-point-btn {
+    height: 120px;
+    padding: 20px;
+    background-color: #EBEBEB;
+}
+
+.mv-com-write-point-btn>button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid #b8b8b8;
+    background-color: #EBEBEB;
+}
+
+/* 관람평 하단 버튼 */
+.mv-com-write-btn {
+    height: 65px;
+    text-align: center;
+}
+
+.mv-com-write-btn>button {
+    width: 55px;
+    height: 36px;
+    border-radius: 5px;
+}
+
+.mv-com-write-btn-submit {
+    margin-left: 5px;
+}
+
+
+
+/* 모든 버튼 속성 */
+
+main button {
+    cursor: pointer;
+}
+
+

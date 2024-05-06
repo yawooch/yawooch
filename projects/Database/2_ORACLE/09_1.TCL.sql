@@ -1,0 +1,41 @@
+/*
+<TCL Transaction Control Language>
+        트랜잭션을 제어하는 언어이다.
+하나의 논리적인 작업 단위를 트랜잭션이라고 한다
+*/
+-- 테스트용 테이블
+CREATE TABLE EMP_TEST AS
+SELECT EMP_ID
+     , EMP_NAME
+     , DEPT_CODE
+  FROM EMPLOYEE;
+
+-- EMP_TEST 테이블에서 EMP_ID 가 213, 218인 사원 삭제
+SELECT * FROM EMP_TEST
+ WHERE DEPT_CODE IS NULL;
+SELECT * FROM EMP_TEST WHERE EMP_ID IN(213, 218);
+DELETE   FROM EMP_TEST WHERE EMP_ID IN(213, 218);
+
+-- 두개의 행이 삭제된 시점에 SAVEPOINT 지정
+SAVEPOINT SP1;
+
+-- EMP_TEST 테이블에서 EMP_ID 가 200 인 사원 삭제
+SELECT * FROM EMP_TEST WHERE EMP_ID = 200;
+DELETE   FROM EMP_TEST WHERE EMP_ID = 200;
+
+ROLLBACK TO SP1;
+ROLLBACK;
+
+-- EMP_TEST 테이블에서 EMP_ID 가 215 인 사원 삭제
+SELECT * FROM EMP_TEST WHERE EMP_ID = 215;
+DELETE   FROM EMP_TEST WHERE EMP_ID = 215;
+
+-- DDL 구문을 실행하는 순가 기존에 메모리 버퍼에 임시 저장된 변경사항들이 무조건 DB에 반영된다.
+CREATE TABLE TEST
+(
+    TID NUMBER
+);
+
+ROLLBACK;
+
+

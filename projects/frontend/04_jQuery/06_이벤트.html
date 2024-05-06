@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트</title>
+    <link rel="stylesheet" href="../97_bootstrap/bootstrap-5.2.3-dist/css/bootstrap.css">
+    <style>
+        .area{
+            border: 1px solid;
+            width:150px;
+            height:150px;
+            margin-bottom:5px;
+        }
+        .bg-hotpink{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>이벤트</h2>
+    <h3>1. 이벤트 연결</h3>
+    <h4>1) on(), off()</h4>
+
+    <div id="div1" class="area"></div>
+    
+    <h4>2) one()</h4>
+    <div id="div2" class="area"></div>
+
+    <h3>2. 키보드 이벤트</h3>
+    <h4>1) keydown, keypress, keyup</h4>
+    <textarea id="textarea1" cols="40" rows="5"></textarea>
+    
+    <h4>2) 동적으로 글자수 세기</h4>
+    <p><span id="currentLength">0</span>/<span id="maxLength">10</span></p>
+    <textarea id="textarea2" cols="40" rows="5"></textarea>
+    
+    <h4>3) 동적으로 아이디 조건 확인</h4>
+    <p>
+        <ul>
+            <li>첫 글자는 반드시 영문 소문자로 작성되어야한다.</li>
+            <li>영문 소문자와 숫자로만 작성되어야 한다.</li>
+            <li>총 4 ~ 12자로 작성되어야 한다.</li>
+        </ul>
+    </p>
+    <label for="userId">아이디 : </label>
+    <input type="text" id="userId">
+    <span id="idCheck"></span>
+
+    <h3>3. trigger() 메소드</h3>
+    <div id="div3" class="area"></div>
+    <button id="btn1" class="btn btn-outline-success">실행 확인</button>
+
+
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./06_이벤트.js"></script>
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+
+</div>
+</body>
+</html>

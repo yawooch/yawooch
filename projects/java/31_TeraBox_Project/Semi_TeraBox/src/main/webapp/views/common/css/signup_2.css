@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+*{
+    margin:0; 
+    padding: 0; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    display: block;
+}
+body {
+    overflow: auto;
+    overflow-y: scroll;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #444;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+}
+div{
+    display: block; /**/
+}
+.cm-h1{
+    margin: 67em;
+}
+.cm-member-wrap{
+    background-color: white;
+    width: 710px;
+    min-height: 100%;
+    margin: 0 auto;
+    padding: 80px 100px;
+}
+.cm-member-wrap .cm-logo {
+    display: block;
+    padding: 0 0 70px 0;
+}
+#cm_logo {
+    display: block;
+    width: 140px;
+    height: 47px;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    background: url(https://i.ibb.co/grsGs7C/Logo-Transparent.png) center no-repeat;
+    background-size: contain;
+}
+/* 상단바 */
+.cm-step-member{
+    border-bottom: 1px solid #ebebeb;
+    width: 510px;
+    margin: 0 0 40px 0;
+    position: relative;
+}
+.cm-step-member ol{
+    list-style: none;
+    width: 510px;
+}
+.cm-step-member ol li {
+    padding: 0;
+    float: left;
+}
+.cm-member-wrap .cm-step-member ol li:first-child {
+    margin-left: 0;
+}
+.cm-member-wrap .cm-step-member ol li {
+    margin: 0 0 0 46px;
+    text-align: center;
+    font-size: .866em;
+}
+.cm-member-wrap .cm-step-member ol li .cm-step.on {
+    border-bottom: 2px solid #6D3030;
+    color: #6D3030;
+}
+.cm-member-wrap .cm-step-member ol li .cm-step {
+    position: relative;
+    /* z-index: 2; */
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-size: .9333em;
+    letter-spacing: 0;
+}
+
+/* 약관동의 및 정보활용동의 문구 */
+.cm-member-wrap .cm-page-info-txt {
+    margin-bottom: 20px;
+    padding: 0 0 20px 0 !important;
+    line-height: 1.1;
+}
+.cm-text-agree{
+    display: block;
+    padding: 0 0 10px 0 ; 
+    font-size: 20px;
+    color: #222;
+}
+.cm-pageinfotextdiv {
+    padding-bottom: 20px;
+}
+/* 약관동의 */
+[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+label {
+    vertical-align: middle;
+    cursor: pointer;
+
+}
+/* 필수항목전체동의 */
+.cm-member-wrap .cm-agree-member .cm-all-chk {
+    margin: 0;
+    padding: 0 0 15px 0;
+    font-size: 15px;
+    color: #222;
+    border-bottom: 1px solid #ebebeb;
+}
+/* 약관동의 전체 블록(공통) */
+.cm-member-wrap .cm-agree-member .cm-block {
+    padding: 30px 0 0 0;
+}
+.cm-member-wrap .cm-agree-member .cm-block .cm-chk {
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+/* 스크롤 블록 (공통)*/
+.cm-member-wrap .cm-agree-member .cm-block .cm-scroll {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 130px;
+    padding: 20px;
+    border: 1px solid #d8d9db;
+    font-size: 14px!important;
+}
+/* 약관 선택 (필수) */
+.cm-must {
+    color: #6D3030;
+    font-size: 13px;
+}
+/* 약관 선택 (선택) */
+.cm-must {
+    font-size: 13px;
+}
+/* x축스크롤 */
+.cm-x-scroll {
+    overflow-x: scroll!important;
+}
+/* 하단 버튼 */
+.cm-member-wrap .cm-agree-btn-bottom {
+    padding: 40px 0 0 0;
+    text-align: center;
+}
+.cm-button{
+    border-radius: 4px;
+}
+.cm-button[disabled] {
+    color: #777!important;
+    cursor: default!important;
+    background-color: #e0e0e0!important;
+    border-color: #e0e0e0!important;
+}
+.cm-button.red {
+    color: #fff;
+    line-height: 36px;
+    border: 0;
+    background: #6D3030;
+}
+#cm_btnagreebottom {
+    border: 0;
+    width: 200px;
+    height: 45px;
+    padding: 0;
+    font-size: 20px;
+    background-color: -internal-light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3));
+    color: -internal-light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3));
+}

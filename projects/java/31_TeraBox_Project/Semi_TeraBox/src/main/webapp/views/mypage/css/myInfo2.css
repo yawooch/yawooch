@@ -1,0 +1,374 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+body {
+    overflow: auto;
+    overflow-y: scroll;
+    letter-spacing: 0;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #444;
+    font-weight: 400;
+    font-family: NanumBarunGothic,Dotum,'돋움',sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
+
+.mp-biv , .mp-body{
+    width: 1100px; 
+    margin: 0 auto;
+}
+
+
+/* body 중 메뉴바 */
+.mp-session {
+    width: 1100px;
+    box-sizing: border-box;
+    margin: 40px auto;
+}
+
+.mp-page-util {
+    display: block;
+    position: static;
+    width: 100%;
+    height: 42px;
+    margin-bottom: 40px;
+}
+
+.mp-inner-wrap{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.mp-page-util .mp-location a {
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    float: left;
+    height: 42px;
+    margin: 0 0 0 25px;
+    padding: 0;
+    line-height: 46px;
+    color: #666;
+}
+
+.mp-page-util .tk-location a:hover{
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    position: relative;
+    float: left;
+    height: 42px;
+    margin: 0 0 0 25px;
+    padding: 0;
+    line-height: 46px;
+    color: #666;
+}
+
+.mp-page-util .mp-location span {
+    overflow: hidden;
+    display: block;
+    float: left;
+    width: 13px;
+    height: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    text-indent: -9999px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-home.png) no-repeat center;
+}
+
+.mp-page-util .mp-location a:before, .tk-page-util .mp-location span .mp-no-link:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -14px;
+    top: 0;
+    width: 5px;
+    height: 42px;
+    background: url(https://img.megabox.co.kr/static/pc/images/common/bg/bg-location-arr.png) no-repeat left center;
+}
+
+
+  /* 왼쪽 메뉴바 시작  */
+.mp-left-box {
+    width: 200px;
+    height: 285px;
+    display: inline-block;
+}
+
+.mp-tera-box{
+    background-color: #6D3030;
+    height: 75px;
+    font-size: 18px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.mp-tera-box a{
+    text-align: center;
+    display: block;
+    padding: 24px 0;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 400;
+}
+
+.mp-ticketing {
+    height: 70px;
+    font-size: 15px;
+    border-top: 1px solid #d8d9db;
+    border-bottom: 1px solid #d8d9db;
+    border-left: 2px solid #d8d9db;
+    border-right: 2px solid #d8d9db;
+    background-color: #f2f4f5;
+}
+
+.mp-ticketing a{
+    text-align: left;
+    display: block;
+    padding: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+.mp-ticketing a:hover{
+    color: #6D3030;
+}
+
+
+.mp-question {
+    height: 70px;
+    font-size: 15px;
+    border-bottom: 1px solid #d8d9db;
+    border-left: 2px solid #d8d9db;
+    border-right: 2px solid #d8d9db;
+    background-color: #f2f4f5;
+}
+
+.mp-question a{
+    text-align: left;
+    display: block;
+    padding: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+.mp-question a:hover{
+    color: #6D3030;
+}
+
+.mp-member {
+    height: 70px;
+    font-size: 15px;
+    border-bottom: 2px solid #d8d9db;
+    border-left: 2px solid #d8d9db;
+    border-right: 2px solid #d8d9db;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.mp-member a{
+    text-align: left;
+    display: block;
+    padding: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* 화살표 이미지 */
+.mp-member a img {
+    margin-left:45px;
+}
+
+.mp-member a:hover{
+    color: #6D3030;
+}
+
+/* 오른쪽 구역 시자악! */
+
+.mp-right {
+    float: right;
+    width: 840px;  
+}
+
+.mp-right h2 {
+    font-size: 27px;
+}
+
+.right-ul {
+    padding-left: 20px ;
+} 
+
+
+.right-ul li {
+    list-style-type: square;
+}
+
+.tb-wrap {
+    position: relative;
+    border-top: 1px solid #555;
+}
+
+.tb-wrap table {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.tb-th{
+    background-color: #f7f8f9;
+}
+
+.tb-th, .tb-td{
+    box-sizing: border-box;
+    text-align: left;
+    border-bottom: 1px solid #d1d5dd;
+    padding-left: 10px;
+}
+
+.tb-td {
+    line-height: 45px;
+}
+
+.tb-btn1 {
+    float: right;
+    width: 75px;
+    height: 32px;
+    margin-top: 6px;
+    background-color: #fff;
+    border: 1px solid #6D3030;
+    border-radius: 5px;
+    color: #6D3030;
+
+}
+
+.tb-btn1:hover {
+    background-color: #f2f4f8;
+    border-color: #666;
+}
+
+.mp-tit-box {
+    margin: 40px 0px 10px 0px;
+}
+
+.mp-tit-box h3 {
+    font-size: 25px;
+    color: #6D3030;
+}
+
+.mp-pp {
+    text-align: right;
+    margin: 0px auto;
+}
+
+.mp-span {
+    color: orangered;
+}
+
+.mp-tb{
+    position: relative;
+    border-top: 1px solid #555;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.font-orange {
+    color: orangered;
+}
+
+.mp-tb tbody th {
+    background: #f7f8f9;
+}
+
+.mp-tb tbody th , .mp-tb tbody td {
+    position: relative;
+    height: 50px;
+    padding: 7px 15px;
+    text-align: left;
+    border-bottom: 1px solid #d1d5dd;
+}
+
+.mp-buttonBox {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mp-button-1, .mp-button-2{
+    width: 80px;
+    height:40px;
+    margin: 0px 7px;
+    border-radius: 5px;
+}
+
+.mp-button-1 {
+    background-color: white;
+    border: 2px solid #6D3030;
+    color: #6D3030;
+}
+
+.mp-button-2 {
+    background-color: #6D3030;
+    border: 2px solid #6D3030;
+    color: white;
+}
+
+.ipt{
+    height: 30px;
+    width: 230px;
+    border: 1px solid #d1d5dd;
+    border-radius: 4px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품관리</title>
+    <style>
+        #divResult{
+            border:1px solid black;
+            width:400px;
+            height:400px;
+        }
+    </style>
+</head>
+<body>
+    <!--     
+    1. 제시된 요구사항에 맞게 상품관리 페이지를 작성한다
+    2. 스타일 시트와 스크립트 파일은 html 문서 내부문서에 작성한다
+    3. submit 버튼 클릭시 기본 이벤트가 동작되지 않도록 
+    4. 등록 버튼을 클릭하면 텍스트 필드에 작성된다
+    5. 다시입력 버튼을 클릭하여 텍스트 필드에 적은 내용이 비워진다. 
+    -->
+    <h2>상품관리</h2>
+    <form action="">
+        <fieldset>
+            <legend>상품정보</legend>
+            <label for="prodName"    >상품명 :   </label><input type="text"   name="prodName"     id="prodName"    ><br><br>
+            <label for="prodCategory">카테고리 : </label><input type="text"   name="prodCategory" id="prodCategory"><br><br>
+            <label for="prodQty"     >보유수량 : </label><input type="number" name="prodQty"      id="prodQty"     ><br>
+        </fieldset>
+        <fieldset>
+            <legend>제조사 정보</legend>
+            <label for="companyName" >제조사명 : </label><input type="text" name="companyName"  id="companyName" ><br><br>
+            <label for="companyPhone">연락처 :   </label><input type="tel"  name="companyPhone" id="companyPhone"><br><br>
+            <label for="companyUrl"  >홈페이지 : </label><input type="url"  name="companyUrl"   id="companyUrl"  ><br>
+        </fieldset>
+        <br>
+        <input type="submit" id="btnSubmit" value="등록">&nbsp;
+        <input type="reset"  id="btnReset"  value="다시입력">
+    </form>
+    <br>
+    <div id="divResult">
+    </div>
+
+    <script>
+        let btnSubmit = document.getElementById('btnSubmit');
+
+        btnSubmit.addEventListener('click', (event)=>{
+            console.log(event);
+            event.preventDefault();
+
+            let prodName     = document.getElementById('prodName').value;
+            let prodCategory = document.getElementById('prodCategory').value;
+            let prodQty      = document.getElementById('prodQty').value;
+            let companyName  = document.getElementById('companyName').value;
+            let companyPhone = document.getElementById('companyPhone').value;
+            let companyUrl   = document.getElementById('companyUrl').value;
+            let divResult    = document.getElementById('divResult');
+
+            divResult.innerHTML = `<h4>상품정보</h4>`;
+            divResult.innerHTML += `상품명 :   ${prodName}<br>`;
+            divResult.innerHTML += `카테고리 : ${prodCategory}<br>`;
+            divResult.innerHTML += `보유수량 : ${prodQty}<br>`;
+            divResult.innerHTML += `<h4>제조사 정보</h4>`;
+            divResult.innerHTML += `제조사명 :${companyName}<br>`;
+            divResult.innerHTML += `연락처 :  ${companyPhone}<br>`;
+            divResult.innerHTML += `홈페이지 :${companyUrl}<br>`;
+        });
+    </script>
+
+</body>
+</html>

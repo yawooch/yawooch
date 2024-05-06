@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/******************************************** 
+    Video 영역 속성정의 시작
+*********************************************/
+#main_videoSection{
+    background-color: #111;
+    width:100%;
+}
+#main_videoSection>.main-content{
+    height:500px;
+}
+.main-video-frame>video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.35);
+    z-index: 0;
+}
+.main-video-frame{
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    position:relative;
+    z-index:1;
+}
+.main-video-wrap{
+    background-image: linear-gradient(to right, #111 0%, rgba(17, 17, 17, 0.25) 30%, rgba(17, 17, 17, 0.25) 50%,rgba(17, 17, 17, 0.25) 70%, #111 100%);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0px;
+}
+.main-video-wrap>div{
+    position:absolute;
+    font-family: 'Noto Sans KR';
+    color:white;
+}
+.main-video-title{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.72);
+    top:180px;
+    font-size: 50px;
+    font-weight:900;
+}
+.main-video-subTitle{
+    top:280px;
+    font-size: 25px;
+}
+.main-video-btn-group{
+    top:380px ;
+    display: inline-flex;
+}
+.main-video-btn-group>.main-btn-pause, .main-video-btn-group>.main-btn-mute{
+    margin-left: 10px;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #979797;
+    border-radius: 50%;
+}
+.main-btn-detail{
+    padding: 5px 30px 5px 18px;
+    font-size: 14px;
+    color: #343434;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.8) url(../img/arrowR_8x13.png) calc(100% - 11px) center/8px 13px scroll no-repeat;
+}
+
+.main-btn-pause{
+    background: transparent url(../img/pause.png) center/18px scroll no-repeat;
+}
+
+.main-btn-mute{
+    background: transparent url(../img/soundOff.png) center/18px scroll no-repeat;
+}
+/******************************************** 
+    Video 영역 속성정의 끝
+*********************************************/

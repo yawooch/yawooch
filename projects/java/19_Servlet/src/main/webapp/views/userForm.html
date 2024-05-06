@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>개인 정보 입력</title>
+</head>
+
+<body>
+    <h2>개인 정보 입력</h2>
+<!--    <form action="/01_Servlet/method.do" method="GET">-->
+    <form action="/01_Servlet/method.do" method="POST">
+        <fieldset>
+            <label for="userName">이름 : </label>
+            <input type="text" name="userName" id="userName" />
+            <br>
+            <label for="userAge">나이 : </label>
+            <input type="text" name="userAge" id="userAge" />
+            <br>
+            <label for="userGender">성별 : </label>
+            <label><input type="radio" name="userGender" value="남자" checked/>남자</label>
+            <label><input type="radio" name="userGender" value="여자" />여자</label>
+            <br>
+            <label for="">좋아하는 음식 : </label>
+            <label><input type="checkbox" name="food" value="한식" checked>한식</label>
+            <label><input type="checkbox" name="food" value="분식">분식</label>
+            <label><input type="checkbox" name="food" value="중식">중식</label>
+            <label><input type="checkbox" name="food" value="일식">일식</label>
+            <label><input type="checkbox" name="food" value="양식">양식</label>
+            <br>
+        </fieldset>
+        <br>
+        <input type="submit" value="등록" />
+        <input type="reset"  value="다시입력" />
+    </form>
+
+</body>
+
+</html>

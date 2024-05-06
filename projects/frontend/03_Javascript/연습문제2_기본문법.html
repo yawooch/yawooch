@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 문법 실습</title>
+    <script src="./연습문제2_기본문법.js"></script>
+    <style>
+        input[type="text"]{
+            width:100%;
+        }
+        div{
+            border:2px solid red;
+            width:100%;
+            height:200px;
+            margin:20px 0px;
+        }
+        #calcInput1, #calcInput2{
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <h2>기본 문법 실습</h2>
+    <hr>
+    <h3>문제 1. 텍스트 필드에 작성한 문자열의 길이를 구하기</h3>
+
+    <fieldset>
+        <legend>보기</legend>
+        <input type="text" value="안녕하세요.">
+    </fieldset>
+    <div id="lengthOutput"></div>
+    <button onclick="checkLength();">확인하기</button>
+
+    <hr>
+    <h3>문제 2. 다음 보기에 있는 문자열을 콤마(,)를 기준으로 잘라내어 하나하나 출력</h3>
+    <fieldset>
+        <legend>보기</legend>
+        <label>콜라,사이다,햄버거,피자,한약</label>
+    </fieldset>
+    <div id="wordOutput"></div>
+    <button onclick="devideWord();">확인하기</button>
+
+    <hr>
+    <h3>문제 3. 간이 계산기 만들기</h3>
+    <fieldset>
+        <label for="">첫번째 값 : </label><input type="number" id="calcInput1" value="8"><br>
+        <label for="">두번째 값 : </label><input type="number" id="calcInput2" value="0">
+    </fieldset>
+    <br><br>
+    <button onclick="miniCalc('+');">+</button>
+    <button onclick="miniCalc('-');">-</button>
+    <button onclick="miniCalc('x');">x</button>
+    <button onclick="miniCalc('/');">/</button>
+    <button onclick="miniCalc('%');">%</button>
+    <br><br>
+    <span><label>계산결과 : </label><span id="outputCalc"></span></span>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

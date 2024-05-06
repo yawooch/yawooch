@@ -1,0 +1,92 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+html, body{
+    font-family: 'NanumBarunGothic';
+}
+
+h1{
+    line-height:150px;
+    font-size: 150px;
+    font-weight:900;
+    margin:0;
+    margin-bottom: 0px;
+}
+h2{
+    line-height:90px;
+    font-size: 100px;
+    font-weight:900;
+    margin:0;
+    margin-bottom: 20px;
+}
+h3{
+    line-height:55px;
+    font-size: 50px;
+    font-weight:900;
+    margin:0;
+}
+h4{
+    line-height:25px;
+    font-size: 30px;
+    font-weight:900;
+    margin:0;
+}
+h5{
+    line-height:28px;
+    font-size: 28px;
+    margin:0;
+}
+h6{
+    line-height:25px;
+    font-size: 25px;
+    margin:0;
+}
+a{
+    font-size: 50px;
+    font-weight:900;
+}
+fieldset{
+    border:5px solid blue;
+}
+legend{
+    font-size:30px;
+    font-weight: 900;
+    color:blue;
+}
+span{
+    color:blue;
+    font-weight: 700;
+}
+table, table>tr, table td, table th{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    margin:8px;
+}
+table tr, table td, table th{
+    border: 1px solid black;
+    padding:8px;
+}

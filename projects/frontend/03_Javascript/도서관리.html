@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도서 관리</title>
+    <style>
+        #resultDiv {
+            border: 1px solid black;
+            width: 400px;
+            height: 600px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>도서 관리</h2>
+    <form action="" method="get">
+        <fieldset>
+            <legend>도서 정보</legend>
+            <label for="name">도서명 :      </label><input type="text"   class="input-form" name="name"    id="name"    ><br>
+            <label for="bunryu">분류 :      </label><input type="text"   class="input-form" name="bunryu"  id="bunryu"  ><br>
+            <label for="isbn">ISBN :        </label><input type="text"   class="input-form" name="isbn"    id="isbn"    ><br>
+            <label for="isuDate">발행일자 : </label><input type="date"   class="input-form" name="isuDate" id="isuDate" ><br>
+            <label for="pages">쪽수 :       </label><input type="number" class="input-form" name="pages"   id="pages"   ><br>
+            <label for="remain">재고 :      </label><input type="number" class="input-form" name="remain"  id="remain"  ><br>
+        </fieldset>
+        <br>
+        <input type="submit" id="btnSubmit" value="등록" />
+        <input type="reset"  id="btnReset" value="다시 입력"><br/>
+    </form>
+    <div id="resultDiv">
+
+    </div>
+    <script>
+        let btnSubmit = document.getElementById('btnSubmit');
+
+        //btnSubmit 버튼 눌렀을때 이벤트
+        btnSubmit.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            let name    = document.getElementById('name');
+            let bunryu    = document.getElementById('bunryu');
+            let isbn    = document.getElementById('isbn');
+            let isuDate    = document.getElementById('isuDate');
+            let pages    = document.getElementById('pages');
+            let remain    = document.getElementById('remain');
+            let resultDiv = document.getElementById('resultDiv');
+
+            resultDiv.innerHTML = `<h3>도서정보</h3>`;
+            resultDiv.innerHTML += `도서명   : ${name.value}<br>`;
+            resultDiv.innerHTML += `분류     : ${bunryu.value}<br>`;
+            resultDiv.innerHTML += `ISBN     : ${isbn.value}<br>`;
+            resultDiv.innerHTML += `발행일자 : ${isuDate.value}<br>`;
+            resultDiv.innerHTML += `쪽수     : ${pages.value}<br>`;
+            resultDiv.innerHTML += `재고     : ${remain.value}<br>`;
+        });
+    </script>
+</body>
+
+</html>
