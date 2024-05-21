@@ -32,6 +32,12 @@ Click [here](https://github.com/yawooch/KHFinalProject)
 ![Pawpawtrip](https://github.com/yawooch/KHFinalProject/blob/main/pawpawtripImage.png?raw=true)
 
 
+## CheckBox
+
+- [ ] ToDo List
+- [x] Done List
+
+
 ## Table
 |Header|Descript|
 |--|--:|
