@@ -50,4 +50,4 @@ AWS : ~[[http://3.38.106.218:8080/PawpawTrip](http://3.38.106.218:8080/PawpawTri
 스터디용으로 시작하였으나 개인 프로젝트로 이관하여 작업중
 AWS : [[http://112.156.11.186:8900/pensieve](http://112.156.11.186:8900/pensieve)]
 
-<img src="[https://github.com/yawooch/KHFinalProject/blob/main/pawpawtripImage.png](https://github.com/yawooch/yawooch/blob/main/projects/spring/PensieveMainPage.png)" width="300" alt="Pensieve Project"  />
+<img src="https://github.com/yawooch/yawooch/blob/main/projects/spring/PensieveMainPage.png" width="300" alt="Pensieve Project"  />
