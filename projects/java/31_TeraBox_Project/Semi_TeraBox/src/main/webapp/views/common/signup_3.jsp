@@ -23,7 +23,7 @@
     </script>
  <body>
     <section>
-    <form action="/member/enroll" method="post">
+    <form action="/TeraBox/member/enroll" method="post">
         <div class="member-wrap">
         	<!-- <form method="post" action="signup_4.jsp"> -->
             <!-- 로고 -->

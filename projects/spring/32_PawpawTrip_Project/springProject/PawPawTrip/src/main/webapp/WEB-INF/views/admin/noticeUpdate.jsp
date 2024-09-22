@@ -60,7 +60,7 @@
                 <li class=""  ><a href="${path}/admin/dashboard">대시보드</a></li>
                 <li class=""  ><a href="${path}/admin/tripList">포포트립 매핑      </a></li>
                 <li class="on"><a href="${path}/admin/noticeWrite">공지사항 입력   </a></li>
-                <li class=""  ><a href="${path}/admin/favoritesite">인추장 선정    </a></li>
+                <li class=""  ><a href="${path}/admin/favoritesite">인기추천장소 선정    </a></li>
                 <li class=""  ><a href="${path}/admin/plannedDevelop">개발예정 기능</a></li>
             </ul>
         </div>

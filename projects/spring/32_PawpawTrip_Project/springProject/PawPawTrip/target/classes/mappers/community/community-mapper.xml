@@ -372,7 +372,7 @@
     </select>
     
     <!-- 내가 쓴 게시글 수 -->
-    <select id="selectBoardByMemberCount" parameterType="_int">
+    <select id="selectBoardByMemberCount" parameterType="_int" resultType="_int">
      SELECT COUNT(*)
        FROM COMMUNITY
       WHERE COMMUNITY_STATUS = 'Y'

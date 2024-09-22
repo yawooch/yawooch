@@ -34,7 +34,7 @@ public interface CommunityMapper
     
     List<Community> selectBoardByMember(RowBounds rowBounds, @Param("memberNo") int memberNo);
     
-    int selectBoardByMemberCount(@Param("memberNo") int memberNo);
+    int selectBoardByMemberCount(int memberNo);
     
     int updateFileName(@Param("cNo") int cNo);
 }

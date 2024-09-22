@@ -184,7 +184,7 @@ $(document).ready(function() {
 	    } else {
 	        $.ajax({
 	            type: 'GET',
-	            url: '/pawpawtrip/member/idCheck',
+	            url: '/Pawpawtrip/member/idCheck',
 	            dataType: 'json',
 	            async: false, // 동기적으로 실행되도록 설정하여 flag 변수를 즉시 반환
 	            data : {
@@ -225,7 +225,7 @@ $(document).ready(function() {
 		
 		$.ajax({
 			type: "POST",
-			url:'/pawpawtrip/send-one',
+			url:'/Pawpawtrip/send-one',
 			data: {
 				memberPhone,
 				generatedCode

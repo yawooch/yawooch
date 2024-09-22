@@ -48,8 +48,8 @@ public class MemberEnrollServlet extends HttpServlet {
     	
     	if (result > 0) {
     		// 회원 가입 완료
-//    		request.setAttribute("msg", "회원 가입 성공");
-//    		request.setAttribute("location", "/views/common/signup_4.jsp");
+    		request.setAttribute("msg", "회원 가입 성공");
+    		request.setAttribute("location", "/views/common/signup_4.jsp");
     		
     		System.out.println("성공");
     	} else {
@@ -57,7 +57,7 @@ public class MemberEnrollServlet extends HttpServlet {
     		request.setAttribute("msg", "회원 가입 실패");
     		request.setAttribute("location", "/");
     	}
-    		request.getRequestDispatcher("/views/common/signup_4.jsp")
+    		request.getRequestDispatcher("/views/common/msg.jsp")
 				   .forward(request, response);
     	
 	

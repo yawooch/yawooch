@@ -73,7 +73,7 @@ $(document).ready(function() {
 		
 		$.ajax({
 			type: "POST",
-			url:'/pawpawtrip/send-one',
+			url:'/Pawpawtrip/send-one',
 			data: {
 				memberPhone,
 				generatedCode

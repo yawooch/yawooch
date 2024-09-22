@@ -539,7 +539,7 @@ public class AdminController
         return modelAndView;
     }
 
-    // 인추장 사이트 이동
+    // 인기추천장소 사이트 이동
     @GetMapping("/admin/favoritesite")
     public ModelAndView favoritesite(ModelAndView modelAndView, @RequestParam(defaultValue = "1") int page,
             @RequestParam(defaultValue = "") String select, @RequestParam(defaultValue = "") String search)
@@ -567,7 +567,7 @@ public class AdminController
         return modelAndView;
     }
 
-    // 인추장 Top3 가져오는 Ajax
+    // 인기추천장소 Top3 가져오는 Ajax
     @GetMapping("/admin/favoriteTopThreeAjax")
     @ResponseBody
     public ResponseEntity<Map<String, Object>> favoriteTopThreeAjax(ModelAndView modelAndView)
@@ -581,7 +581,7 @@ public class AdminController
         return ResponseEntity.ok(map);
     }
 
-    // 인추장 사이트 저장하는 Ajax
+    // 인기추천장소 사이트 저장하는 Ajax
     @ResponseBody
     @PostMapping("/admin/addTopThreeAjax")
     public ResponseEntity<Integer> addTopThreeAjax(@RequestParam(value = "contentIdsArr[]") List<String> contentIdsArr)

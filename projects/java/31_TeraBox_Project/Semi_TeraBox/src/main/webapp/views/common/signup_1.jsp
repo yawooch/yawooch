@@ -5,7 +5,7 @@
     
  <main>
     <section>
-    <form class="cm-col-wrap" action="/member/agree" method="post">
+    <form class="cm-col-wrap" action="/TeraBox/member/agree" method="post">
     <div class="cm-member-wrap">
         <!-- 로고 -->
         <div class="cm-logo"><a href="https://megabox.co.kr/main" id="cm_logo">Megabox lifetheather</a>

@@ -29,16 +29,18 @@ import com.kr.pawpawtrip.member.model.vo.Member;
 import com.kr.pawpawtrip.trip.model.service.TripService;
 import com.kr.pawpawtrip.trip.model.vo.MyTrip;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
 @SessionAttributes("loginMember")
+@RequiredArgsConstructor
 public class MemberController {
     @Autowired // 빈을 만들어 주입
-    private MemberService    service;
-    private CommunityService communityService;
-    private TripService      tripService;
+    private final MemberService    service;
+    private final CommunityService communityService;
+    private final TripService      tripService;
     
     
     // 로그인 화면
@@ -295,7 +297,7 @@ public class MemberController {
             
             modelAndView.addObject("pageInfo", pageInfo);
             modelAndView.addObject("community", community);
-            modelAndView.setViewName("member/mypage/myBoard");
+            modelAndView.setViewName("/member/mypage/myBoard");
         } else {
             modelAndView.addObject("msg", "로그인 후 이용해주세요.");
             modelAndView.addObject("location", "/login");
@@ -330,7 +332,7 @@ public class MemberController {
         System.out.println("member : " + member);
         if (result > 0) {
             // 회원가입 성공 페이지로 이동
-            modelAndView.setViewName("member/enrollComplete");
+            modelAndView.setViewName("/member/enrollComplete");
         } else {
             modelAndView.addObject("msg", "회원 가입 실패");
             modelAndView.addObject("location", "/enroll");
@@ -400,7 +402,7 @@ public class MemberController {
          
          modelAndView.addObject("pageInfo", pageInfo);
          modelAndView.addObject("myTrips", myTrips);
-         modelAndView.setViewName("member/mypage/myTrip");
+         modelAndView.setViewName("/member/mypage/myTrip");
          
       } else {
          // 로그인 하지 않은 멤버일 경우, msg 출력 & 로그인페이지로 이동

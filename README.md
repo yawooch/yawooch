@@ -33,7 +33,7 @@
 개인 프로젝트로 이관하여 작업중\
 GIT : ~[[https://github.com/yawooch/yawooch/tree/main/projects/java/31_TeraBox_Project](https://github.com/yawooch/yawooch/tree/main/projects/java/31_TeraBox_Project)]~\
 AWS : ~[[(http://3.38.106.218:8080/TeraBox/](http://3.38.106.218:8080/TeraBox/)]~
-[[(http://112.156.11.186:8900/TeraBox](http://112.156.11.186:8900/TeraBox/)]
+[[(http://www.yawooch.life/TeraBox](http://www.yawooch.life/TeraBox/)]
 
 <img src="https://github.com/yawooch/TerraBoxProject/blob/master/%EC%82%B0%EC%B6%9C%EB%AC%BC/TeraBox.mainpage.png" width="300" alt="KH Semi Project"  />
 
@@ -41,13 +41,13 @@ AWS : ~[[(http://3.38.106.218:8080/TeraBox/](http://3.38.106.218:8080/TeraBox/)]
 개인 프로젝트로 이관하여 작업중\
 GIT : ~[[https://github.com/yawooch/yawooch/tree/main/projects/spring/32_PawpawTrip_Project](https://github.com/yawooch/yawooch/tree/main/projects/spring/32_PawpawTrip_Project)]~\
 AWS : ~[[http://3.38.106.218:8080/PawpawTrip](http://3.38.106.218:8080/PawpawTrip)]~
-[[http://112.156.11.186:8900/Pawpawtrip](http://112.156.11.186:8900/Pawpawtrip)]
+[[http://www.yawooch.life/Pawpawtrip](http://www.yawooch.life/pensieve/Pawpawtrip)]
 
 <img src="https://github.com/yawooch/KHFinalProject/blob/main/pawpawtripImage.png" width="300" alt="KH Final Project"  />
 
 
-4. 스케줄러 프로젝트(개인) [스케줄러](https://github.com/yawooch/pensieve)\
+1. 스케줄러 프로젝트(개인) [스케줄러](https://github.com/yawooch/pensieve)\
 스터디용으로 시작하였으나 개인 프로젝트로 이관하여 작업중
-AWS : [[http://112.156.11.186:8900/pensieve](http://112.156.11.186:8900/pensieve)]
+AWS : [[http://www.yawooch.life/pensieve/](http://www.yawooch.life/pensieve/)]
 
 <img src="https://github.com/yawooch/yawooch/blob/main/projects/spring/PensieveMainPage.png" width="300" alt="Pensieve Project"  />

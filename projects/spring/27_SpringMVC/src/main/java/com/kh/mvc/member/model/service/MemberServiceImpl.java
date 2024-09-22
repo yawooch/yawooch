@@ -32,7 +32,7 @@ public class MemberServiceImpl implements MemberService
         
         log.info("encoder.encode(userPwd) : " + encoder.encode(userPwd));
         
-        //matches ¸Ş¼Òµå¸¦»ç¿ëÇÏ¸é³»ºÎÀûÀ¸·Î º¹È£È­ ÇØ¼­ ³ª¿Â°á°ú°ª¿¡ ¼ÖÆ®°ªÀ» ¶© ³ª¸ÓÁö °ª°ú ¿ø¹®À» ºñ±³ÇÑ´Ù.
+        //matches ë©”ì†Œë“œë¥¼ì‚¬ìš©í•˜ë©´ë‚´ë¶€ì ìœ¼ë¡œ ë³µí˜¸í™” í•´ì„œ ë‚˜ì˜¨ê²°ê³¼ê°’ì— ì†”íŠ¸ê°’ì„ ë• ë‚˜ë¨¸ì§€ ê°’ê³¼ ì›ë¬¸ì„ ë¹„êµí•œë‹¤.
         log.info("encoder.matches(userPwd, member.getPassword()) : " + encoder.matches(userPwd, member.getPassword()));
         
         System.out.println(member);
