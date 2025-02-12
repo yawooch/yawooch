@@ -32,7 +32,7 @@
 
 GIT : ~[[https://github.com/yawooch/TerraBoxProject](https://github.com/yawooch/TerraBoxProject)]~\
 AWS : ~[http://3.38.106.218:8080/TeraBox/](http://3.38.106.218:8080/TeraBox/)]- 현재 프리티어 종료~\
-DemoSite : [개인 Tomcat으로 운영되는 페이지](http://www.yawooch.life/TeraBox/)
+DemoSite : [http://www.yawooch.life/TeraBox/](http://www.yawooch.life/TeraBox/)
 
 <img src="https://github.com/yawooch/TerraBoxProject/blob/master/%EC%82%B0%EC%B6%9C%EB%AC%BC/TeraBox.mainpage.png" width="300" alt="KH Semi Project"  />
 
@@ -40,7 +40,7 @@ DemoSite : [개인 Tomcat으로 운영되는 페이지](http://www.yawooch.life/
 
 GIT : ~[[https://github.com/yawooch/yawooch/tree/main/projects/spring/32_PawpawTrip_Project](https://github.com/yawooch/yawooch/tree/main/projects/spring/32_PawpawTrip_Project)]~\
 AWS : ~[[http://3.38.106.218:8080/PawpawTrip](http://3.38.106.218:8080/PawpawTrip)]- 현재 프리티어 종료~\
-DemoSite : [개인 Tomcat으로 운영되는 페이지]((http://www.yawooch.life/Pawpawtrip))
+DemoSite : [http://www.yawooch.life/Pawpawtrip](http://www.yawooch.life/Pawpawtrip)
 
 
 <img src="https://github.com/yawooch/KHFinalProject/blob/main/pawpawtripImage.png" width="300" alt="KH Final Project"  />
