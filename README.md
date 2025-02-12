@@ -28,26 +28,29 @@
 
 
 ## Repositories Index
-1. ~~개인 프로젝트 [yawooch](https://github.com/yawooch/yawooch) 수정중~~
-2. 영화 예매 사이트 구현 프로젝트(5인) [KH Semi Project](https://github.com/yawooch/TerraBoxProject/tree/master)\
-개인 프로젝트로 이관하여 작업중\
-GIT : ~[[https://github.com/yawooch/yawooch/tree/main/projects/java/31_TeraBox_Project](https://github.com/yawooch/yawooch/tree/main/projects/java/31_TeraBox_Project)]~\
-AWS : ~[[(http://3.38.106.218:8080/TeraBox/](http://3.38.106.218:8080/TeraBox/)]~
-[[(http://www.yawooch.life/TeraBox](http://www.yawooch.life/TeraBox/)]
+1. 영화 예매 사이트 구현 프로젝트(5인) [KH Semi Project](https://github.com/yawooch/TerraBoxProject/tree/master)\
+
+GIT : ~[[https://github.com/yawooch/TerraBoxProject](https://github.com/yawooch/TerraBoxProject)]~\
+AWS : ~[http://3.38.106.218:8080/TeraBox/](http://3.38.106.218:8080/TeraBox/)]- 현재 프리티어 종료~\
+DemoSite : [개인 Tomcat으로 운영되는 페이지](http://www.yawooch.life/TeraBox/)
 
 <img src="https://github.com/yawooch/TerraBoxProject/blob/master/%EC%82%B0%EC%B6%9C%EB%AC%BC/TeraBox.mainpage.png" width="300" alt="KH Semi Project"  />
 
-3. 반려견 동반 여행정보 제공 사이트 프로젝트(4인) [KH Final Project](https://github.com/yawooch/KHFinalProject)\
-개인 프로젝트로 이관하여 작업중\
+2. 반려견 동반 여행정보 제공 사이트 프로젝트(4인) [KH Final Project](https://github.com/yawooch/KHFinalProject)\
+
 GIT : ~[[https://github.com/yawooch/yawooch/tree/main/projects/spring/32_PawpawTrip_Project](https://github.com/yawooch/yawooch/tree/main/projects/spring/32_PawpawTrip_Project)]~\
-AWS : ~[[http://3.38.106.218:8080/PawpawTrip](http://3.38.106.218:8080/PawpawTrip)]~
-[[http://www.yawooch.life/Pawpawtrip](http://www.yawooch.life/pensieve/Pawpawtrip)]
+AWS : ~[[http://3.38.106.218:8080/PawpawTrip](http://3.38.106.218:8080/PawpawTrip)]- 현재 프리티어 종료~\
+DemoSite : [개인 Tomcat으로 운영되는 페이지]((http://www.yawooch.life/Pawpawtrip))
+
 
 <img src="https://github.com/yawooch/KHFinalProject/blob/main/pawpawtripImage.png" width="300" alt="KH Final Project"  />
 
+3. 스터디 프로젝트(5인) [pensieve](https://github.com/yawooch/pensieve)\
+서버와 소스는 공유하고 각자 메뉴에 자신이 하고싶은 기능을 구현해보는 스터디\
+개인 프로젝트로 이관하여 작업중 (4번 프로젝트)
 
-1. 스케줄러 프로젝트(개인) [스케줄러](https://github.com/yawooch/pensieve)\
-스터디용으로 시작하였으나 개인 프로젝트로 이관하여 작업중
-AWS : [[http://www.yawooch.life/pensieve/](http://www.yawooch.life/pensieve/)]
+4. 개인 프로젝트 [Pensieve - 메모 공유 사이트](https://github.com/yawooch/pensieve)\
+스터디용으로 시작하였으나 개인 프로젝트로 이관하여 작업중\
+HOME Server : [[http://www.yawooch.life/pensieve/](http://www.yawooch.life/pensieve/)]
 
 <img src="https://github.com/yawooch/yawooch/blob/main/projects/spring/PensieveMainPage.png" width="300" alt="Pensieve Project"  />
