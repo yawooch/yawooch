@@ -1,0 +1,10 @@
+python D:/workspace/git_project/yawooch/projects/python/improvedCrawling.py
+python D:/workspace/git_project/yawooch/projects/python/webSeleniumCrawlingJobsite.py
+python D:/workspace/git_project/yawooch/projects/python/sqlFormatter.py
+python D:/workspace/git_project/yawooch/projects/python/text_tableGen.py
+python D:/workspace/git_project/yawooch/projects/python/webCrawlingNews.py
+python D:/workspace/git_project/yawooch/projects/python/jsonToTsv.py
+python D:/workspace/git_project/yawooch/projects/python/removeDuplicates.py
+python D:/workspace/git_project/yawooch/projects/python/sortTsv.py
+
+D:/workspace/git_project/yawooch/projects/python/run_crawling.bat

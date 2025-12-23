@@ -1,0 +1,65 @@
+[
+  {
+    "site" : {"korName": "예제", "engName": "Example"},
+    "url": "https://www.wanted.co.kr/wdlist/518/873?country=kr&job_sort=job.recommend_order&years=4&years=6&locations=seoul.all",
+    "elTag":    {
+                "target": {"selector":".example a", "elOrdNum":"5", "splitWord":"5", "splitOrdNum":"2"},
+                "title": {"selector":".title a", "elOrdNum":"5", "splitWord":"5", "splitOrdNum":"2"},
+                "company": {"selector":".company a", "elOrdNum":"5", "splitWord":"5", "splitOrdNum":"2"},
+                "record": {"selector":".record a", "elOrdNum":"5", "splitWord":"5", "splitOrdNum":"2"},
+                "area": {"selector":".area a", "elOrdNum":"5", "splitWord":"5", "splitOrdNum":"2"},
+                "link": {"selector":".link a", "elOrdNum":"5", "splitWord":"5", "splitOrdNum":"2"}
+                },
+    "readCnt": 100
+  },
+  {
+    "site" : {"korName": "잡코리아", "engName": "jobkorea"},
+    "url": "https://www.jobkorea.co.kr/OnePick/JobList?Ord=GcmCodeAmtDesc&DutyCtgr=10031&Local=I000&CareerType=2&CareerMin=3&CareerMax=5",
+    "elTag":    {
+                "target": {"selector":"a.listCell"},
+                "title": {"selector":"div.rTit"},
+                "company": {"selector":"span.corNm"},
+                "record": {"selector":"span.rPart"},
+                "area": {"selector":"span.rAddress"}
+                },
+    "readCnt": 100
+  },
+  {
+    "site" : {"korName": "원티드", "engName": "wanted"},
+    "url": "https://www.wanted.co.kr/wdlist/518/873?country=kr&job_sort=job.recommend_order&years=4&years=6&locations=seoul.all",
+    "elTag":    {
+                "target": {"selector":".JobCard_JobCard__Tb7pI a"},
+                "title": {"selector":".JobCard_JobCard__body__position__CyaGY"},
+                "company": {"selector":".CompanyNameWithLocationPeriod_CompanyNameWithLocationPeriod__company__j_pad"},
+                "record": {"selector":".CompanyNameWithLocationPeriod_CompanyNameWithLocationPeriod__location__FHNmN","splitWord":" · ","splitOrdNum":"1"},
+                "area": {"selector":".CompanyNameWithLocationPeriod_CompanyNameWithLocationPeriod__location__FHNmN","splitWord":" · ","splitOrdNum":"0"}
+                },
+    "readCnt": 100
+  },
+  {
+    "site" : {"korName": "인크루트", "engName": "incruit"},
+    "url": "https://job.incruit.com/jobdb_list/searchjob.asp?occ3=17111&jobty=2&jobty=1&jobty=8&rgn2=11",
+    "elTag":   {
+                "target": {"selector":"ul.c_row"},
+                "title": {"selector":"div.cell_mid div.cl_top a"},
+                "company": {"selector":"div.cell_first div.cl_top","splitWord":" ", "splitOrdNum":"0"},
+                "record": {"selector":"div.cl_md","splitWord":" ", "splitOrdNum":"0"},
+                "area": {"selector":"div.cl_md","splitWord":" ", "splitOrdNum":"3"},
+                "link": {"selector":"div.cell_mid div.cl_top a"}
+                },
+    "readCnt": 60
+  },
+  {
+    "site" : {"korName": "사람인", "engName": "saramin"},
+    "url": "https://www.saramin.co.kr/zf_user/jobs/list/domestic?loc_mcd=101000&cat_kewd=87%2C88%2C89&exp_cd=2&exp_min=3&exp_max=5&panel_type=&search_optional_item=y&search_done=y&panel_count=y&preview=y&page=1&page_count=100",
+    "elTag":    {
+                "target": {"selector":"div.list_item"},
+                "title": {"selector":"div.job_tit a.str_tit span"},
+                "company": {"selector":"div.col.company_nm a"},
+                "record": {"selector":"div.col.recruit_info ul li", "elOrdNum":"1"},
+                "area": {"selector":"div.col.recruit_info ul li"},
+                "link": {"selector":"div.job_tit a.str_tit"}
+                },
+    "readCnt": 100
+  }
+]

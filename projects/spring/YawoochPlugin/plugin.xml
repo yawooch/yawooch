@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <!-- 플러그인 활성화 클래스 -->
+   <extension
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="Yawooch Plugin"
+            id="com.yawooch.plugin.product">
+      </product>
+   </extension>
+
+   <!-- 1. Content Assist (Ctrl+Space) 확장점 -->
+   <extension
+         point="org.eclipse.jdt.ui.javaCompletionProposalComputer">
+      <proposalCategory
+            id="com.yawooch.plugin.contentAssist"
+            name="Yawooch Custom Proposals">
+      </proposalCategory>
+      <proposalComputer
+            class="com.yawooch.plugin.contentassist.YawoochContentAssistProcessor"
+            categoryId="com.yawooch.plugin.contentAssist"
+            activate="true">
+         <partitionType
+               id="org.eclipse.jdt.ui.java">
+         </partitionType>
+      </proposalComputer>
+   </extension>
+
+   <!-- 2. 메뉴 추가 확장점 -->
+   <extension
+         point="org.eclipse.ui.menus">
+      <!-- 메인 메뉴에 추가 -->
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="com.yawooch.plugin.menu"
+               label="Yawooch Tools">
+            <command
+                  commandId="com.yawooch.plugin.commands.helloWorld"
+                  label="Hello World"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.yawooch.plugin.commands.formatCode"
+                  label="Format Selected Code"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.yawooch.plugin.commands.generateGetterSetter"
+                  label="Generate Getter/Setter"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
+      
+      <!-- 툴바에 추가 -->
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="com.yawooch.plugin.toolbar">
+            <command
+                  commandId="com.yawooch.plugin.commands.helloWorld"
+                  icon="icons/sample.gif"
+                  tooltip="Yawooch Hello World">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+   <!-- 3. 단축키 등록 확장점 -->
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            id="com.yawooch.plugin.commands.helloWorld"
+            name="Hello World"
+            description="Yawooch Plugin Hello World Command">
+      </command>
+      <command
+            id="com.yawooch.plugin.commands.formatCode"
+            name="Format Code"
+            description="Format selected code">
+      </command>
+      <command
+            id="com.yawooch.plugin.commands.generateGetterSetter"
+            name="Generate Getter/Setter"
+            description="Generate getter and setter methods">
+      </command>
+   </extension>
+
+   <!-- 단축키 바인딩 -->
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="com.yawooch.plugin.commands.helloWorld"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="CTRL+SHIFT+Y"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+      <key
+            commandId="com.yawooch.plugin.commands.formatCode"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="CTRL+SHIFT+F"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+      <key
+            commandId="com.yawooch.plugin.commands.generateGetterSetter"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="CTRL+SHIFT+G"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
+      </key>
+   </extension>
+
+   <!-- 커맨드 핸들러 -->
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="com.yawooch.plugin.handlers.HelloWorldHandler"
+            commandId="com.yawooch.plugin.commands.helloWorld">
+         <enabledWhen>
+            <instanceof
+                  value="org.eclipse.core.resources.IResource">
+            </instanceof>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="com.yawooch.plugin.handlers.FormatCodeHandler"
+            commandId="com.yawooch.plugin.commands.formatCode">
+         <enabledWhen>
+            <with
+                  variable="activeEditorId">
+               <equals
+                     value="org.eclipse.jdt.ui.CompilationUnitEditor">
+               </equals>
+            </with>
+         </enabledWhen>
+      </handler>
+      <handler
+            class="com.yawooch.plugin.handlers.GenerateGetterSetterHandler"
+            commandId="com.yawooch.plugin.commands.generateGetterSetter">
+         <enabledWhen>
+            <with
+                  variable="activeEditorId">
+               <equals
+                     value="org.eclipse.jdt.ui.CompilationUnitEditor">
+               </equals>
+            </with>
+         </enabledWhen>
+      </handler>
+   </extension>
+
+   <!-- 4. 컨텍스트 메뉴 (우클릭 메뉴) 확장점 -->
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <!-- 에디터에서 우클릭 -->
+      <objectContribution
+            id="com.yawooch.plugin.objectContribution"
+            objectClass="org.eclipse.jdt.core.ICompilationUnit">
+         <action
+               id="com.yawooch.plugin.actions.helloWorld"
+               label="Yawooch: Hello World"
+               class="com.yawooch.plugin.actions.HelloWorldAction"
+               menubarPath="additions">
+         </action>
+         <action
+               id="com.yawooch.plugin.actions.formatCode"
+               label="Yawooch: Format Code"
+               class="com.yawooch.plugin.actions.FormatCodeAction"
+               menubarPath="additions">
+         </action>
+         <action
+               id="com.yawooch.plugin.actions.generateGetterSetter"
+               label="Yawooch: Generate Getter/Setter"
+               class="com.yawooch.plugin.actions.GenerateGetterSetterAction"
+               menubarPath="additions">
+         </action>
+      </objectContribution>
+      
+      <!-- 프로젝트 탐색기에서 우클릭 -->
+      <objectContribution
+            id="com.yawooch.plugin.resourceContribution"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               id="com.yawooch.plugin.actions.helloWorldFile"
+               label="Yawooch: Hello World"
+               class="com.yawooch.plugin.actions.HelloWorldAction"
+               menubarPath="additions">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>

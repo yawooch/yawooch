@@ -1,0 +1,782 @@
+{
+  "정치": {
+    "main": [
+      {
+        "title": "공수처, '尹 영장 허위답변' 논란에 \"미흡한 부분 있었다\"",
+        "link": "https://n.news.naver.com/mnews/article/014/0005313087"
+      },
+      {
+        "title": "한동훈 “이재명, 가장 위험한 인물… ‘계엄의 바다’ 건너가자”",
+        "link": "https://n.news.naver.com/mnews/article/366/0001056554"
+      },
+      {
+        "title": "김 여사 통화 속 '대통령 추정 목소리'…공천 정보 공유했나",
+        "link": "https://n.news.naver.com/mnews/article/437/0000431355"
+      }
+    ],
+    "sub": {
+      "대통령실": [
+        {
+          "title": "트럼프 \"투자이민 비자 폐지·71억원에 美 영주권…2주 후 시행\"(종합)",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233885"
+        },
+        {
+          "title": "[뉴스초점] 윤 대통령 탄핵심판 변론 종료…내달 중순 선고 전망",
+          "link": "https://n.news.naver.com/mnews/article/422/0000716560"
+        },
+        {
+          "title": "트럼프, '구리'에도 관세 부과할듯...조사 지시",
+          "link": "https://n.news.naver.com/mnews/article/030/0003287691"
+        }
+      ],
+      "국회/정당": [
+        {
+          "title": "尹 파면 결정 시…수용 55.9% vs 수용 불가 41.9%",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951358"
+        },
+        {
+          "title": "김상욱 \"尹 정치개혁? 아직도 왕인 줄…친한, 친윤과 관계회복 모색하는 듯\"",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098108"
+        },
+        {
+          "title": "오늘 이재명 선거법 위반혐의 2심 진행…검찰 구형·최후 진술의 날",
+          "link": "https://n.news.naver.com/mnews/article/654/0000107932"
+        }
+      ],
+      "북한": [
+        {
+          "title": "외교2차관, 유엔 인권이사회서 北 인권 우려 표명",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098084"
+        },
+        {
+          "title": "파병 북한군 의식?…김정은 \"현대전 능력 갖춘 군사인재 길러야\"",
+          "link": "https://n.news.naver.com/mnews/article/422/0000716561"
+        },
+        {
+          "title": "김정은, '인민군 초대 총참모장' 강건 동상에 화환",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098063"
+        }
+      ],
+      "행정": [
+        {
+          "title": "권익위, 올해 국공립大 포함 721개 기관 청렴도 평가",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951346"
+        },
+        {
+          "title": "트럼프 \"젤렌스키 28일 방미\"…미-우크라 광물협정 서명 예정(종합2보)",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233908"
+        },
+        {
+          "title": "송파구 삼일절 기념행사…55ｍ 높이 대형 태극기 휘날린다",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233878"
+        }
+      ],
+      "국방/외교": [
+        {
+          "title": "내년 입영 육군 기술행정병부터 年단위 모집한다",
+          "link": "https://n.news.naver.com/mnews/article/277/0005552084"
+        },
+        {
+          "title": "트럼프 \"젤렌스키 28일 방미\"…미-우크라 광물협정 서명 예정(종합2보)",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233908"
+        },
+        {
+          "title": "외교부 2차관 \"러북 불법 군사협력·탈북민 문제 우려\"",
+          "link": "https://n.news.naver.com/mnews/article/011/0004454854"
+        }
+      ],
+      "정치일반": [
+        {
+          "title": "[정치쇼] 박선원 \"尹 복귀시켜주면 개헌? 다시 계엄해 영구집권 하겠단 것\"",
+          "link": "https://n.news.naver.com/mnews/article/055/0001235204"
+        },
+        {
+          "title": "인사말 하는 윤재옥 국회글로벌외교안보포럼 대표 의원",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233914"
+        },
+        {
+          "title": "의원들과 인사하는 조셉 윤 주한미국대사대리",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088444"
+        }
+      ]
+    }
+  },
+  "경제": {
+    "main": [
+      {
+        "title": "한은, 기준금리 2.75%로 인하…올해 성장률 전망 1.5%로 하향",
+        "link": "https://n.news.naver.com/mnews/article/437/0000431294"
+      },
+      {
+        "title": "대기업집단 주식 담보 대출, 8개월 만에 1.5조 가까이 증가",
+        "link": "https://n.news.naver.com/mnews/article/055/0001235199"
+      },
+      {
+        "title": "비수도권 15곳 그린벨트 풀린다",
+        "link": "https://n.news.naver.com/mnews/article/016/0002433795"
+      }
+    ],
+    "sub": {
+      "금융": [
+        {
+          "title": "떼려야 뗄 수 없는 중동-EU…올해도 자본시장 밀착동행",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951357"
+        },
+        {
+          "title": "케이뱅크, 인뱅 최초 금융 특화 AI '프라이빗 LLM' 도입",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951354"
+        },
+        {
+          "title": "비트코인, 1억2000만원대로 추락…리플은 상승 반전 [한경 코알라]",
+          "link": "https://n.news.naver.com/mnews/article/015/0005099341"
+        }
+      ],
+      "증권": [
+        {
+          "title": "“셀트리온, 4Q 영업익 기대치 하회…올해 영업익 1.5조 전망”",
+          "link": "https://n.news.naver.com/mnews/article/009/0005450001"
+        },
+        {
+          "title": "[아침밥] \"미국서 실적 좋았다\"… 상상인증권, 한국콜마 '매수' 유지",
+          "link": "https://n.news.naver.com/mnews/article/417/0001060489"
+        },
+        {
+          "title": "“월배당 ETF도 역주행 중”…삼성 KODEX 美배당커버드콜액티브, 올해 개인 순매수 유입 1위",
+          "link": "https://n.news.naver.com/mnews/article/016/0002434186"
+        }
+      ],
+      "산업/재계": [
+        {
+          "title": "SPC그룹, 말레이 제빵공장 준공…“20억 할랄시장에 행복한 맛 선물”",
+          "link": "https://n.news.naver.com/mnews/article/016/0002434192"
+        },
+        {
+          "title": "대한항공, ‘드론쇼 코리아’ 참가…무인기·UAM 선보여",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951355"
+        },
+        {
+          "title": "문체부, 올해 한국관광 홍보지점 12개로 확대…\"신흥시장 공략\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233921"
+        }
+      ],
+      "중기/벤처": [
+        {
+          "title": "코스포, AI 산업협의회 신설…“2500여 회원사 지원 확대”",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951353"
+        },
+        {
+          "title": "구취 원인균 99.9% 제거…오스템파마 ‘제로미아 프레쉬’ 출시",
+          "link": "https://n.news.naver.com/mnews/article/016/0002434184"
+        },
+        {
+          "title": "홈앤쇼핑, 올해 中企 해외판로 지원 늘린다",
+          "link": "https://n.news.naver.com/mnews/article/277/0005552083"
+        }
+      ],
+      "부동산": [
+        {
+          "title": "“한 번도 아니고 벌써 두 번이나”…현대엔지니어링, 도로 붕괴 사고에 실적 ‘먹구름’",
+          "link": "https://n.news.naver.com/mnews/article/009/0005449999"
+        },
+        {
+          "title": "“자금조달 부담 낮췄다”…LH, 민간건설사와 함께 올해 8조  규모 사업 추진",
+          "link": "https://n.news.naver.com/mnews/article/009/0005449997"
+        },
+        {
+          "title": "‘아파크먼트’ 트렌드 확산… 'e편한세상 성성호수공원' 주목",
+          "link": "https://n.news.naver.com/mnews/article/014/0005313470"
+        }
+      ],
+      "글로벌 경제": [
+        {
+          "title": "엔비디아 실적 앞두고 지수 선물은 일제 상승, 나스닥 0.34%↑",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098103"
+        },
+        {
+          "title": "[속보] 이민자 불안에...트럼프 “美 영주권 72억원에 팔겠다”",
+          "link": "https://n.news.naver.com/mnews/article/243/0000073364"
+        },
+        {
+          "title": "비트코인 3.39% 떨어져… 상승세 두드러진 리플, 2.12% 올라",
+          "link": "https://n.news.naver.com/mnews/article/417/0001060481"
+        }
+      ],
+      "생활경제": [
+        {
+          "title": "농심, 아시아 50 베스트 레스토랑 시상식에서 신라면 툼바 시식",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951360"
+        },
+        {
+          "title": "롯데웰푸드, '아보하' 트렌드 공략…럭키 롯데껌 에디션 선보여",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098113"
+        },
+        {
+          "title": "SPC그룹, 말레이 제빵공장 준공…“20억 할랄시장에 행복한 맛 선물”",
+          "link": "https://n.news.naver.com/mnews/article/016/0002434192"
+        }
+      ],
+      "경제 일반": [
+        {
+          "title": "롯데면세점, 외국인 단체관광 유치전…통역사 200여명 초청",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233926"
+        },
+        {
+          "title": "“직원 1명, 자영업자 60%”…평균 1.8명 고용",
+          "link": "https://n.news.naver.com/mnews/article/022/0004014266"
+        },
+        {
+          "title": "기아, 스마트 충전·V2H 서비스 시동",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233924"
+        }
+      ]
+    }
+  },
+  "사회": {
+    "main": [
+      {
+        "title": "광주서 경찰관 흉기 피습…50대 피의자는 총격에 사망(2보)",
+        "link": "https://n.news.naver.com/mnews/article/003/0013088364"
+      },
+      {
+        "title": "“수리비 대겠다” 사람 구하려다 문 뜯은 소방서에 쏟아진 기부 손길",
+        "link": "https://n.news.naver.com/mnews/article/016/0002433616"
+      },
+      {
+        "title": "국회측 최종진술 \"尹, 피로 지킨 민주주의 짓밟아…파면해야\"",
+        "link": "https://n.news.naver.com/mnews/article/025/0003423065"
+      }
+    ],
+    "sub": {
+      "사건사고": [
+        {
+          "title": "새벽시간대 광주 수산물 도매점 불…5명 대피",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088451"
+        },
+        {
+          "title": "역주행하던 승용차 정상 방향으로 주행하던 승용차 들이받아 운전자 1명 숨지고 1명 부상",
+          "link": "https://n.news.naver.com/mnews/article/087/0001100645"
+        },
+        {
+          "title": "윤 대통령, 탄핵심판 최후 진술서 \"계엄 선포 목적 대부분 이뤘다\"",
+          "link": "https://n.news.naver.com/mnews/article/654/0000107931"
+        }
+      ],
+      "교육": [
+        {
+          "title": "서울 초교에 원어민 영어교사 415명 배치",
+          "link": "https://n.news.naver.com/mnews/article/277/0005552085"
+        },
+        {
+          "title": "의대 추가모집 경쟁률 439대1…11명 모집에 4825명 몰려",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088432"
+        },
+        {
+          "title": "조대엽 前정책기획위원장 '21세기 노동의 귀환' 출간",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233888"
+        }
+      ],
+      "노동": [
+        {
+          "title": "“자영업자 평균 1.8명 고용…직원 1명 사업장 60%”",
+          "link": "https://n.news.naver.com/mnews/article/032/0003353320"
+        },
+        {
+          "title": "해양교통안전공단, 28일부터 2025년 정규직 등 34명 채용 시작",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233851"
+        },
+        {
+          "title": "부산야생동물치료센터, 지역 대학생에게 무료 취업 교육",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233845"
+        }
+      ],
+      "언론": [
+        {
+          "title": "[손병관의 뉴스프레소] 윤석열이 자신의 체포영장 방해 시도한 증거 나왔다",
+          "link": "https://n.news.naver.com/mnews/article/047/0002463850"
+        },
+        {
+          "title": "동아일보 \"승복 약속조차 없어\" 경향신문 \"복귀 망상까지\"",
+          "link": "https://n.news.naver.com/mnews/article/006/0000128734"
+        },
+        {
+          "title": "\"침대서 하루 6000만원 벌어\"…中인플루언서, 논란일자 \"피땀 흘려 번돈\"",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088315"
+        }
+      ],
+      "환경": [
+        {
+          "title": "7월부터 서산 풍전저수지서 낚시하면 최대 300만원 과태료",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233925"
+        },
+        {
+          "title": "아산시, '저장 강박' 의심 어르신 폐기물 처리 지원",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233923"
+        },
+        {
+          "title": "오늘 낮 5∼12도 점차 '포근'…수도권 등 중서부 '황사'",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233886"
+        }
+      ],
+      "인권/복지": [
+        {
+          "title": "아산시, '저장 강박' 의심 어르신 폐기물 처리 지원",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233923"
+        },
+        {
+          "title": "딥노이드, 'AI기반 갑상선 결절 검출' 유럽학회 초록 채택",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088430"
+        },
+        {
+          "title": "SK슈가글라이더즈, 대한체육회 체육상 '스포츠 가치' 최우수",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233884"
+        }
+      ],
+      "식품/의료": [
+        {
+          "title": "의대 추가모집 경쟁률 439대1…11명 모집에 4825명 몰려",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088432"
+        },
+        {
+          "title": "[부산소식] 청년창업시설 '부산 창업가꿈' 4호점 개소",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233853"
+        },
+        {
+          "title": "“그래서 필요한 의사 수가 얼마인가요”…산출 기구 만들자는데 또 줄다리기",
+          "link": "https://n.news.naver.com/mnews/article/009/0005449979"
+        }
+      ],
+      "지역": [
+        {
+          "title": "속초시, 봄 맞아 주요 사업 공정 재개",
+          "link": "https://n.news.naver.com/mnews/article/468/0001128613"
+        },
+        {
+          "title": "강남구, 걷기 캠페인 ‘플로킨’…“걸으면서 주우세요”",
+          "link": "https://n.news.naver.com/mnews/article/016/0002434191"
+        },
+        {
+          "title": "동작구, 전세사기 피해자 ‘소송비’ 최대 100만원 지원",
+          "link": "https://n.news.naver.com/mnews/article/016/0002434190"
+        }
+      ],
+      "인물": [
+        {
+          "title": "“너무 아닌 척 했지만 간절했다”…15년 전 ‘피겨여왕’ 김연아에 생긴 일",
+          "link": "https://n.news.naver.com/mnews/article/009/0005450002"
+        },
+        {
+          "title": "[인사] 경기 포천시",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233920"
+        },
+        {
+          "title": "“K팝 같은 저력, AI서도 발휘할 수 있죠”…결국 상상력 싸움이라는 이 전문가",
+          "link": "https://n.news.naver.com/mnews/article/009/0005449965"
+        }
+      ],
+      "사회 일반": [
+        {
+          "title": "강남구, 걷기 캠페인 ‘플로킨’…“걸으면서 주우세요”",
+          "link": "https://n.news.naver.com/mnews/article/016/0002434191"
+        },
+        {
+          "title": "동작구, 전세사기 피해자 ‘소송비’ 최대 100만원 지원",
+          "link": "https://n.news.naver.com/mnews/article/016/0002434190"
+        },
+        {
+          "title": "냉동수산업장서 '암모니아 가스' 누출.. 70대 남성 심정지",
+          "link": "https://n.news.naver.com/mnews/article/661/0000051300"
+        }
+      ]
+    }
+  },
+  "생활/문화": {
+    "main": [
+      {
+        "title": "낮 최고 5∼12도…건조 특보에 ‘산불 조심’",
+        "link": "https://n.news.naver.com/mnews/article/032/0003353316"
+      },
+      {
+        "title": "하이브 \"BTS 매출 비중, 입대로 95%→20%…컴백하면 올라갈 것\"",
+        "link": "https://n.news.naver.com/mnews/article/055/0001235037"
+      },
+      {
+        "title": "국립예술단체 4곳 “문체부 이사회 통합 추진 반대”",
+        "link": "https://n.news.naver.com/mnews/article/056/0011899897"
+      }
+    ],
+    "sub": {
+      "건강정보": [
+        {
+          "title": "[아미랑] 스트레스가 몰려오는 순간, “컷”을 외쳐라",
+          "link": "https://n.news.naver.com/mnews/article/346/0000088047"
+        },
+        {
+          "title": "\"떡볶이 먹을때 OO은 같이 먹지 말아라\"… 132만 의사 유튜버 경고",
+          "link": "https://n.news.naver.com/mnews/article/417/0001060488"
+        },
+        {
+          "title": "온종합병원, 인공신장센터 병상 61개로 확장…혈액투석 적극 대응",
+          "link": "https://n.news.naver.com/mnews/article/014/0005313466"
+        }
+      ],
+      "자동차/시승기": [
+        {
+          "title": "기아, 온라인 커뮤니티 커머스 ‘기아샵’ 오픈",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951352"
+        },
+        {
+          "title": "기아, 유럽·미국서 똑똑한 전기차 충전 서비스 개시",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951349"
+        },
+        {
+          "title": "무디스, 현대글로비스 신용등급 전망 '안정적'→'긍정적'",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951334"
+        }
+      ],
+      "도로/교통": [
+        {
+          "title": "흩어진 철도 시설물·유지보수 정보 통합…안전한 서비스 제공한다",
+          "link": "https://n.news.naver.com/mnews/article/421/0008097945"
+        },
+        {
+          "title": "\"향후치료비, 중상환자만 받는다\"…자동차 보험 인상 요인 제거",
+          "link": "https://n.news.naver.com/mnews/article/421/0008097904"
+        },
+        {
+          "title": "자동차보험 향후치료비 지급 기준·장기치료 요건 강화",
+          "link": "https://n.news.naver.com/mnews/article/119/0002927265"
+        }
+      ],
+      "여행/레저": [
+        {
+          "title": "대문자 I, 내향인들에겐 이 서점 강추입니다",
+          "link": "https://n.news.naver.com/mnews/article/047/0002463853"
+        },
+        {
+          "title": "롯데면세점, 외국인 단체관광 유치전…통역사 200여명 초청",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233926"
+        },
+        {
+          "title": "문체부, 올해 한국관광 홍보지점 12개로 확대…\"신흥시장 공략\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233921"
+        }
+      ],
+      "음식/맛집": [
+        {
+          "title": "BBQ, 美 유타주에 31번째 매장 개점",
+          "link": "https://n.news.naver.com/mnews/article/277/0005552082"
+        },
+        {
+          "title": "동원샘물, '국제식음료품평회' 최고등급 '3스타' 수상",
+          "link": "https://n.news.naver.com/mnews/article/277/0005552080"
+        },
+        {
+          "title": "파리바게트 이어…뚜레쥬르도 110여 종 가격 5% 인상",
+          "link": "https://n.news.naver.com/mnews/article/277/0005552077"
+        }
+      ],
+      "패션/뷰티": [
+        {
+          "title": "젠테, 카카오뱅크와 손잡고 ‘나의 추구미’ 찾는다",
+          "link": "https://n.news.naver.com/mnews/article/119/0002927299"
+        },
+        {
+          "title": "코스맥스는 '중국'·한국콜마는 '미국'…해외서 답 찾았다",
+          "link": "https://n.news.naver.com/mnews/article/648/0000033807"
+        },
+        {
+          "title": "“키트 하나로 피부 유해균 손쉽게 파악”…이 회사, 맞춤형 ‘꿈의 화장품’ 시대 연다",
+          "link": "https://n.news.naver.com/mnews/article/009/0005449981"
+        }
+      ],
+      "공연/전시": [
+        {
+          "title": "\"퇴색 없이 영원히\" 조선시대 일월오봉도 색소 없이 구현",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233906"
+        },
+        {
+          "title": "최길수 초대전, 내달 3일 세종아트갤러리서 개최…'작은 행복 발견의 기쁨'",
+          "link": "https://n.news.naver.com/mnews/article/277/0005552055"
+        },
+        {
+          "title": "부산 최초 클래식 전용 공연장 '부산콘서트홀' 홈페이지 개설",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233847"
+        }
+      ],
+      "책": [
+        {
+          "title": "이어령 초대 문화부 장관 3주기…추모식 26일 국립중앙도서관",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098109"
+        },
+        {
+          "title": "이어령 오늘 3주기…유인촌 장관 추모사, 장사익 추모곡",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951339"
+        },
+        {
+          "title": "웹툰엔터 작년 적자 폭 확대…매출은 1.8조원으로 성장세 유지(종합)",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233849"
+        }
+      ],
+      "종교": [
+        {
+          "title": "\"프란치스코 교황, 위중하지만 안정적…중요 업무 처리\"",
+          "link": "https://n.news.naver.com/mnews/article/422/0000716565"
+        },
+        {
+          "title": "진우스님 \"불교복지 제일 잘하는 곳이 종로노인복지관\"",
+          "link": "https://n.news.naver.com/mnews/article/421/0008097967"
+        },
+        {
+          "title": "'교명 개칭 120주년' 천도교…3·1절 행사로 민족종교 정체성 강화",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233784"
+        }
+      ],
+      "날씨": [
+        {
+          "title": "추위 가고 황사 왔다...수도권 미세먼지 '나쁨'",
+          "link": "https://n.news.naver.com/mnews/article/215/0001199854"
+        },
+        {
+          "title": "낮 기온 10도 안팎.. 낮 한때 황사 영향",
+          "link": "https://n.news.naver.com/mnews/article/659/0000030799"
+        },
+        {
+          "title": "오늘 낮 5∼12도 점차 '포근'…수도권 등 중서부 '황사'",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233886"
+        }
+      ],
+      "생활문화 일반": [
+        {
+          "title": "롯데시네마, '플레이브 대쉬 인 시네마' 단독 상영",
+          "link": "https://n.news.naver.com/mnews/article/008/0005158329"
+        },
+        {
+          "title": "“따뜻함 나눔 실천”…아워홈, 강서노인종합복지관서 배식 봉사",
+          "link": "https://n.news.naver.com/mnews/article/009/0005450000"
+        },
+        {
+          "title": "김범석 쿠팡Inc 의장 “파페치·대만 등 글로벌 성장…고객에 최고가치 제공”",
+          "link": "https://n.news.naver.com/mnews/article/009/0005449998"
+        }
+      ]
+    }
+  },
+  "IT/과학": {
+    "main": [
+      {
+        "title": "차세대발사체 2035년 재사용 기술 확보…비용 95% 저감",
+        "link": "https://n.news.naver.com/mnews/article/421/0008097250"
+      },
+      {
+        "title": "바씨 다쏘시스템 수석부사장 \"`아우라`로 산업용AI 선도할 것\"",
+        "link": "https://n.news.naver.com/mnews/article/029/0002937689"
+      },
+      {
+        "title": "국회 AI 공청회서 '韓 독자 AI 파운데이션 모델 개발' 제언",
+        "link": "https://n.news.naver.com/mnews/article/030/0003287602"
+      }
+    ],
+    "sub": {
+      "모바일": [
+        {
+          "title": "기아, 스마트 충전·V2H 서비스 시동",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233924"
+        },
+        {
+          "title": "기아, 스마트 충전·V2H 서비스 시동",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233922"
+        },
+        {
+          "title": "현대차-삼성전자, 기술협력으로 스마트 팩토리 구축 나선다",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233919"
+        }
+      ],
+      "인터넷/SNS": [
+        {
+          "title": "비트코인, 8만 8000달러대 거래, 지난해 11월 이후 최저점",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951356"
+        },
+        {
+          "title": "대통령이 준비해야 할 AI 정책 [김윤명박사의 AI웨이브]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004454855"
+        },
+        {
+          "title": "CJ ONE, 트래블월렛과 외국인 관광객 멤버십 서비스",
+          "link": "https://n.news.naver.com/mnews/article/018/0005951332"
+        }
+      ],
+      "통신/뉴미디어": [
+        {
+          "title": "LGU+, MWC에서 AI·RTK 활용 AX 협업 사례 소개한다",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098094"
+        },
+        {
+          "title": "오픈AI, AI 에이전트 ‘딥리서치’ 이용 대상 확대",
+          "link": "https://n.news.naver.com/mnews/article/366/0001056735"
+        },
+        {
+          "title": "웹툰엔터, 지난해 4분기 영업손실 386억원… 적자 확대",
+          "link": "https://n.news.naver.com/mnews/article/366/0001056734"
+        }
+      ],
+      "IT 일반": [
+        {
+          "title": "LS일렉트릭, 삼성물산과 美 BESS 사업 맞손",
+          "link": "https://n.news.naver.com/mnews/article/092/0002364578"
+        },
+        {
+          "title": "현대차-삼성전자, 기술협력으로 스마트 팩토리 구축 나선다",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233919"
+        },
+        {
+          "title": "현대차-삼성전자, 기술협력으로 스마트 팩토리 구축 나선다",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233918"
+        }
+      ],
+      "보안/해킹": [
+        {
+          "title": "\"망분리 완화에 제로트러스트 중요성 커져…설루션 협력해 달성\"",
+          "link": "https://n.news.naver.com/mnews/article/421/0008097741"
+        },
+        {
+          "title": "조영철 KISIA 회장 “보안기업도 해킹에서 자유롭지 않다”…자율보안협의체 신설",
+          "link": "https://n.news.naver.com/mnews/article/138/0002191535"
+        },
+        {
+          "title": "조영철 KISIA 회장, “동남아·중동 등 신흥 시장 정조준”",
+          "link": "https://n.news.naver.com/mnews/article/030/0003287632"
+        }
+      ],
+      "컴퓨터": [
+        {
+          "title": "트래블월렛 앱서 CJ원 멤버십 결제 'OK'…외국인 관광객도 '가능'",
+          "link": "https://n.news.naver.com/mnews/article/092/0002364577"
+        },
+        {
+          "title": "뇌·흉부에 갑상선까지... 딥노이드 AI모델 연구결과, 유럽학회서 소개",
+          "link": "https://n.news.naver.com/mnews/article/008/0005158323"
+        },
+        {
+          "title": "1조 규모 의료영상 판독시장, 딥노이드 AI솔루션 기대 ↑-상상인證",
+          "link": "https://n.news.naver.com/mnews/article/008/0005158318"
+        }
+      ],
+      "게임/리뷰": [
+        {
+          "title": "유안타증권 \"시프트업, '니케' 2분기 中진출로 실적 개선 기대\"",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233866"
+        },
+        {
+          "title": "대전시, PMPS·이터널 리턴 2025 정규시즌 국내 단독 유치",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098039"
+        },
+        {
+          "title": "'애플 비전프로 쓰고 3D설계·시뮬레이션 협업'…다쏘시스템, 3D라이브 올 여름 출시",
+          "link": "https://n.news.naver.com/mnews/article/011/0004454836"
+        }
+      ],
+      "과학 일반": [
+        {
+          "title": "뉴로핏, 국제 뇌 자극 컨퍼런스 참가…연구 초록 3편 발표",
+          "link": "https://n.news.naver.com/mnews/article/015/0005099343"
+        },
+        {
+          "title": "딥바이오, AI 기반 동반진단 ‘딥시디엑스’ 美 상표권 획득",
+          "link": "https://n.news.naver.com/mnews/article/015/0005099339"
+        },
+        {
+          "title": "\"퇴색 없이 영원히\" 조선시대 일월오봉도 색소 없이 구현",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233906"
+        }
+      ]
+    }
+  },
+  "세계": {
+    "main": [
+      {
+        "title": "트럼프 “우크라 수주 내 종전”… 마크롱 “안전보장 없이 안 돼”",
+        "link": "https://n.news.naver.com/mnews/article/005/0001759613"
+      },
+      {
+        "title": "트럼프 “美영주권 71억원에 판매”…‘골드카드’ 주인 나타날까",
+        "link": "https://n.news.naver.com/mnews/article/018/0005951283"
+      },
+      {
+        "title": "“장례준비는 끝났습니다. 다른 교인들처럼 소박하게 치르고 싶습니다”…프란치스코 교황 자서전 ‘희망’ 13일 출간",
+        "link": "https://n.news.naver.com/mnews/article/081/0003520643"
+      }
+    ],
+    "sub": {
+      "아시아/호주": [
+        {
+          "title": "[아침에 한 장] 끝나지 않는 전쟁",
+          "link": "https://n.news.naver.com/mnews/article/448/0000510520"
+        },
+        {
+          "title": "브라질 북동부에 '거대 싱크홀' 발생…주민 1200명 대피",
+          "link": "https://n.news.naver.com/mnews/article/448/0000510518"
+        },
+        {
+          "title": "\"시신과 나란히 4시간을…\" 호주인 부부의 끔찍했던 비행",
+          "link": "https://n.news.naver.com/mnews/article/119/0002927290"
+        }
+      ],
+      "미국/중남미": [
+        {
+          "title": "애플 AI가 '인종차별주의자'를 '트럼프'로 적었다고? [윤민혁의 실리콘밸리View]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004454856"
+        },
+        {
+          "title": "엔비디아 실적 앞두고 지수 선물은 일제 상승, 나스닥 0.34%↑",
+          "link": "https://n.news.naver.com/mnews/article/421/0008098103"
+        },
+        {
+          "title": "코발트 가격 70% 하락에 생산 중단 vs. 美, 국가 이익 위해 러와 경제개발 거래… 글로벌 지형 변화 [AI 프리즘*글로벌 투자자 뉴스]",
+          "link": "https://n.news.naver.com/mnews/article/011/0004454850"
+        }
+      ],
+      "유럽": [
+        {
+          "title": "트럼프 \"젤렌스키 28일 방미\"…미-우크라 광물협정 서명 예정(종합2보)",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233908"
+        },
+        {
+          "title": "유엔난민기구, 리비아 수용소의 난민 39명 석방에 \"환영",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088417"
+        },
+        {
+          "title": "\"트럼프 러 편들기에 대응책 마련 어려운 우크라\"-NYT",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088400"
+        }
+      ],
+      "중동/아프리카": [
+        {
+          "title": "[게시판] 롯데장학재단, 레바논 거주 시리아 난민에 2억원 지원",
+          "link": "https://n.news.naver.com/mnews/article/001/0015233917"
+        },
+        {
+          "title": "추위로 인큐베이터 치료 받는 팔레스타인 영아",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088415"
+        },
+        {
+          "title": "가자지구 한파로 팔레스타인 영아 6명 사망",
+          "link": "https://n.news.naver.com/mnews/article/003/0013088411"
+        }
+      ],
+      "세계 일반": [
+        {
+          "title": "美 긴장할까…'중국판 챗GPT' 딥시크, 차기 모델 R2 앞당겨 공개",
+          "link": "https://n.news.naver.com/mnews/article/011/0004454858"
+        },
+        {
+          "title": "71억 원에 미 영주권 사세요…2주 후 시행\"",
+          "link": "https://n.news.naver.com/mnews/article/055/0001235205"
+        },
+        {
+          "title": "구리에도 관세? 트럼프 “구리 수입, 국가안보 영향 조사하라” 행정명령 서명",
+          "link": "https://n.news.naver.com/mnews/article/366/0001056739"
+        }
+      ]
+    }
+  }
+}

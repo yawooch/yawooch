@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pensieve - 개선된 디자인</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --accent-color: #6366f1;
+            --text-primary: #1e293b;
+            --text-secondary: #64748b;
+            --border-light: #e2e8f0;
+            --search-bg: rgba(255, 255, 255, 0.95);
+            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--primary-bg);
+            min-height: 100vh;
+            color: var(--text-primary);
+        }
+
+        /* 헤더 */
+        .header {
+            background: var(--search-bg);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* 로그인 관련 스타일 */
+        .auth-section {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .login-btn {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background: #4f46e5;
+            transform: translateY(-1px);
+        }
+
+        .user-menu {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .user-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--accent-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .user-avatar:hover {
+            transform: scale(1.05);
+        }
+
+        .user-name {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* 드롭다운 메뉴 공통 스타일 */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: color 0.2s ease;
+        }
+
+        .dropdown-toggle:hover {
+            color: var(--accent-color);
+        }
+
+        .dropdown-arrow {
+            font-size: 0.75rem;
+            transition: transform 0.2s ease;
+        }
+
+        .dropdown.open .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border-light);
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .dropdown.open .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: background 0.2s ease;
+            border-radius: 8px;
+            margin: 0.25rem;
+        }
+
+        .dropdown-item:hover {
+            background: var(--secondary-bg);
+            color: var(--accent-color);
+        }
+
+        .dropdown-item:first-child {
+            margin-top: 0.5rem;
+        }
+
+        .dropdown-item:last-child {
+            margin-bottom: 0.5rem;
+        }
+
+        .dropdown-divider {
+            height: 1px;
+            background: var(--border-light);
+            margin: 0.5rem 0;
+        }
+
+        /* Menus 드롭다운 전용 스타일 */
+        .menus-dropdown .dropdown-menu {
+            right: auto;
+            left: 0;
+            min-width: 250px;
+        }
+
+        .menu-category {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border-light);
+            margin-bottom: 0.25rem;
+        }
+
+        .menu-category:not(:first-child) {
+            margin-top: 0.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-light);
+        }
+
+        /* 검색 섹션 - 개선된 부분 */
+        .search-container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .search-tabs {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .tab-button {
+            background: rgba(255, 255, 255, 0.9);
+            border: 2px solid transparent;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .tab-button.active {
+            background: white;
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+            box-shadow: var(--shadow-md);
+        }
+
+        .tab-button:not(.active):hover {
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        .search-input-container {
+            position: relative;
+            background: white;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1.25rem 4rem 1.25rem 1.5rem;
+            border: none;
+            font-size: 1.1rem;
+            outline: none;
+            background: transparent;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 1.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 1.25rem;
+        }
+
+        /* 필터 태그 */
+        .active-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .filter-tag {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .filter-tag:hover {
+            transform: scale(1.05);
+        }
+
+        .filter-tag .remove {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        /* 메인 컨텐츠 */
+        .main-content {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .memo-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow-md);
+            transition: all 0.3s ease;
+            position: relative;
+            border: 1px solid var(--border-light);
+            cursor: pointer;
+            overflow: hidden;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .memo-card.expanded {
+            grid-column: 1 / -1;
+            max-width: none;
+            min-height: auto;
+        }
+
+        .memo-card.long-content {
+            background: linear-gradient(to bottom, var(--card-bg) 0%, var(--card-bg) 70%, rgba(248, 250, 252, 0.9) 100%);
+        }
+
+        .memo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .memo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            line-height: 1.4;
+            flex: 1;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 0.5rem;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .memo-card:hover .card-actions {
+            opacity: 1;
+        }
+
+        .action-btn {
+            background: var(--secondary-bg);
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .action-btn:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .card-content {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-content.collapsed {
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            max-height: 120px;
+        }
+
+        .card-content.expanded {
+            display: block;
+            max-height: none;
+            -webkit-line-clamp: none;
+        }
+
+        .content-fade {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(transparent, var(--card-bg));
+            pointer-events: none;
+        }
+
+        .card-content.expanded .content-fade {
+            display: none;
+        }
+
+        .expand-indicator {
+            position: absolute;
+            bottom: 0.5rem;
+            right: 0.5rem;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .expand-indicator:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-md);
+        }
+
+        .expand-indicator.expanded {
+            background: var(--text-secondary);
+        }
+
+        .card-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: auto;
+        }
+
+        .tag {
+            background: var(--secondary-bg);
+            color: var(--accent-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .tag:hover {
+            background: var(--accent-color);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .card-meta {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-light);
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+        }
+
+        /* 플로팅 액션 버튼 */
+        .fab {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 64px;
+            height: 64px;
+            background: var(--accent-color);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            z-index: 50;
+        }
+
+        .fab:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 25px -5px rgb(0 0 0 / 0.3);
+        }
+
+        /* 반응형 디자인 */
+        @media (max-width: 768px) {
+            .header {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .auth-section {
+                gap: 0.5rem;
+            }
+
+            .user-name {
+                display: none;
+            }
+
+            .search-container,
+            .main-content {
+                padding: 0 1rem;
+            }
+
+            .cards-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .search-tabs {
+                flex-wrap: wrap;
+            }
+
+            .dropdown-menu {
+                right: 0;
+                left: auto;
+                min-width: 180px;
+            }
+
+            .menus-dropdown .dropdown-menu {
+                right: 0;
+                left: auto;
+            }
+        }
+
+        /* 애니메이션 */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .memo-card {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+
+        .memo-card:nth-child(2) { animation-delay: 0.1s; }
+        .memo-card:nth-child(3) { animation-delay: 0.2s; }
+        .memo-card:nth-child(4) { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+    <!-- 헤더 -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">Pensieve</a>
+            <ul class="nav-links">
+                <li><a href="#">Memory</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Books</a></li>
+                <li class="dropdown menus-dropdown">
+                    <a href="#" class="dropdown-toggle" onclick="toggleDropdown(event, this)">
+                        Menus <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <div class="menu-category">개인 도구</div>
+                        <a href="#" class="dropdown-item">
+                            <span>📝</span> 할일 관리
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>💰</span> 가계부
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>📊</span> 습관 트래커
+                        </a>
+                        
+                        <div class="menu-category">개발 도구</div>
+                        <a href="#" class="dropdown-item">
+                            <span>🔧</span> 코드 스니펫
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>📚</span> 학습 노트
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>🐛</span> 버그 트래커
+                        </a>
+                        
+                        <div class="menu-category">설정</div>
+                        <a href="#" class="dropdown-item">
+                            <span>⚙️</span> 환경설정
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>🎨</span> 테마 설정
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            
+            <!-- 로그인 섹션 -->
+            <div class="auth-section">
+                <!-- 로그인 전 -->
+                <button class="login-btn" onclick="showLogin()" id="loginBtn">로그인</button>
+                
+                <!-- 로그인 후 (기본적으로 숨김) -->
+                <div class="user-menu dropdown" id="userMenu" style="display: none;">
+                    <div class="dropdown-toggle" onclick="toggleDropdown(event, this)">
+                        <div class="user-avatar">우</div>
+                        <span class="user-name">woochan</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">
+                            <span>👤</span> 프로필
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>📊</span> 대시보드
+                        </a>
+                        <a href="#" class="dropdown-item">
+                            <span>⚙️</span> 설정
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item" onclick="logout()">
+                            <span>🚪</span> 로그아웃
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 검색 섹션 -->
+    <div class="search-container">
+        <div class="search-tabs">
+            <button class="tab-button active" onclick="switchTab('content')">💭 내용 검색</button>
+            <button class="tab-button" onclick="switchTab('hashtag')"># 태그 검색</button>
+            <button class="tab-button" onclick="switchTab('mixed')">🔍 통합 검색</button>
+        </div>
+        
+        <div class="search-input-container">
+            <input type="text" class="search-input" placeholder="메모를 검색하세요..." id="searchInput">
+            <div class="search-icon">🔍</div>
+        </div>
+
+        <div class="active-filters">
+            <div class="filter-tag">
+                python <span class="remove">×</span>
+            </div>
+            <div class="filter-tag">
+                memo <span class="remove">×</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메인 컨텐츠 -->
+    <main class="main-content">
+        <div class="cards-grid">
+            <!-- 해야할거 카드 -->
+            <div class="memo-card">
+                <div class="card-header">
+                    <h3 class="card-title">해야할거</h3>
+                    <div class="card-actions">
+                        <button class="action-btn">📝</button>
+                        <button class="action-btn">🔍</button>
+                        <button class="action-btn">⋮</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    ✅ 판일서버<br>
+                    • 컴석기능<br>
+                    • 개발/운영 구분하기<br>
+                    • 연구실 데이지<br>
+                    ✅ 에뉴 드물다음<br>
+                    • 가계부 메뉴
+                </div>
+                <div class="card-tags">
+                    <span class="tag">#default</span>
+                    <span class="tag">#할일</span>
+                </div>
+                <div class="card-meta">
+                    2025-08-11 13:26 Modified by woochan
+                </div>
+            </div>
+
+            <!-- Git 커밋 및 푸시 명령어서 카드 (긴 내용) -->
+            <div class="memo-card long-content" data-full-content="true">
+                <div class="card-header">
+                    <h3 class="card-title">Git 커밋 및 푸시 명령어서</h3>
+                    <div class="card-actions">
+                        <button class="action-btn">📝</button>
+                        <button class="action-btn">🔍</button>
+                        <button class="action-btn">⋮</button>
+                    </div>
+                </div>
+                <div class="card-content collapsed">
+                    <h4>Git 커밋 및 푸시 명령어 순서</h4>
+                    
+                    <h5>1. 현재 작업 디렉토리로 이동</h5>
+                    <code>cd /workspace/git_project/yawooch/projects/privateProject/spring/Pensieve</code>
+                    
+                    <h5>2. 현재 Git 상태 확인</h5>
+                    <code>git status</code>
+                    
+                    <h5>3. 변경된 파일들을 스테이징 영역에 추가</h5>
+                    • 특정 파일만 추가<br>
+                    <code>git add src/main/webapp/WEB-INF/views/memoryCard.jsp</code><br>
+                    <code>git add src/main/webapp/resources/js/memo.js</code><br>
+                    • 또는 모든 변경사항을 한번에 추가<br>
+                    <code>git add .</code>
+                    
+                    <h5>4. 커밋 메시지와 함께 커밋</h5>
+                    <code>git commit -m "feat: 메모리 카드 컴포넌트 Toastui Editor viewer로 표시하도록 수정"</code>
+                    
+                    - memoryCard.jsp: 100% 미만 컨텐츠를 Toastui Editor viewer로 표시<br>
+                    - memo.js: Toastui Editor 초기화 및 뷰어 설정 업데이트<br>
+                    - 컨텐츠 편집과 방식 자연 웹 미디어는 처리"
+                    
+                    <div class="content-fade"></div>
+                </div>
+                <button class="expand-indicator" onclick="toggleExpand(this)">+</button>
+                <div class="card-tags">
+                    <span class="tag">#git</span>
+                    <span class="tag">#guide</span>
+                    <span class="tag">#dev</span>
+                </div>
+                <div class="card-meta">
+                    2025-08-10 17:09 Created by woochan
+                </div>
+            </div>
+
+            <!-- webCrawlingNews.p 카드 -->
+            <div class="memo-card">
+                <div class="card-header">
+                    <h3 class="card-title">webCrawlingNews.p</h3>
+                    <div class="card-actions">
+                        <button class="action-btn">📝</button>
+                        <button class="action-btn">🔍</button>
+                        <button class="action-btn">⋮</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    webCrawlingNews.p
+                </div>
+                <div class="card-tags">
+                    <span class="tag">#정보</span>
+                    <span class="tag">#memo</span>
+                    <span class="tag">#python</span>
+                    <span class="tag">#code</span>
+                </div>
+                <div class="card-meta">
+                    2025-08-10 14:40 Modified by woochan
+                </div>
+            </div>
+
+            <!-- 무료 SSL 적용 메뉴얼 카드 -->
+            <div class="memo-card">
+                <div class="card-header">
+                    <h3 class="card-title">무료 SSL 적용 메뉴얼</h3>
+                    <div class="card-actions">
+                        <button class="action-btn">📝</button>
+                        <button class="action-btn">🔍</button>
+                        <button class="action-btn">⋮</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    무료 SSL 적용 메뉴얼
+                </div>
+                <div class="card-tags">
+                </div>
+                <div class="card-meta">
+                    Created by woochan
+                </div>
+            </div>
+
+            <!-- 스니펫 카드 -->
+            <div class="memo-card">
+                <div class="card-header">
+                    <h3 class="card-title">스니펫</h3>
+                    <div class="card-actions">
+                        <button class="action-btn">📝</button>
+                        <button class="action-btn">🔍</button>
+                        <button class="action-btn">⋮</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    스니펫
+                </div>
+                <div class="card-tags">
+                </div>
+                <div class="card-meta">
+                    Created by woochan
+                </div>
+            </div>
+
+            <!-- 업력 테스트 카드 -->
+            <div class="memo-card">
+                <div class="card-header">
+                    <h3 class="card-title">업력 테스트test</h3>
+                    <div class="card-actions">
+                        <button class="action-btn">📝</button>
+                        <button class="action-btn">🔍</button>
+                        <button class="action-btn">⋮</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    업력 테스트test
+                </div>
+                <div class="card-tags">
+                    <span class="tag">#업정</span>
+                </div>
+                <div class="card-meta">
+                    Created by woochan
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- 플로팅 액션 버튼 -->
+    <button class="fab" title="새 메모 추가">+</button>
+
+    <script>
+        // 탭 전환 함수
+        function switchTab(tabType) {
+            // 탭 버튼 활성화 상태 변경
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // 검색창 placeholder 변경
+            const searchInput = document.getElementById('searchInput');
+            switch(tabType) {
+                case 'content':
+                    searchInput.placeholder = '메모 내용을 검색하세요...';
+                    break;
+                case 'hashtag':
+                    searchInput.placeholder = '#태그명으로 검색하세요...';
+                    break;
+                case 'mixed':
+                    searchInput.placeholder = '내용이나 태그로 검색하세요...';
+                    break;
+            }
+        }
+
+        // 드롭다운 토글 함수
+        function toggleDropdown(event, element) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const dropdown = element.closest('.dropdown');
+            const isOpen = dropdown.classList.contains('open');
+            
+            // 모든 다른 드롭다운 닫기
+            document.querySelectorAll('.dropdown.open').forEach(d => {
+                if (d !== dropdown) {
+                    d.classList.remove('open');
+                }
+            });
+            
+            // 현재 드롭다운 토글
+            dropdown.classList.toggle('open', !isOpen);
+        }
+
+        // 외부 클릭시 드롭다운 닫기
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown.open').forEach(dropdown => {
+                    dropdown.classList.remove('open');
+                });
+            }
+        });
+
+        // 로그인 함수 (데모용)
+        function showLogin() {
+            // 실제로는 로그인 모달이나 페이지로 이동
+            alert('로그인 화면으로 이동합니다.');
+            
+            // 데모용: 로그인 상태로 변경
+            setTimeout(() => {
+                document.getElementById('loginBtn').style.display = 'none';
+                document.getElementById('userMenu').style.display = 'flex';
+            }, 500);
+        }
+
+        // 로그아웃 함수
+        function logout() {
+            document.getElementById('loginBtn').style.display = 'block';
+            document.getElementById('userMenu').style.display = 'none';
+            
+            // 드롭다운 닫기
+            document.querySelectorAll('.dropdown.open').forEach(dropdown => {
+                dropdown.classList.remove('open');
+            });
+        }
+
+        // 태그 클릭 이벤트
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('click', function() {
+                const tagName = this.textContent.trim();
+                // 태그를 활성 필터에 추가하는 로직
+                console.log('Tag clicked:', tagName);
+            });
+        });
+
+        // 필터 제거 이벤트
+        document.querySelectorAll('.filter-tag .remove').forEach(remove => {
+            remove.addEventListener('click', function(e) {
+                e.stopPropagation();
+                this.parentElement.remove();
+            });
+        });
+
+        // 카드 확장/축소 기능
+        function toggleExpand(button) {
+            const card = button.closest('.memo-card');
+            const content = card.querySelector('.card-content');
+            
+            if (content.classList.contains('collapsed')) {
+                // 확장
+                content.classList.remove('collapsed');
+                content.classList.add('expanded');
+                card.classList.add('expanded');
+                button.innerHTML = '−';
+                button.classList.add('expanded');
+                button.title = '축소하기';
+            } else {
+                // 축소
+                content.classList.remove('expanded');
+                content.classList.add('collapsed');
+                card.classList.remove('expanded');
+                button.innerHTML = '+';
+                button.classList.remove('expanded');
+                button.title = '확장하기';
+            }
+        }
+
+        // 무한 스크롤 구현 (간단한 예시)
+        let loading = false;
+        window.addEventListener('scroll', () => {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 1000 && !loading) {
+                loading = true;
+                // 여기서 새로운 카드들을 로드
+                setTimeout(() => {
+                    loading = false;
+                }, 1000);
+            }
+        });
+    </script>
+</body>
+</html>

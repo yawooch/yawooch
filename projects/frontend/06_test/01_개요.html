@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/jquery-3.7.1.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+    <link href="./bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <title>jQuery 개요</title>
+
+</head>
+<style>
+#lockableDiv {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 2px solid #333;
+  cursor: pointer;
+  user-select: none;
+  background-color: lightgray;
+}
+
+#lockableDiv.unlock {
+  background-color: lightgreen;
+}
+
+.spinner {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ddd;
+  border-top: 4px solid #333;
+  border-radius: 50%;
+  animation: none; /* 기본값: 비활성화 */
+  visibility: hidden; /* 기본값: 숨김 */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+<body>
+    <div id="lockableDiv" class="lock">
+  <div class="spinner"></div>
+  <p>Hold for 0.5 seconds to unlock</p>
+</div>
+
+<script>
+const lockableDiv = document.getElementById("lockableDiv");
+const spinner = lockableDiv.querySelector(".spinner");
+let holdTimer;
+
+lockableDiv.addEventListener("mousedown", () => {
+  if (!lockableDiv.classList.contains("unlock")) {
+    spinner.style.animation = "spin 0.5s linear";
+    spinner.style.visibility = "visible";
+    holdTimer = setTimeout(() => {
+      lockableDiv.classList.replace("lock", "unlock");
+      spinner.style.animation = "none";
+      spinner.style.visibility = "hidden";
+    }, 500); // 2초 후 unlock
+  }
+});
+
+lockableDiv.addEventListener("mouseup", () => {
+  clearTimeout(holdTimer);
+  spinner.style.animation = "none";
+  spinner.style.visibility = "hidden";
+});
+
+lockableDiv.addEventListener("mouseleave", () => {
+  clearTimeout(holdTimer);
+  spinner.style.animation = "none";
+  spinner.style.visibility = "hidden";
+});
+
+</script>
+</body>
+</html>
